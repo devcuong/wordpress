@@ -1,0 +1,3 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Bắc Hà","meta" : "bac_ha"},{"name" : "Bảo Thắng","meta" : "bao_thang"},{"name" : "Bảo Yên","meta" : "bao_yen"},
+{"name" : "Bát Xát","meta" : "bat_xat"},{"name" : "Mường Khương","meta" : "muong_khuong"},{"name" : "Sa Pa","meta" : "sa_pa"},{"name" : "Văn Bàn","meta" : "van_ban"},
+{"name" : "Xi Ma Cai","meta" : "xi_ma_cai"},{"name" : "Lào Cai","meta" : "lao_cai"}]

@@ -1,0 +1,2 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Đông Hải","meta" : "dong_hai"},{"name" : "Giá Rai","meta" : "gia_rai"},{"name" : "Hòa Bình","meta" : "hoa_binh"},
+{"name" : "Hồng Dân","meta" : "hong_dan"},{"name" : "Phước Long","meta" : "phuoc_long"},{"name" : "Vĩnh Lợi","meta" : "vinh_loi"},{"name" : "Bạc Liêu","meta" : "bac_lieu"}]

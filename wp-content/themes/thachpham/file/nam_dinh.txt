@@ -1,0 +1,3 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Giao Thủy","meta" : "giao_thuy"},{"name" : "Hải Hậu","meta" : "hai_hau"},{"name" : "Mỹ Lộc","meta" : "my_loc"},
+{"name" : "Nam Trực","meta" : "nam_truc"},{"name" : "Nghĩa Hưng","meta" : "nghia_hung"},{"name" : "Trực Ninh","meta" : "truc_ninh"},{"name" : "Vụ Bản","meta" : "vu_ban"},
+{"name" : "Xuân Trường","meta" : "xuan_truong"},{"name" : "Ý Yên","meta" : "y_yen"},{"name" : "Nam Định","meta" : "nam_dinh"}]

@@ -1,0 +1,4 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Ba Chẽ","meta" : "ba_che"},{"name" : "Bình Liêu","meta" : "binh_lieu"},{"name" : "Cô Tô","meta" : "co_to"},
+{"name" : "Đầm Hà","meta" : "dam_ha"},{"name" : "Đông Triều","meta" : "dong_trieu"},{"name" : "Hải Hà","meta" : "hai_ha"},{"name" : "Hoành Bồ","meta" : "hoanh_bo"}
+,{"name" : "Tiên Yên","meta" : "tien_yen"},{"name" : "Vân Đồn","meta" : "van_don"},{"name" : "Hạ Long","meta" : "ha_long"},{"name" : "Cẩm Phả","meta" : "cam_pha"}
+,{"name" : "Móng Cái","meta" : "mong_cai"},{"name" : "Uông Bí","meta" : "uong_bi"},{"name" : "Quảng Yên","meta" : "quang_yen"}]

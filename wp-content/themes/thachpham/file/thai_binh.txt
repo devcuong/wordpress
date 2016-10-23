@@ -1,0 +1,3 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Đông Hưng","meta" : "dong_hung"},{"name" : "Hưng Hà","meta" : "hung_ha"},{"name" : "Kiến Xương","meta" : "kien_xuong"},
+{"name" : "Quỳnh Phụ","meta" : "quynh_phu"},{"name" : "Thái Thuỵ","meta" : "thai_thuy"},{"name" : "Tiền Hải","meta" : "tien_hai"},{"name" : "Vũ Thư","meta" : "vu_thu"}
+,{"name" : "Thái Bình","meta" : "thai_binh"}]

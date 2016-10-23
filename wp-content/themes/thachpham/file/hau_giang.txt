@@ -1,0 +1,2 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Châu Thành","meta" : "chau_thanh"},{"name" : "Châu Thành A","meta" : "chau_thanh_a"},{"name" : "Long Mỹ","meta" : "long_my"},
+{"name" : "Phụng Hiệp","meta" : "phung_hiep"},{"name" : "Vị Thủy","meta" : "vi_thuy"},{"name" : "Ngã Bảy","meta" : "nga_bay"},{"name" : "Vị Thanh","meta" : "vi_Thanh"}]

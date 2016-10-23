@@ -1,0 +1,3 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Bình Long","meta" : "binh_long"},{"name" : "Bù Đăng","meta" : "bu_dang"},{"name" : "Bù Đốp","meta" : "bu_dop"},
+{"name" : "Chơn Thành","meta" : "chon_thanh"},{"name" : "Đồng Phú","meta" : "dong_phu"},{"name" : "Lộc Ninh","meta" : "loc_ninh"},{"name" : "Phước Long","meta" : "phuoc_long"},
+{"name" : "Đồng Xoài","meta" : "dong_xoai"},{"name" : "Hớn Quản","meta" : "hon_quan"},{"name" : "Bù Gia Mập","meta" : "bu_gia_map"},{"name" : "Phú Riềng","meta" : "phu_rieng"}]

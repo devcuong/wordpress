@@ -1,0 +1,3 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Điện Biên","meta" : "dien_bien"},{"name" : "Điện Biên Đông","meta" : "dien_bien_dong"},{"name" : "Mường Ảng","meta" : "muong_ang"},
+{"name" : "Mường Chà","meta" : "muong_cha"},{"name" : "Mường Nhé","meta" : "muong_nhe"},{"name" : "Tủa Chùa","meta" : "tua_chua"},{"name" : "Tuần Giáo","meta" : "tuan_giao"},
+{"name" : "Điện Biên Phủ","meta" : "dien_bien_phu"}, {"name" : "Mường Lay","meta" : "muong_lay"}, {"name" : "Nậm Pồ","meta" : "nam_po"}]

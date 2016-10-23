@@ -1,0 +1,3 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Lục Yên","meta" : "luc_yen"},{"name" : "Mù Cang Chải","meta" : "mu_cang_chai"},{"name" : "Trạm Tấu","meta" : "tram_tau"},
+{"name" : "Trấn Yên","meta" : "tran_yen"},{"name" : "Văn Chấn","meta" : "van_chan"},{"name" : "Văn Yên","meta" : "van_yen"},{"name" : "Yên Bình","meta" : "yen_binh"}
+,{"name" : "Yên Bái","meta" : "yen_bai"},{"name" : "Nghĩa Lộ","meta" : "nghia_lo"}]

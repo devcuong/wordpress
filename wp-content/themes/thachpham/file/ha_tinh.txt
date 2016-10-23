@@ -1,0 +1,4 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Cẩm Xuyên","meta" : "cam_xuyen"},{"name" : "Can Lộc","meta" : "can_loc"},{"name" : "Đức Thọ","meta" : "duc_tho"},
+{"name" : "Hương Khê","meta" : "huong_khe"},{"name" : "Hương Sơn","meta" : "huong_son"},{"name" : "Kỳ Anh","meta" : "ky_anh"},{"name" : "Lộc Hà","meta" : "loc_ha"},
+{"name" : "Nghi Xuân","meta" : "nghi_xuan"},{"name" : "Thạch Hà","meta" : "thach_ha"},{"name" : "Vũ Quang","meta" : "vu_quang"},{"name" : "Hà Tĩnh","meta" : "ha_tinh"},
+{"name" : "Hồng Lĩnh","meta" : "hong_linh"}]

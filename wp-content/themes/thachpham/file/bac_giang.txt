@@ -1,0 +1,3 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Hiệp Hòa","meta" : "hiep_hoa"},{"name" : "Lạng Giang","meta" : "lang_giang"},{"name" : "Lục Nam","meta" : "luc_nam"},{"name" : "Lục Ngạn","meta" : "luc_ngan"},
+{"name" : "Sơn Động","meta" : "son_dong"},{"name" : "Tân Yên","meta" : "tan_yen"},{"name" : "Việt Yên","meta" : "viet_yen"},{"name" : "Yên Dũng","meta" : "yen_dung"},{"name" : "Yên Thế","meta" : "yen_the"},
+{"name" : "Bắc Giang","meta" : "bac_giang"}]

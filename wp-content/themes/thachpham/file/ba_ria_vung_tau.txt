@@ -1,0 +1,2 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Châu Đức","meta" : "chau_duc"},{"name" : "Côn Đảo","meta" : "con_dao"},{"name" : "Đất Đỏ","meta" : "dat_do"},{"name" : "Long Điền","meta" : "long_dien"},
+{"name" : "Tân Thành","meta" : "tan_thanh"},{"name" : "Xuyên Mộc","meta" : "xuyen_moc"},{"name" : "Vũng Tàu","meta" : "vung_Tau"},{"name" : "Bà Rịa","meta" : "ba_ria"}]

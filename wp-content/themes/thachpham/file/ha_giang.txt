@@ -1,0 +1,3 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Bắc Mê","meta" : "bac_me"},{"name" : "Bắc Quang","meta" : "bac_quang"},{"name" : "Đồng Văn","meta" : "dong_van"},
+{"name" : "Hoàng Su Phì","meta" : "hoang_su_phi"},{"name" : "Mèo Vạc","meta" : "meo_vac"},{"name" : "Quản Bạ","meta" : "quan_ba"},{"name" : "Quang Bình","meta" : "quang_binh"},
+{"name" : "Vị Xuyên","meta" : "vi_xuyen"}, {"name" : "Xín Mần","meta" : "xin_man"}, {"name" : "Yên Minh","meta" : "yen_minh"}, {"name" : "Hà Giang","meta" : "ha_giang"}]

@@ -1,0 +1,4 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Cẩm Khê","meta" : "cam_khe"},{"name" : "Đoan Hùng","meta" : "doan_hung"},{"name" : "Hạ Hòa","meta" : "ha_hoa"},
+{"name" : "Lâm Thao","meta" : "lam_thao"},{"name" : "Phù Ninh","meta" : "phu_ninh"},{"name" : "Tam Nông","meta" : "tam_nong"},{"name" : "Tân Sơn","meta" : "tan_son"}
+,{"name" : "Thanh Ba","meta" : "thanh_ba"},{"name" : "Thanh Sơn","meta" : "thanh_son"},{"name" : "Thanh Thủy","meta" : "thanh_thuy"},{"name" : "Yên Lập","meta" : "yen_lap"}
+,{"name" : "Việt Trì","meta" : "viet_tri"},{"name" : "Phú Thọ","meta" : "phu_tho"}]

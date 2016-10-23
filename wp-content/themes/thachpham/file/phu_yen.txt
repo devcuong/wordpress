@@ -1,0 +1,3 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Đông Hòa","meta" : "dong_hoa"},{"name" : "Đồng Xuân","meta" : "dong_xuan"},{"name" : "Phú Hòa","meta" : "phu_hoa"},
+{"name" : "Sơn Hòa","meta" : "son_hoa"},{"name" : "Sông Cầu","meta" : "song_cau"},{"name" : "Sông Hinh","meta" : "song_hinh"},{"name" : "Tây Hòa","meta" : "tay_hoa"}
+,{"name" : "Tuy An","meta" : "tuy_an"},{"name" : "Tuy Hòa","meta" : "tuy_hoa"}]

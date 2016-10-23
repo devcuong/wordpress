@@ -1,0 +1,3 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Cư Jút","meta" : "cu_jut"},{"name" : "Dăk GLong","meta" : "dak_glong"},{"name" : "Dăk Mil","meta" : "dak_mil"},
+{"name" : "Dăk R'Lấp","meta" : "dak_r_lap"},{"name" : "Dăk Song","meta" : "dak_song"},{"name" : "Krông Nô","meta" : "krong_no"},{"name" : "Tuy Đức","meta" : "tuy_duc"},
+{"name" : "Gia Nghĩa","meta" : "gia_nghia"}]

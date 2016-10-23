@@ -1,0 +1,3 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Cam Lộ","meta" : "cam_lo"},{"name" : "Đa Krông","meta" : "da_krong"},{"name" : "Đảo Cồn cỏ","meta" : "dao_con_co"},
+{"name" : "Gio Linh","meta" : "gio_linh"},{"name" : "Hải Lăng","meta" : "hai_lang"},{"name" : "Hướng Hóa","meta" : "huong_hoa"},{"name" : "Triệu Phong","meta" : "trieu_phong"}
+,{"name" : "Vĩnh Linh","meta" : "vinh_linh"},{"name" : "Đông Hà","meta" : "dong_ha"},{"name" : "Quảng Trị","meta" : "quang_tri"}]

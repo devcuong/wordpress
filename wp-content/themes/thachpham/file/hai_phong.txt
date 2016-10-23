@@ -1,0 +1,4 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Đồ Sơn","meta" : "do_son"},{"name" : "Dương Kinh","meta" : "duong_kinh"},{"name" : "Hải An","meta" : "hai_an"},{"name" : "Hồng Bàng","meta" : "hong_bang"},
+{"name" : "Kiến An","meta" : "kien_an"},{"name" : "Lê Chân","meta" : "le_chan"},{"name" : "Ngô Quyền","meta" : "ngo_quyen"},{"name" : "An Dương","meta" : "an_duong"},{"name" : "An Lão","meta" : "an_lao"},
+{"name" : "Bạch Long Vĩ","meta" : "bach_long_vi"}, {"name" : "Cát Hải","meta" : "bach_long_vi"}, {"name" : "Bạch Long Vĩ","meta" : "bach_long_vi"}, {"name" : "Cát Hải","meta" : "cat_hai"},
+{"name" : "Kiến Thụy","meta" : "kien_thuy"}, {"name" : "Thủy Nguyên","meta" : "thuy_nguyen"}, {"name" : "Tiên Lãng","meta" : "tien_lang"}, {"name" : "Tiên Lãng","meta" : "tien_lang"}, {"name" : "Vĩnh Bảo","meta" : "vinh_bao"}]

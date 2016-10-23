@@ -1,0 +1,3 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Mường Tè","meta" : "muong_te"},{"name" : "Phong Thổ","meta" : "phong_tho"},{"name" : "Sìn Hồ","meta" : "sin_ho"},
+{"name" : "Tam Đường","meta" : "tam_duong"},{"name" : "Than Uyên","meta" : "than_uyen"},{"name" : "Lai Châu","meta" : "lai_chau"},{"name" : "Tân Uyên","meta" : "tan_uyen"},
+{"name" : "Nậm Nhùn","meta" : "nam_nhun"}]

@@ -1,0 +1,3 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "An Lão","meta" : "an_lao"},{"name" : "An Nhơn","meta" : "an_nhon"},{"name" : "Hoài Ân","meta" : "hoai_an"},
+{"name" : "Hoài Nhơn","meta" : "hoai_nhon"},{"name" : "Phù Cát","meta" : "phu_cat"},{"name" : "Phù Mỹ","meta" : "phu_my"},{"name" : "Tây Sơn","meta" : "tay_son"},
+{"name" : "Tuy Phước","meta" : "tuy_phuoc"},{"name" : "Vân Canh","meta" : "van_canh"},{"name" : "Vĩnh Thạnh","meta" : "vinh_thanh"},{"name" : "Quy Nhơn","meta" : "quy_nhon"}]

@@ -1,0 +1,2 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Gia Viễn","meta" : "gia_vien"},{"name" : "Hoa Lư","meta" : "hoa_lu"},{"name" : "Nho Quan","meta" : "nho_quan"},
+{"name" : "Yên Khánh","meta" : "yen_khanh"},{"name" : "Yên Mô","meta" : "yen_mo"},{"name" : "Ninh Bình","meta" : "ninh_binh"},{"name" : "Tam Điệp","meta" : "tam_diep"}]

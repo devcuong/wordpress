@@ -1,0 +1,6 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Bá Thước","meta" : "ba_thuoc"},{"name" : "Cẩm Thủy","meta" : "cam_thuy"},{"name" : "Đông Sơn","meta" : "dong_son"},
+{"name" : "Hà Trung","meta" : "ha_trung"},{"name" : "Hậu Lộc","meta" : "hau_loc"},{"name" : "Hoằng Hóa","meta" : "hoang_hoa"},{"name" : "Lang Chánh","meta" : "lang_chanh"}
+,{"name" : "Mường Lát","meta" : "muong_lat"},{"name" : "Nga Sơn","meta" : "nga_son"},{"name" : "Ngọc Lặc","meta" : "ngoc_lac"},{"name" : "Như Thanh","meta" : "nhu_thanh"},{"name" : "Như Xuân","meta" : "nhu_xuan"}
+,{"name" : "Nông Cống","meta" : "nong_cong"},{"name" : "Quan Hóa","meta" : "quan_hoa"},{"name" : "Quan Sơn","meta" : "quan_son"},{"name" : "Quảng Xương","meta" : "quang_xuong"},{"name" : "Thạch Thành","meta" : "thach_thanh"},
+{"name" : "Thiệu Hóa","meta" : "thieu_hoa"} ,{"name" : "Thọ Xuân","meta" : "tho_xuan"},{"name" : "Thường Xuân","meta" : "thuong_xuan"},{"name" : "Tĩnh Gia","meta" : "tinh_gia"},{"name" : "Triệu Sơn","meta" : "trieu_son"}
+,{"name" : "Vĩnh Lộc","meta" : "vinh_loc"},{"name" : "Yên Định","meta" : "yen_dinh"},{"name" : "Thanh Hóa","meta" : "thanh_hoa"},{"name" : "Bỉm Sơn","meta" : "bim_son"},{"name" : "Sầm Sơn","meta" : "sam_son"}]

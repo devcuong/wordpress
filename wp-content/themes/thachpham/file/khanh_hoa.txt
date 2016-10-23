@@ -1,0 +1,3 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Cam Lâm","meta" : "cam_lam"},{"name" : "Diên Khánh","meta" : "dien_khanh"},{"name" : "Khánh Sơn","meta" : "khanh_son"},
+{"name" : "Khánh Vĩnh","meta" : "khanh_vinh"},{"name" : "Ninh Hòa","meta" : "ninh_hoa"},{"name" : "Trường Sa","meta" : "truong_sa"},{"name" : "Vạn Ninh","meta" : "van_ninh"},
+{"name" : "Nha Trang","meta" : "nha_trang"},{"name" : "Cam Ranh","meta" : "cam_ranh"}]

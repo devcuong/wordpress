@@ -1,0 +1,5 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Bắc Trà My","meta" : "bac_tra_my"},{"name" : "Đại Lộc","meta" : "dai_loc"},{"name" : "Điện Bàn","meta" : "dien_ban"},
+{"name" : "Đông Giang","meta" : "dong_giang"},{"name" : "Duy Xuyên","meta" : "duy_xuyen"},{"name" : "Hiệp Đức","meta" : "tuyen_hoa"},{"name" : "Nam Giang","meta" : "nam_giang"}
+,{"name" : "Nam Trà My","meta" : "nam_tra_my"},{"name" : "Núi Thành","meta" : "nui_thanh"},{"name" : "Phú Ninh","meta" : "phu_ninh"},{"name" : "Phước Sơn","meta" : "phuoc_so"}
+,{"name" : "Quế Sơn","meta" : "que_son"},{"name" : "Tây Giang","meta" : "tay_giang"},{"name" : "Thăng Bình","meta" : "thang_binh"},{"name" : "Tiên Phước","meta" : "tien_phuoc"}
+,{"name" : "Tam Kỳ","meta" : "tam_ky"},{"name" : "Hội An","meta" : "hoi_an"},{"name" : "Nông Sơn","meta" : "nong_son"}]

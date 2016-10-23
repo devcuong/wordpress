@@ -1,0 +1,3 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Đại Từ","meta" : "dai_tu"},{"name" : "Định Hóa","meta" : "dinh_hoa"},{"name" : "Đồng Hỷ","meta" : "dong_hy"},
+{"name" : "Phổ Yên","meta" : "pho_yen"},{"name" : "Phú Bình","meta" : "phu_binh"},{"name" : "Phú Lương","meta" : "phu_luong"},{"name" : "Võ Nhai","meta" : "vo_nhai"}
+,{"name" : "Thái Nguyên","meta" : "thai_nguyen"},{"name" : "Sông Công","meta" : "song_cong"}]

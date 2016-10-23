@@ -1,0 +1,4 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Cù Lao Dung","meta" : "cu_lao_dung"},{"name" : "Kế Sách","meta" : "ke_sach"},{"name" : "Long Phú","meta" : "long_phu"},
+{"name" : "Long Phú","meta" : "long_phu"},{"name" : "Mỹ Tú","meta" : "my_tu"},{"name" : "Mỹ Xuyên","meta" : "my_xuyen"},{"name" : "Ngã Năm","meta" : "nga_nam"}
+,{"name" : "Thạnh Trị","meta" : "thanh_tri"},{"name" : "Vĩnh Châu","meta" : "vinh_chau"},{"name" : "Sóc Trăng","meta" : "soc_trang"},{"name" : "Châu Thành","meta" : "chau_thanh"}
+,{"name" : "Trần Đề","meta" : "tran_de"}]

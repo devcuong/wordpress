@@ -1,0 +1,3 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Ân Thi","meta" : "an_thi"},{"name" : "Khoái Châu","meta" : "khoai_chau"},{"name" : "Kim Động","meta" : "kim_dong"},
+{"name" : "Mỹ Hào","meta" : "my_hao"},{"name" : "Phù Cừ","meta" : "phu_cu"},{"name" : "Tiên Lữ","meta" : "tien_lu"},{"name" : "Văn Giang","meta" : "van_giang"},
+{"name" : "Văn Lâm","meta" : "van_lam"},{"name" : "Yên Mỹ","meta" : "yen_my"},{"name" : "Hưng Yên","meta" : "hung_yen"}]

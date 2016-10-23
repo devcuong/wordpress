@@ -1,0 +1,3 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Cái Nước","meta" : "cai_nuoc"},{"name" : "Đầm Dơi","meta" : "dam_doi"},{"name" : "Năm Căn","meta" : "nam_can"},
+{"name" : "Ngọc Hiển","meta" : "ngoc_hien"},{"name" : "Phú Tân","meta" : "phu_tan"},{"name" : "Thới Bình","meta" : "thoi_binh"},{"name" : "Trần Văn Thời","meta" : "tran_van_thoi"},
+{"name" : "U Minh","meta" : "u_minh"},{"name" : "Cà Mau","meta" : "ca_mau"}]

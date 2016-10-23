@@ -1,0 +1,2 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Bình Lục","meta" : "binh_luc"},{"name" : "Duy Tiên","meta" : "duy_tien"},{"name" : "Kim Bảng","meta" : "kim_bang"},
+{"name" : "Lý Nhân","meta" : "ly_nhan"},{"name" : "Thanh Liêm","meta" : "thanh_liem"},{"name" : "Phủ Lý","meta" : "phu_ly"}]

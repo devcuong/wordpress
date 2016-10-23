@@ -1,0 +1,2 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Ba Bể","meta" : "ba_be"},{"name" : "Bạch Thông","meta" : "bach_thong"},{"name" : "Chợ Đồn","meta" : "cho_don"},
+{"name" : "Chợ Mới","meta" : "cho_moi"},{"name" : "Na Rì","meta" : "na_ri"},{"name" : "Ngân Sơn","meta" : "ngan_son"},{"name" : "Pác Nặm","meta" : "pac_nam"},{"name" : "Bắc Kạn","meta" : "bac_kan"}]

@@ -1,0 +1,5 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "AYun Pa","meta" : "ayun_pa"},{"name" : "Chư Păh","meta" : "chu_pah"},{"name" : "Chư Sê","meta" : "chu_se"},
+{"name" : "ChưPRông","meta" : "chuprong"},{"name" : "Đăk Đoa","meta" : "dak_doa"},{"name" : "Đăk Pơ","meta" : "dak_po"},{"name" : "Đức Cơ","meta" : "duc_co"},
+{"name" : "Ia Grai","meta" : "ia_grai"}, {"name" : "Ia Pa","meta" : "ia_pa"}, {"name" : "KBang","meta" : "kbang"}, {"name" : "Kông Chro","meta" : "kong_chro"}, 
+{"name" : "Krông Pa","meta" : "krong_pa"},{"name" : "Mang Yang","meta" : "mang_yang"},{"name" : "Phú Thiện","meta" : "phu_thien"},{"name" : "Plei Ku","meta" : "plei_ku"},
+{"name" : "An Khê","meta" : "an_khe"},{"name" : "Chư Pưh","meta" : "chu_puh"}]

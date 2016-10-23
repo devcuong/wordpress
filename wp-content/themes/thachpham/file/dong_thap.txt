@@ -1,0 +1,3 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Huyện Cao Lãnh","meta" : "huyen_cao_lanh"},{"name" : "Châu Thành","meta" : "chau_thanh"},{"name" : "Hồng Ngự","meta" : "hong_ngu"},
+{"name" : "Lai Vung","meta" : "lai_vung"},{"name" : "Lấp Vò","meta" : "lap_vo"},{"name" : "Tam Nông","meta" : "tam_nong"},{"name" : "Tân Hồng","meta" : "tan_hong"},
+{"name" : "Thanh Bình","meta" : "thanh_binh"}, {"name" : "Tháp Mười","meta" : "thap_muoi"}, {"name" : "Sa Đéc","meta" : "sa_dec"}, {"name" : "Cao Lãnh","meta" : "cao_lanh"}, {"name" : "Huyện Hồng Ngự","meta" : "huyen_hong_ngu"}]

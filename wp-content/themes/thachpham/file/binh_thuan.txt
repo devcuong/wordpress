@@ -1,0 +1,3 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Bắc Bình","meta" : "bac_binh"},{"name" : "Đảo Phú Quý","meta" : "dao_phu_quy"},{"name" : "Đức Linh","meta" : "duc_linh"},
+{"name" : "Hàm Tân","meta" : "ham_tan"},{"name" : "Hàm Thuận Bắc","meta" : "ham_thuan_bac"},{"name" : "Hàm Thuận Nam","meta" : "ham_thuan_nam"},{"name" : "Tánh Linh","meta" : "tanh_linh"},
+{"name" : "Tuy Phong","meta" : "tuy_phong"},{"name" : "Phan Thiết","meta" : "phan_thiet"},{"name" : "La Gi","meta" : "la_gi"}]

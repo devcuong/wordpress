@@ -1,0 +1,4 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "An Biên","meta" : "an_bien"},{"name" : "An Minh","meta" : "an_minh"},{"name" : "Châu Thành","meta" : "chau_thanh"},
+{"name" : "Giồng Riềng","meta" : "giong_rieng"},{"name" : "Gò Quao","meta" : "go_quao"},{"name" : "Hòn Đất","meta" : "hon_dat"},{"name" : "Kiên Hải","meta" : "kien_hai"},
+{"name" : "Kiên Lương","meta" : "kien_luong"},{"name" : "Phú Quốc","meta" : "phu_quoc"},{"name" : "Tân Hiệp","meta" : "tan_hiep"},{"name" : "U minh Thượng","meta" : "u_minh_thuong"}
+,{"name" : "Vĩnh Thuận","meta" : "vinh_thuan"},{"name" : "Rạch Giá","meta" : "rach_gia"},{"name" : "Hà Tiên","meta" : "ha_tien"},{"name" : "Giang Thành","meta" : "giang_thanh"}]

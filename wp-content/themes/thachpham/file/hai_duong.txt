@@ -1,0 +1,4 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Bình Giang","meta" : "binh_giang"},{"name" : "Cẩm Giàng","meta" : "cam_giang"},{"name" : "Chí Linh","meta" : "chi_linh"},
+{"name" : "Gia Lộc","meta" : "gia_loc"},{"name" : "Kim Thành","meta" : "kim_thanh"},{"name" : "Kinh Môn","meta" : "kinh_mon"},{"name" : "Nam Sách","meta" : "nam_sach"},
+{"name" : "Ninh Giang","meta" : "ninh_giang"},{"name" : "Thanh Hà","meta" : "thanh_ha"},{"name" : "Thanh Miện","meta" : "thanh_mien"},{"name" : "Tứ Kỳ","meta" : "tu_ky"},
+{"name" : "Hai_Duong","meta" : "hai_duong"}]

@@ -1,0 +1,1 @@
+ <img class="img-responsive" src="<?php echo bloginfo('template_directory'); ?>/images/blog2.jpg"/>   

@@ -1,0 +1,3 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "An Phú","meta" : "an_phu"},{"name" : "Châu Phú","meta" : "chau_phu"},{"name" : "Châu Thành","meta" : "chau_thanh"},{"name" : "Chợ Mới","meta" : "cho_moi"},
+{"name" : "Tri Tôn","meta" : "tri_ton"},{"name" : "Phú Tân","meta" : "phu_tan"},{"name" : "Tân Châu","meta" : "tan_chau"},{"name" : "Thoại Sơn","meta" : "thoai_son"},{"name" : "Thoại Sơn","meta" : "thoai_son"},
+{"name" : "Thoại Sơn","meta" : "thoai_son"}, {"name" : "Tịnh Biên","meta" : "tinh_bien"}, {"name" : "Long Xuyên","meta" : "long_xuyen"}, {"name" : "Châu Đốc","meta" : "chau_doc"}]

@@ -1,0 +1,3 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Bắc Sơn","meta" : "bac_son"},{"name" : "Bình Gia","meta" : "binh_gia"},{"name" : "Cao Lộc","meta" : "cao_loc"},
+{"name" : "Chi Lăng","meta" : "chi_lang"},{"name" : "Đình Lập","meta" : "dinh_lap"},{"name" : "Hữu Lũng","meta" : "huu_lung"},{"name" : "Lộc Bình","meta" : "loc_binh"},
+{"name" : "Tràng Định","meta" : "trang_dinh"},{"name" : "Văn Lãng","meta" : "van_lang"},{"name" : "Văn Quan","meta" : "van_quan"},{"name" : "Lạng Sơn","meta" : "lang_son"}]

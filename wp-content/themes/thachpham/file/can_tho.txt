@@ -1,0 +1,3 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Cờ Đỏ","meta" : "co_do"},{"name" : "Phong Điền","meta" : "phong_dien"},{"name" : "Thốt Nốt","meta" : "thot_not"},
+{"name" : "Vĩnh Thạnh","meta" : "vinh_thanh"},{"name" : "Bình Thủy","meta" : "binh_thuy"},{"name" : "Cái Răng","meta" : "cai_rang"},{"name" : "Ninh Kiều","meta" : "ninh_kieu"},
+{"name" : "Ô Môn","meta" : "o_mon"},{"name" : "Thới Lai","meta" : "thoi_lai"}]

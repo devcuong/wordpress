@@ -1,0 +1,2 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Gia Bình","meta" : "gia_binh"},{"name" : "Lương Tài","meta" : "luong_tai"},{"name" : "Quế Võ","meta" : "que_vo"},
+{"name" : "Thuận Thành","meta" : "thuan_thanh"},{"name" : "Tiên Du","meta" : "tien_du"},{"name" : "Từ Sơn","meta" : "tu_son"},{"name" : "Yên Phong","meta" : "yen_phong"}]

@@ -1,0 +1,4 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Bắc Yên","meta" : "bac_yen"},{"name" : "Mai Sơn","meta" : "mai_son"},{"name" : "Mộc Châu","meta" : "moc_chau"},
+{"name" : "Mường La","meta" : "muong_la"},{"name" : "Phù Yên","meta" : "phu_yen"},{"name" : "Quỳnh Nhai","meta" : "quynh_nhai"},{"name" : "Sông Mã","meta" : "song_ma"}
+,{"name" : "Sốp Cộp","meta" : "sop_cop"},{"name" : "Thuận Châu","meta" : "thuan_chau"},{"name" : "Yên Châu","meta" : "yen_chau"},{"name" : "Sơn La","meta" : "son_la"}
+,{"name" : "Vân Hồ","meta" : "van_ho"}]

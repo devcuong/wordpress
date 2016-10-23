@@ -1,0 +1,2 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Bến Cát","meta" : "ben_cat"},{"name" : "Dầu Tiếng","meta" : "dau_tieng"},{"name" : "Dĩ An","meta" : "di_an"},{"name" : "Phú Giáo","meta" : "phu_giao"},
+{"name" : "Tân Uyên","meta" : "tan_uyen"},{"name" : "Thuận An","meta" : "thuan_an"},{"name" : "Thủ Dầu Một","meta" : "thu_dau_mot"},{"name" : "Bàu Bàng","meta" : "bau_bang"}]

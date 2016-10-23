@@ -1,0 +1,3 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Bình Xuyên","meta" : "binh_xuyen"},{"name" : "Lập Thạch","meta" : "lap_thach"},{"name" : "Tam Đảo","meta" : "tam_dao"},
+{"name" : "Tam Dương","meta" : "tam_duong"},{"name" : "Vĩnh Tường","meta" : "vinh_tuong"},{"name" : "Yên Lạc","meta" : "yen_lac"},{"name" : "Vĩnh Yên","meta" : "vinh_yen"}
+,{"name" : "Phúc Yên","meta" : "phuc_yen"},{"name" : "Sông Lô","meta" : "song_lo"}]

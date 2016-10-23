@@ -1,0 +1,3 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Cái Bè","meta" : "cai_be"},{"name" : "Huyện Cai Lậy","meta" : "huyen_cai_lay"},{"name" : "Châu Thành","meta" : "chau_thanh"},
+{"name" : "Chợ Gạo","meta" : "cho_gao"},{"name" : "Gò Công Đông","meta" : "go_cong_dong"},{"name" : "Gò Công Tây","meta" : "go_cong_tay"},{"name" : "Tân Phước","meta" : "tan_phuoc"}
+,{"name" : "Tân Phú Đông","meta" : "tan_phu_dong"},{"name" : "Mỹ Tho","meta" : "my_tho"},{"name" : "Gò Công","meta" : "go_cong"},{"name" : "Cai Lậy","meta" : "cai_lay"}]

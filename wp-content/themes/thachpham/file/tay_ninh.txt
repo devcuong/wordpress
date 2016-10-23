@@ -1,0 +1,3 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Bến Cầu","meta" : "ben_cau"},{"name" : "Châu Thành","meta" : "chau_thanh"},{"name" : "Dương Minh Châu","meta" : "duong_minh_chau"},
+{"name" : "Gò Dầu","meta" : "go_dau"},{"name" : "Hòa Thành","meta" : "hoa_thanh"},{"name" : "Tân Biên","meta" : "tan_bien"},{"name" : "Tân Châu","meta" : "tan_chau"}
+,{"name" : "Trảng Bàng","meta" : "trang_bang"},{"name" : "Tây Ninh","meta" : "tay_ninh"}]

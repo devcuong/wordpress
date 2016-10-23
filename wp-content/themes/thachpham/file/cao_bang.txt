@@ -1,0 +1,4 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Bảo Lạc","meta" : "bao_lac"},{"name" : "Bảo Lâm","meta" : "bao_lam"},{"name" : "Hạ Lang","meta" : "ha_lang"},
+{"name" : "Hà Quảng","meta" : "ha_quang"},{"name" : "Hòa An","meta" : "hoa_an"},{"name" : "Nguyên Bình","meta" : "nguyen_binh"},{"name" : "Phục Hòa","meta" : "phuc_hoa"},
+{"name" : "Quảng Uyên","meta" : "quang_uyen"},{"name" : "Thạch An","meta" : "thach_an"},{"name" : "Thông Nông","meta" : "thong_nong"},{"name" : "Trà Lĩnh","meta" : "tra_linh"},
+{"name" : "Trùng Khánh","meta" : "trung_khanh"},{"name" : "Cao Bằng","meta" : "cao_bang"}]

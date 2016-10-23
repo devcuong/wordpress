@@ -1,0 +1,2 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Bác Ái","meta" : "bac_ai"},{"name" : "Ninh Hải","meta" : "ninh_hai"},{"name" : "Ninh Phước","meta" : "ninh_phuoc"},
+{"name" : "Ninh Sơn","meta" : "ninh_son"},{"name" : "Thuận Bắc","meta" : "thuan_bac"},{"name" : "Phan Rang - Tháp Chàm","meta" : "phan_rang_thap_cham"},{"name" : "Thuận Nam","meta" : "thuan_nam"}]

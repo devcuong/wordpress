@@ -1,0 +1,3 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "A Lưới","meta" : "a_luoi"},{"name" : "Hương Thủy","meta" : "huong_thuy"},{"name" : "Hương Trà","meta" : "huong_tra"},
+{"name" : "Nam Đông","meta" : "nam_dong"},{"name" : "Phong Điền","meta" : "phong_dien"},{"name" : "Phú Lộc","meta" : "phu_loc"},{"name" : "Phú Vang","meta" : "phu_vang"}
+,{"name" : "Quảng Điền","meta" : "quang_dien"},{"name" : "Huế","meta" : "hue"}]

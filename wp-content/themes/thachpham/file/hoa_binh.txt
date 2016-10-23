@@ -1,0 +1,3 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Cao Phong","meta" : "cao_phong"},{"name" : "Đà Bắc","meta" : "da_bac"},{"name" : "Kim Bôi","meta" : "kim_boi"},
+{"name" : "Kỳ Sơn","meta" : "ky_son"},{"name" : "Lạc Sơn","meta" : "lac_son"},{"name" : "Lạc Thủy","meta" : "lac_thuy"},{"name" : "Lương Sơn","meta" : "luong_son"},
+{"name" : "Mai Châu","meta" : "mai_chau"},{"name" : "Tân Lạc","meta" : "tan_lac"},{"name" : "Yên Thủy","meta" : "yen_thuy"},{"name" : "Hòa Bình","meta" : "hoa_binh"}]

@@ -1,0 +1,6 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Anh Sơn","meta" : "anh_son"},{"name" : "Con Cuông","meta" : "con_cuong"},{"name" : "Diễn Châu","meta" : "dien_chau"},
+{"name" : "Đô Lương","meta" : "do_luong"},{"name" : "Hưng Nguyên","meta" : "hung_nguyen"},{"name" : "Kỳ Sơn","meta" : "ky_son"},{"name" : "Nam Đàn","meta" : "nam_dan"},
+{"name" : "Nghi Lộc","meta" : "nghi_loc"},{"name" : "Nghĩa Đàn","meta" : "nghia_dan"},{"name" : "Quế Phong","meta" : "que_phong"},{"name" : "Quỳ Châu","meta" : "quy_chau"}
+,{"name" : "Quỳ Hợp","meta" : "quy_hop"},{"name" : "Quỳnh Lưu","meta" : "quynh_luu"},{"name" : "Tân Kỳ","meta" : "tan_ky"},{"name" : "Thanh Chương","meta" : "thanh_chuong"}
+,{"name" : "Tương Dương","meta" : "tuong_duong"},{"name" : "Yên Thành","meta" : "yen_thanh"},{"name" : "Vinh","meta" : "vinh"},{"name" : "Cửa Lò","meta" : "cua_lo"}
+,{"name" : "Thái Hòa","meta" : "thai_hoa"},{"name" : "Hoàng Mai","meta" : "hoang_mai"}]

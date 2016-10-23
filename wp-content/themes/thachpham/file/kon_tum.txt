@@ -1,0 +1,3 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Đăk Glei","meta" : "dak_glei"},{"name" : "Đăk Hà","meta" : "dak_ha"},{"name" : "Đăk Tô","meta" : "dak_to"},
+{"name" : "Kon Plông","meta" : "kon_plong"},{"name" : "Kon Rẫy","meta" : "kon_ray"},{"name" : "Ngọc Hồi","meta" : "ngoc_hoi"},{"name" : "Sa Thầy","meta" : "sa_thay"},
+{"name" : "Tu Mơ Rông","meta" : "tu_mo_rong"},{"name" : "KonTum","meta" : "kon_tum"},{"name" : "Ia H'Drai","meta" : "ia_h_drai"}]

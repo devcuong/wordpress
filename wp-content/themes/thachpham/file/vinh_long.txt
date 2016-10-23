@@ -1,0 +1,3 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Bình Minh","meta" : "binh_minh"},{"name" : "Bình Tân","meta" : "binh_tan"},{"name" : "Long Hồ","meta" : "long_ho"},
+{"name" : "Mang Thít","meta" : "mang_thit"},{"name" : "Tam Bình","meta" : "tam_binh"},{"name" : "Trà Ôn","meta" : "tra_on"},{"name" : "Vũng Liêm","meta" : "vung_liem"}
+,{"name" : "Vĩnh Long","meta" : "vinh_long"}]	

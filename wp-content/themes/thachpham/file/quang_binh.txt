@@ -1,0 +1,3 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Bố Trạch","meta" : "bo_trach"},{"name" : "Lệ Thủy","meta" : "le_thuy"},{"name" : "Minh Hóa","meta" : "minh_hoa"},
+{"name" : "Quảng Ninh","meta" : "quang_ninh"},{"name" : "Quảng Trạch","meta" : "quang_trach"},{"name" : "Tuyên Hóa","meta" : "tuyen_hoa"},{"name" : "Đồng Hới","meta" : "dong_hoi"}
+,{"name" : "Ba Đồn","meta" : "ba_don"}]

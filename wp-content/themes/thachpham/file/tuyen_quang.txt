@@ -1,0 +1,3 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Chiêm Hóa","meta" : "chiem_hoa"},{"name" : "Hàm Yên","meta" : "ham_yen"},{"name" : "Na Hang","meta" : "na_hang"},
+{"name" : "Sơn Dương","meta" : "son_duong"},{"name" : "Yên Sơn","meta" : "yen_son"},{"name" : "Tuyên Quang","meta" : "tuyen_quang"},{"name" : "Lâm Bình","meta" : "lam_binh"}
+]

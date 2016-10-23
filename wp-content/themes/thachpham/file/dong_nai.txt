@@ -1,0 +1,3 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Cẩm Mỹ","meta" : "cam_my"},{"name" : "Định Quán","meta" : "dinh_quan"},{"name" : "Long Thành","meta" : "long_thanh"},
+{"name" : "Nhơn Trạch","meta" : "nhon_trach"},{"name" : "Tân Phú","meta" : "tan_phu"},{"name" : "Thống Nhất","meta" : "thong_nhat"},{"name" : "Trảng Bom","meta" : "trang_bom"},
+{"name" : "Vĩnh Cửu","meta" : "vinh_cuu"}, {"name" : "Xuân Lộc","meta" : "xuan_loc"}, {"name" : "Biên Hòa","meta" : "bien_hoa"}, {"name" : "Long Khánh","meta" : "long_khanh"}]

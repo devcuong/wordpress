@@ -1,0 +1,4 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Buôn Đôn","meta" : "buon_don"},{"name" : "Cư Kuin","meta" : "cu_kuin"},{"name" : "Cư M'gar","meta" : "cu_m_gar"},
+{"name" : "Ea H'Leo","meta" : "ea_h_leo"},{"name" : "Ea Kar","meta" : "ea_kar"},{"name" : "Ea Súp","meta" : "ea_sup"},{"name" : "Krông Ana","meta" : "krong_ana"},
+{"name" : "Krông Bông","meta" : "krong_bong"},{"name" : "Krông Buk","meta" : "krong_buk"},{"name" : "Krông Năng","meta" : "krong_nang"},{"name" : "Krông Pắc","meta" : "krong_pak"},
+{"name" : "Lăk","meta" : "lak"},{"name" : "M'Đrăk","meta" : "m_drak"},{"name" : "Buôn Ma Thuột","meta" : "buon_ma_thuot"},{"name" : "Buôn Hồ","meta" : "buon_ho"}]

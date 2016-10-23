@@ -1,0 +1,4 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Bến Lức","meta" : "ben_luc"},{"name" : "Cần Đước","meta" : "can_duoc"},{"name" : "Cần Giuộc","meta" : "can_giuoc"},{"name" : "Châu Thành","meta" : "chau_thanh"},
+{"name" : "Đức Hòa","meta" : "duc_hoa"},{"name" : "Đức Huệ","meta" : "duc_hue"},{"name" : "Mộc Hóa","meta" : "moc_hoa"},{"name" : "Tân Hưng","meta" : "tan_hung"},{"name" : "Tân Thạnh","meta" : "tan_thanh"},
+{"name" : "Tân Trụ","meta" : "tan_tru"}, {"name" : "Thạnh Hóa","meta" : "thanh_hoa"}, {"name" : "Thủ Thừa","meta" : "thu_thua"}, {"name" : "Vĩnh Hưng","meta" : "vinh_hung"},
+{"name" : "Tân An","meta" : "tan_an"}, {"name" : "Kiến Tường","meta" : "kien_tuong"}]

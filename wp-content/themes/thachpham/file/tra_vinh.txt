@@ -1,0 +1,3 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Càng Long","meta" : "cang_long"},{"name" : "Cầu Kè","meta" : "cau_ke"},{"name" : "Cầu Ngang","meta" : "cau_ngang"},
+{"name" : "Châu Thành","meta" : "chau_thanh"},{"name" : "Duyên Hải","meta" : "duyen_hai"},{"name" : "Tiểu Cần","meta" : "tieu_can"},{"name" : "Trà Cú","meta" : "tra_cu"}
+,{"name" : "Trà Vinh","meta" : "tra_vinh"}]

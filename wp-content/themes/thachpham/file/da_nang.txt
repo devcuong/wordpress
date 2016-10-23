@@ -1,0 +1,2 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Cẩm Lệ","meta" : "cam_le"},{"name" : "Hải Châu","meta" : "hai_chau"},{"name" : "Liên Chiểu","meta" : "lien_chieu"},{"name" : "Ngũ Hành Sơn","meta" : "ngu_hanh_son"},
+{"name" : "Sơn Trà","meta" : "son_tra"},{"name" : "Thanh Khê","meta" : "thanh_khe"},{"name" : "Hòa Vang","meta" : "hoa_vang"}]

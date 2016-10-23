@@ -1,0 +1,4 @@
+[{"name" : "--Chọn Quận Huyện--","meta" : ""},{"name" : "Bảo Lâm","meta" : "bao_lam"},{"name" : "Cát Tiên","meta" : "cat_tien"},{"name" : "Đạ Huoai","meta" : "da_huoai"},
+{"name" : "Đạ Tẻh","meta" : "da_teh"},{"name" : "Đam Rông","meta" : "dam_rong"},{"name" : "Di Linh","meta" : "di_linh"},{"name" : "Đơn Dương","meta" : "don_duong"},
+{"name" : "Đức Trọng","meta" : "duc_trong"},{"name" : "Lạc Dương","meta" : "lac_duong"},{"name" : "Lâm Hà","meta" : "lam_ha"},{"name" : "Đà Lạt","meta" : "da_lat"},
+{"name" : "Bảo Lộc","meta" : "bao_loc"}]
