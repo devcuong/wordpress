@@ -13,12 +13,7 @@ $v_args = array(
                                     'key'     => 'chon_thanh_pho', // assumed your meta_key is 'car_model'
                                     'value'   => $_tp,
                                     'compare' => '=', // finds models that matches 'model' from the select field
-                                ),
-								 array(
-                                    'key'     => 'chon_quan_huyen', // assumed your meta_key is 'car_model'
-                                    'value'   => $_qh,
-                                    'compare' => '=', // finds models that matches 'model' from the select field
-                                ),
+                                )
                             )
     );
 $searchQuery = new WP_Query( $v_args );
@@ -27,10 +22,18 @@ $searchQuery = new WP_Query( $v_args );
 // var_dump($searchQuery->request);
 ?>
 <?php get_header(); ?>
-<?php if( $searchQuery->have_posts() ) : while( $searchQuery->have_posts() ) : $searchQuery->the_post(); ?>
-        <?php get_template_part('search-result', get_post_format()); ?>
-<?php endwhile; ?>
-<?php else : ?>
-    <?php get_template_part('search-result', 'none'); ?>
-<?php endif; ?>
-<?php wp_reset_postdata(); ?>
+	<div class="content">
+		<div id="main-content">
+			<?php if( $searchQuery->have_posts() ) : while( $searchQuery->have_posts() ) : $searchQuery->the_post(); ?>
+					<?php get_template_part('search-result', get_post_format()); ?>
+			<?php endwhile; ?>
+			<?php else : ?>
+				<?php get_template_part('search-result', 'none'); ?>
+			<?php endif; ?>
+			<?php wp_reset_postdata(); ?>
+		</div>
+		<div id="sidebar">  
+			<?php get_sidebar(); ?>
+		</div>
+	</div>
+<?php get_footer(); ?>

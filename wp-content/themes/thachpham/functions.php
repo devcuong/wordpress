@@ -257,7 +257,7 @@ function thachpham_script() {
 }
 add_action('wp_enqueue_scripts', 'thachpham_script');
 
-
+	/*------------- CREATE SEARCH BOX WHEN LOAD WEBSITE ------------- */
 function wpse_load_custom_search_template(){
     if( isset($_REQUEST['search']) == 'advanced' ) {
         require('advanced-search-result.php');
@@ -265,3 +265,80 @@ function wpse_load_custom_search_template(){
     }
 }
 add_action('init','wpse_load_custom_search_template');
+
+	/*------------- CREATE CUSTOMBOX TYPE WHEN LOAD WEBSITE ------------- */
+/*Custom post type*/
+  add_action('init', 'create_news_post_type');
+  function create_news_post_type(){
+    register_post_type('News',
+      array(
+        'labels'  =>  array(
+          'name'  =>  __('News'),
+          'singular_name' =>  __('News'),
+          'add_new' =>  __('Add New'),
+          'add_new_item'  =>  __('Add New News'),
+          'edit'  =>  __('Edit'),
+          'edit_item' =>  __('Edit News'),
+          'new_item'  =>  __('New News'),
+          'view'  =>  __('View News'),
+          'view_item' =>  __('View News'),
+          'search_items' =>  __('Search News'),
+          'not_found' =>  __('No News found'),
+          'not_found_in_trash'  =>  __('No News found in Trash')
+        ),
+        'public'  =>  true,
+        'show_ui' =>  true,
+        'publicy_queryable' =>  true,
+        'exclude_from_search' =>  false,
+        'menu_position' => 20,
+        'menu_icon' =>  get_stylesheet_directory_uri(). '/images/news.png',
+        'hierarchical'  => false,
+        'query_var' =>  true,
+        'supports'  =>  array(
+          'title', 'editor', 'comments', 'author', 'excerpt', 'thumbnail',
+          'custom-fields'
+        ),
+        'rewrite' =>  array('slug'  =>  'news', 'with_front' =>  false),
+        //'taxonomies' =>  array('post_tag', 'category'),
+        'can_export'  =>  true,
+        //'register_meta_box_cb'  =>  'call_to_function_do_something',
+        'description' =>  __('News description here.')
+      )
+    );
+  }
+  
+  add_action('init', 'create_news_taxonomies');
+  function  create_news_taxonomies(){
+    register_taxonomy('newscategory', 'news', array(
+      'hierarchical'  =>  true,
+      'labels'  =>  array(
+          'name'  =>  __('News Category'),
+          'singular_name' =>  __('News Category'),
+          'add_new' =>  __('Add New'),
+          'add_new_item'  =>  __('Add New News Category'),
+          'new_item'  =>  __('New News Category'),
+          'search_items' =>  __('Search News Category'),
+        ),
+    ));
+    register_taxonomy('newstag', 'news', array(
+      'hierarchical'  =>  false,
+      'labels'  =>  array(
+          'name'  =>  __('News Tag'),
+          'singular_name' =>  __('News Tag'),
+          'add_new' =>  __('Add New'),
+          'add_new_item'  =>  __('Add New News Tag'),
+          'new_item'  =>  __('New News Tag'),
+          'search_items' =>  __('Search News Tag'),
+        ),
+    ));
+
+  }
+
+/*------------- GET CUSTOM POST FOR INIT LOAD ------------- */
+	// add_action( 'pre_get_posts', 'add_my_post_types_to_query' );
+
+	// function add_my_post_types_to_query( $query ) {
+		// if ( is_home() && $query->is_main_query() )
+			// $query->set( 'post_type', array( 'post', 'news' ) );
+		// return $query;
+	// }

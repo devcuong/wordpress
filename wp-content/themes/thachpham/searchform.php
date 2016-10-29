@@ -62,7 +62,7 @@ function removeQuanHuyen(){
     <input type="text" value="" placeholder="<?php _e( 'Nhập từ khóa muốn tìm', 'thachpham' ); ?>" name="name" id="name" /><br>
 	<!-- Chon Loai Nha Dat -->
 	<label for="model" class=""><?php _e( 'Chọn Loại Nhà Đất: ', 'thachpham' ); ?></label>
-    <select name="tp" id="selLoaiNhaDat" >
+    <select name="ld" id="selLoaiNhaDat" >
         <option value=""><?php _e( '--Chọn Loại Nhà Đất--', 'thachpham' ); ?></option>
 		<option value="ban_can_ho_chung_cu"><?php _e( 'Bán căn hộ chung cư', 'thachpham' ); ?></option>
 		<option value="ban_nha_rieng"><?php _e( 'Bán nhà riêng', 'thachpham' ); ?></option>
@@ -87,7 +87,7 @@ function removeQuanHuyen(){
 
 	<!-- Chon Dien Tich -->
 	<label for="model" class=""><?php _e( 'Chọn Diện Tích: ', 'thachpham' ); ?></label>
-    <select name="tp" id="selLoaiNhaDat" >
+    <select name="dt" id="selDienTich" >
         <option value=""><?php _e( '--Chọn Diện Tích--', 'thachpham' ); ?></option>
 		<option value="chua_xac_dinh"><?php _e( 'Chưa xác định', 'thachpham' ); ?></option>
 		<option value="nho_hon_30_m2"><?php _e( '<= 30 m2', 'thachpham' ); ?></option>
@@ -104,7 +104,7 @@ function removeQuanHuyen(){
 	
 	<!-- Chon Muc Gia -->
 	<label for="model" class=""><?php _e( 'Chọn Mức Giá: ', 'thachpham' ); ?></label>
-    <select name="tp" id="selLoaiNhaDat" >
+    <select name="gd" id="selGiaNhaDat" >
         <option value=""><?php _e( '--Chọn Mức Giá--', 'thachpham' ); ?></option>
 		<option value="gia_thoa_thuan"><?php _e( 'Thỏa thuận', 'thachpham' ); ?></option>
 		<option value="nho_hon_500_trieu"><?php _e( '< 500 triệu', 'thachpham' ); ?></option>

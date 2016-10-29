@@ -34,11 +34,38 @@
 	</script>
 </head>
 <body <?php body_class(); ?> onload="loadTrang()" >
-    <div id="container">
-        <div class="logo">
-           <?php thachpham_header(); ?>
-           <?php thachpham_menu('primary-menu'); ?>
-        </div>
-		<div id="searchbox">
-			<?php get_search_form(); ?>
+  <div id="wr_header" class="header">  
+	<div class="header-register" id="headerregister">
+		<div class="action">
+			
+			
+			<div class="logon">
+				<a href="/dang-nhap.htm" rel="nofollow" title="Đăng nhập">
+					<span>Đăng nhập</span>
+				</a>
+			</div>
+			<div class="register">
+				<a href="/dang-ky.htm" rel="nofollow" title="Đăng ký">
+					<span>Đăng ký</span>
+				</a>
+			</div>
+
+			
 		</div>
+	</div>
+	  <div class="header-logo">
+			   <?php thachpham_header(); ?>
+			  
+
+	  </div>
+</div>
+ <div class="adv-menu"><div class="menu-content"><?php thachpham_menu('primary-menu'); ?>
+</div></div>
+
+		   	<div class="search">
+			<div class="search-content" >
+				<?php get_search_form(); ?>
+			</div>		
+			</div>
+    <div id="container">
+			
