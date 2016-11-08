@@ -51,19 +51,26 @@ function removeQuanHuyen(){
 }	
 
 </script>
-<form method="get" id="advanced-searchform" role="search" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+<form method="get" id="advanced-searchform" role="search"
+	action="<?php echo esc_url( home_url( '/' ) ); ?>">
 
-    <h3><?php _e( 'Advanced Search', 'thachpham' ); ?></h3>
+	<h3><?php _e( 'Advanced Search', 'thachpham' ); ?></h3>
 
-    <!-- PASSING THIS TO TRIGGER THE ADVANCED SEARCH RESULT PAGE FROM functions.php -->
-    <input type="hidden" name="search" value="advanced">
-
-    <label for="name" class=""><?php _e( 'Name: ', 'thachpham' ); ?></label>
-    <input type="text" value="" placeholder="<?php _e( 'Nhập từ khóa muốn tìm', 'thachpham' ); ?>" name="name" id="name" /><br>
+	<!-- PASSING THIS TO TRIGGER THE ADVANCED SEARCH RESULT PAGE FROM functions.php -->
+	<input type="hidden" name="search" value="advanced">
+	<div class="input1" id="KeyDownEnterHome">
+		<label for="name" class=""><?php _e( 'Name: ', 'thachpham' ); ?></label>
+		<input type="text" value=""
+			placeholder="<?php _e( 'Nhập từ khóa muốn tìm', 'thachpham' ); ?>"
+			name="name" id="name" /><br>
+	</div>
 	<!-- Chon Loai Nha Dat -->
-	<label for="model" class=""><?php _e( 'Chọn Loại Nhà Đất: ', 'thachpham' ); ?></label>
-    <select name="ld" id="selLoaiNhaDat" >
-        <option value=""><?php _e( '--Chọn Loại Nhà Đất--', 'thachpham' ); ?></option>
+	<div class="input1 paddingleft0">
+     <div class="section" style="width:154px;"><span class="segtext">Loại bất động sản</span><span class="segdart"></span></div>
+     <div class="gridcontainer" style="min-width:154px; display:none;">
+     <label for="model" class=""><?php _e( 'Chọn Loại Nhà Đất: ', 'thachpham' ); ?></label>
+	<select name="ld" id="selLoaiNhaDat">
+		<option value=""><?php _e( '--Chọn Loại Nhà Đất--', 'thachpham' ); ?></option>
 		<option value="ban_can_ho_chung_cu"><?php _e( 'Bán căn hộ chung cư', 'thachpham' ); ?></option>
 		<option value="ban_nha_rieng"><?php _e( 'Bán nhà riêng', 'thachpham' ); ?></option>
 		<option value="ban_nha_biet_thu_lien_ke"><?php _e( 'Bán nhà biệt thự. liền kề', 'thachpham' ); ?></option>
@@ -73,22 +80,24 @@ function removeQuanHuyen(){
 		<option value="ban_trang_trai_khu_nghi_duong"><?php _e( 'Bán trang trại khu nghỉ dưỡng', 'thachpham' ); ?></option>
 		<option value="ban_kho_nha_xuong"><?php _e( 'Bán kho, nhà xưởng', 'thachpham' ); ?></option>
 		<option value="ban_bat_dong_san_khac"><?php _e( 'Bán các loại bất động sản khác', 'thachpham' ); ?></option>
-    </select><br>
+	</select>
+     </div>
+    </div>
 	<!-- Chon Thanh Pho -->
-    <label for="model" class=""><?php _e( 'Chọn Thành Phố: ', 'thachpham' ); ?></label>
-    <select name="tp" id="selThanhPho" onchange="changeThanhPho()" >
-        <option value=""><?php _e( '--Chọn Thành Phố--', 'thachpham' ); ?></option>
-    </select><br>
+	<label for="model" class=""><?php _e( 'Chọn Thành Phố: ', 'thachpham' ); ?></label>
+	<select name="tp" id="selThanhPho" onchange="changeThanhPho()">
+		<option value=""><?php _e( '--Chọn Thành Phố--', 'thachpham' ); ?></option>
+	</select><br>
 	<!-- Chon Quan Huyen -->
 	<label for="model" class=""><?php _e( 'Chọn Quận Huyện: ', 'thachpham' ); ?></label>
-    <select name="qh" id="selQuanHuyen">
-        <option value=""><?php _e( '--Chọn Quận Huyện--', 'thachpham' ); ?></option>
-    </select><br>
+	<select name="qh" id="selQuanHuyen">
+		<option value=""><?php _e( '--Chọn Quận Huyện--', 'thachpham' ); ?></option>
+	</select><br>
 
 	<!-- Chon Dien Tich -->
 	<label for="model" class=""><?php _e( 'Chọn Diện Tích: ', 'thachpham' ); ?></label>
-    <select name="dt" id="selDienTich" >
-        <option value=""><?php _e( '--Chọn Diện Tích--', 'thachpham' ); ?></option>
+	<select name="dt" id="selDienTich">
+		<option value=""><?php _e( '--Chọn Diện Tích--', 'thachpham' ); ?></option>
 		<option value="chua_xac_dinh"><?php _e( 'Chưa xác định', 'thachpham' ); ?></option>
 		<option value="nho_hon_30_m2"><?php _e( '<= 30 m2', 'thachpham' ); ?></option>
 		<option value="30_toi_50_m2"><?php _e( '30 - 50 m2', 'thachpham' ); ?></option>
@@ -100,12 +109,12 @@ function removeQuanHuyen(){
 		<option value="250_toi_300_m2"><?php _e( '250 - 300 m2', 'thachpham' ); ?></option>
 		<option value="300_toi_500_m2"><?php _e( '300 - 500 m2', 'thachpham' ); ?></option>
 		<option value="lon_hon_500_m2"><?php _e( '>= 500 m2', 'thachpham' ); ?></option>
-    </select><br>
-	
+	</select><br>
+
 	<!-- Chon Muc Gia -->
 	<label for="model" class=""><?php _e( 'Chọn Mức Giá: ', 'thachpham' ); ?></label>
-    <select name="gd" id="selGiaNhaDat" >
-        <option value=""><?php _e( '--Chọn Mức Giá--', 'thachpham' ); ?></option>
+	<select name="gd" id="selGiaNhaDat">
+		<option value=""><?php _e( '--Chọn Mức Giá--', 'thachpham' ); ?></option>
 		<option value="gia_thoa_thuan"><?php _e( 'Thỏa thuận', 'thachpham' ); ?></option>
 		<option value="nho_hon_500_trieu"><?php _e( '< 500 triệu', 'thachpham' ); ?></option>
 		<option value="tu_500_toi_800_trieu"><?php _e( '500 - 800 triệu', 'thachpham' ); ?></option>
@@ -118,7 +127,5 @@ function removeQuanHuyen(){
 		<option value="tu_10_toi_20_ty"><?php _e( '10 - 20 tỷ', 'thachpham' ); ?></option>
 		<option value="tu_20_toi_30_ty"><?php _e( '20 - 30 tỷ', 'thachpham' ); ?></option>
 		<option value="lon_hon_30_ty"><?php _e( '> 30 tỷ', 'thachpham' ); ?></option>
-    </select><br>
-	
-	<input type="submit" id="searchsubmit" value="Search" />
+	</select><br> <input type="submit" id="searchsubmit" value="Search" />
 </form>

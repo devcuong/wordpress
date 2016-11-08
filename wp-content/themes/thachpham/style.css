@@ -122,6 +122,21 @@ ul {
     background: #fafafa;
     border-bottom: 1px solid #f4f4f4;
 }
+.header .header-logo .hdcontent {
+    width: 1076px;
+    height: 100%;
+    margin: 0 auto;
+    background: #fff;
+}
+.header .header-logo .hdcontent .content-logo {
+    float: left;
+    padding-top: 45px;
+}
+
+.header .header-logo .hdcontent .content-banner {
+    float: right;
+    padding-top: 22px;
+}
 
 .action {
     width: 1000px;
@@ -226,6 +241,29 @@ ul {
     background-size: 100% 246px;
     /* z-index: 100; */
 }
+.search .search-content {
+    width: 100%;
+    height: 125px;
+    margin: 0;
+}
+.search-content .search-content-input {
+    background: url(http://dothi.net/Styles/Images/bg-boxsearch.png) repeat;
+    width: 982px;
+    height: 115px;
+    margin: 0 auto;
+    padding: 14px 0 0 17px;
+    position: relative;
+}
+.search-content-input .input1 {
+    height: 29px;
+    margin: 0 0 7px 0;
+}
+.search-content-input .input1 input {
+    width: 952px;
+    border: 1px solid #6990b1;
+    float: left;
+    padding: 7px;
+}
 .search .search-tab {
     width: 100%;
     margin: 36px 0 0 0;
@@ -234,7 +272,7 @@ ul {
 }
 
 .search .search-tab .search-tab-content {
-    width: 1000px;
+    width: 1076px;
     margin: 0 auto;
     z-index: 99;
 }
@@ -243,6 +281,17 @@ ul {
     background: url("http://dothi.net/Styles/Images/bg-boxsearch.png") repeat !important;
     color: #fff !important;
 }
+
+.search-tab-content .tab-sell {
+    width: 176px;
+    text-align: center;
+    background: url(http://dothi.net/Styles/Images/bg-tab.png) repeat;
+    color: #102c54;
+    cursor: pointer;
+    float: left;
+    font-size: 15px;
+}
+
 .search-tab-content .tab-rent {
     width: 200px;
     text-align: center;

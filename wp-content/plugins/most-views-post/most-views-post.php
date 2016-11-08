@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: My Widget
+Plugin Name: Most View Post
 Plugin URI: http://thachpham.com
 Description: tao widget myself
 Author: Thach Pham
@@ -68,11 +68,11 @@ class Thachpham_Widget extends WP_Widget {
 			extract( $args );
 			$title = apply_filters( 'widget_title', $instance['title'] );
 	 
-			echo $before_widget;
+			echo $args['before_widget'];
 	 
 			//In tiêu đề widget
 			// var_dump($args['before_title']);
-			echo "<div>".$before_title.$title.$after_title."</div>";
+			echo "<div id='most_view_title'>".$args['before_title'].$title.$args['after_title']."</div>";
 	 
 			// Nội dung trong widget
 			$popularpost = new WP_Query( array( 'post_type'     =>  'News','posts_per_page' => 5, 'meta_key' => 'wpb_post_views_count', 'orderby' => 'meta_value_num', 'order' => 'DESC'  ) );
@@ -83,7 +83,7 @@ class Thachpham_Widget extends WP_Widget {
 			endwhile;
 			// Kết thúc nội dung trong widget
 	 
-			echo $after_widget;
+			echo $args['after_widget'];
         }
  
 }

@@ -54,15 +54,32 @@
 		</div>
 	</div>
 	  <div class="header-logo">
-			   <?php thachpham_header(); ?>
-			  
-
+	  <div class="hdcontent">
+           <div class="content-logo"> <?php thachpham_header(); ?></div>
+        
+            <div class="MultiBanner1 content-banner" id="Banner_bxh">
+                <a href="http://banxehoi.com" target="_blank" rel="nofollow">
+                    <img src="http://dothi.net/Images/banner/banner-bxh-151230-b1-728x90.gif"></a>
+            </div>
+        </div>
+	 
 	  </div>
 </div>
  <div class="adv-menu"><div class="menu-content"><?php thachpham_menu('primary-menu'); ?>
 </div></div>
 
 		   	<div class="search">
+		   	<div class="search-tab">
+                <div class="search-tab-content">
+                    <div class="tab-sell tab-active" id="divSell">
+                        <h1>bất động sản bán</h1>
+                    </div>
+                    <div class="tab-rent" id="divRent">
+                        <h2>bất động sản cho thuê</h2>
+                    </div>
+                     <div class="clear"></div>
+                </div>
+            </div>
 			<div class="search-content" >
 				<?php get_search_form(); ?>
 			</div>		

@@ -356,3 +356,14 @@ add_action('init','wpse_load_custom_search_template');
 }
 //To keep the count accurate, lets get rid of prefetching
 remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
+
+/*------------- SET DEFAULT CUSTOM FIELD FOR POST ------------- */
+add_action('wp_insert_post', 'set_default_custom_fields');
+function set_default_custom_fields($post_id){
+    if ( $_GET['post_type'] == 'project' ) {
+
+        add_post_meta($post_id, 'dia_chi', '', true);
+        add_post_meta($post_id, 'dien_thoai', '', true);
+    }
+    return true;
+}
