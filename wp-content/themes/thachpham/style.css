@@ -348,7 +348,9 @@ ul {
 /*--Phan Post ThumbNail--*/
 .post {
 	overflow: hidden;
-	border-top: 1px solid #8e8e8e;
+	border: 1px solid #dedede;
+	margin-top: 10px;
+	background-color: #fff;
 }
 .post .entry-thumbnail {
 	width: 10px;
