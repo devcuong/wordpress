@@ -37,7 +37,7 @@ h1 {
 	font-size: 2.2em;
 }
 h2 {
-	font-size: 2em;
+	font-size: 1em;
 }
 h3 {
 	font-size: 1.8em;
@@ -70,7 +70,7 @@ ul {
 	 /* overflow: hidden;  */
 }
 #main-content{
-	width: 620px;
+	width: 680px;
 	float: left;
 	margin-right: 10px;
 }
@@ -288,7 +288,7 @@ ul {
 }
 .extra-top-slide{
 	height: 300px;
-	width: 284px;
+	width: 283px;
 	float:left;
 	text-align: center;
     background-color: #fff;
@@ -346,6 +346,19 @@ ul {
 }
 
 /*--Phan Post ThumbNail--*/
+.title_post a {
+    background: url("http://file4.batdongsan.com.vn/images/tit1.gif") no-repeat scroll left top #055699;
+    float: left;
+    margin: 0;
+    padding: 0 0 0 4px;
+    text-decoration: none;
+}
+.title_post a span{
+	color: #fff;
+}
+.line_gr {
+    border-bottom: 2px solid #055699;
+}
 .post {
 	overflow: hidden;
 	border: 1px solid #dedede;
