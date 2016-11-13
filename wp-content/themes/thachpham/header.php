@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="<?php language_attributes(); ?>" />
 <head>
-    <meta charset="<?php bloginfo('charset'); ?>" />
-	<meta http-equiv='cache-control' content='no-cache'>
-    <link rel="profile" href="http://gmgp.org/xfn/11" />
-    <link rel="pingback" href="<?php bloginfo('pingback_url') ?>" />
+<meta charset="<?php bloginfo('charset'); ?>" />
+<meta http-equiv='cache-control' content='no-cache'>
+<link rel="profile" href="http://gmgp.org/xfn/11" />
+<link rel="pingback" href="<?php bloginfo('pingback_url') ?>" />
     <?php wp_head(); ?>
 	<script type="text/javascript">
 	function loadTrang(){
@@ -33,56 +33,53 @@
 	}
 	</script>
 </head>
-<body <?php body_class(); ?> onload="loadTrang()" >
-  <div id="wr_header" class="header">  
-	<div class="header-register" id="headerregister">
-		<div class="action">
-			
-			
-			<div class="logon">
-				<a href="/dang-nhap.htm" rel="nofollow" title="Đăng nhập">
-					<span>Đăng nhập</span>
-				</a>
+<body <?php body_class(); ?> onload="loadTrang()">
+	<div id="wr_header" class="header">
+		<div class="header-register" id="headerregister">
+			<div class="action">
+
+
+				<div class="logon">
+					<a href="/dang-nhap.htm" rel="nofollow" title="Đăng nhập"> <span>Đăng
+							nhập</span>
+					</a>
+				</div>
+				<div class="register">
+					<a href="/dang-ky.htm" rel="nofollow" title="Đăng ký"> <span>Đăng
+							ký</span>
+					</a>
+				</div>
+
+
 			</div>
-			<div class="register">
-				<a href="/dang-ky.htm" rel="nofollow" title="Đăng ký">
-					<span>Đăng ký</span>
-				</a>
+		</div>
+		<div class="header-logo">
+			<div class="hdcontent">
+				<div class="content-logo"> <?php thachpham_header(); ?></div>
+
+				<div class="MultiBanner1 content-banner" id="Banner_bxh">
+					<a href="http://banxehoi.com" target="_blank" rel="nofollow"> <img
+						src="http://dothi.net/Images/banner/banner-bxh-151230-b1-728x90.gif"></a>
+				</div>
 			</div>
 
-			
 		</div>
 	</div>
-	  <div class="header-logo">
-	  <div class="hdcontent">
-           <div class="content-logo"> <?php thachpham_header(); ?></div>
-        
-            <div class="MultiBanner1 content-banner" id="Banner_bxh">
-                <a href="http://banxehoi.com" target="_blank" rel="nofollow">
-                    <img src="http://dothi.net/Images/banner/banner-bxh-151230-b1-728x90.gif"></a>
-            </div>
-        </div>
-	 
-	  </div>
+	<div class="adv-menu">
+		<div class="menu-content"><?php thachpham_menu('primary-menu'); ?>
 </div>
- <div class="adv-menu"><div class="menu-content"><?php thachpham_menu('primary-menu'); ?>
-</div></div>
-
-		   	<div class="search">
-		   	<div class="search-tab">
-                <div class="search-tab-content">
-                    <div class="tab-sell tab-active" id="divSell">
-                        <h1>bất động sản bán</h1>
-                    </div>
-                    <div class="tab-rent" id="divRent">
-                        <h2>bất động sản cho thuê</h2>
-                    </div>
-                     <div class="clear"></div>
-                </div>
-            </div>
-			<div class="search-content" >
+	</div>
+	<div id="container">
+	<div class="main-top-content">
+		<div class="search-content">
 				<?php get_search_form(); ?>
-			</div>		
-			</div>
-    <div id="container">
-			
+		</div>
+		
+		<div class="main-top-slide">
+		<?php echo do_shortcode('[metaslider id="1586"]');  ?>
+		</div>
+		
+		<div class="extra-top-slide">
+		<?php echo do_shortcode('[metaslider id="1587"]');  ?>
+		</div>
+	</div>

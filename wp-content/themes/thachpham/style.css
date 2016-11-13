@@ -62,9 +62,9 @@ ul {
 #container{
 	width: 1024px;
 	margin: 0 auto;
-	background: #fff;
+	background: #f2f2f2;
 	border: 1px solid #d1d1d1;
-	padding: 10px 25px;
+	padding: 10px 2px;
 }
 .content{
 	 /* overflow: hidden;  */
@@ -78,7 +78,6 @@ ul {
 	width: 320px;
 	float:right;
 	margin-left: 10px;
-	padding-left: 20px;
 	background-color: red;
 }
 
@@ -160,14 +159,14 @@ ul {
 }
 /*-- Top news Box --*/
 .content .news-default {
-    width: 620px;
+    width: 680px;
     margin-top: 20px;
 }
 .fl {
     float: left;
 }
 .news-default .news-default-left {
-    width: 340px;
+    width: 400px;
     border: 1px solid #e3e3e3;
     padding: 6px;
     position: relative;
@@ -180,14 +179,14 @@ ul {
     font: bold 16px/20px tahoma,arial;
 }
 .news-default-left img {
-    width: 340px;
-    height: 250px;
+    width: 400px;
+    height: 300px;
     display: block;
     margin: 0 auto;
 }
 .news-default .news-default-right {
     width: 252px;
-    height: 347px;
+    height: 360px;
     border: 1px solid #dedede;
     float: right;
     background: #fff;
@@ -227,24 +226,25 @@ ul {
 .col-left{
 	background-color: blue;
 	float:left;
-	width: 620px;
+	width: 680px;
 }
 /*-- Search Box --*/
-.search {
+.main-top-content {
     width: 100%;
     position: relative;
     text-align: center;
     float: left;
-    height: 246px;
-    background-image: url("http://dothi.net/Styles/Images/banner.png");
     background-position: center top;
     background-size: 100% 246px;
-    /* z-index: 100; */
 }
-.search .search-content {
-    width: 100%;
-    height: 125px;
+.main-top-content .search-content {
+    width: 200px;
+    height: 300px;
     margin: 0;
+	float: left;
+	background: #fff;
+	overflow: hidden;
+	border: 1px solid #dedede;
 }
 .search-content .search-content-input {
     background: url(http://dothi.net/Styles/Images/bg-boxsearch.png) repeat;
@@ -264,49 +264,37 @@ ul {
     float: left;
     padding: 7px;
 }
-.search .search-tab {
-    width: 100%;
-    margin: 36px 0 0 0;
-    font-family: Arial,Helvetica,sans-serif !important;
-    text-transform: uppercase;
-}
 
-.search .search-tab .search-tab-content {
-    width: 1076px;
-    margin: 0 auto;
-    z-index: 99;
-}
-
-.search-tab-content .tab-active {
-    background: url("http://dothi.net/Styles/Images/bg-boxsearch.png") repeat !important;
-    color: #fff !important;
-}
-
-.search-tab-content .tab-sell {
-    width: 176px;
-    text-align: center;
-    background: url(http://dothi.net/Styles/Images/bg-tab.png) repeat;
-    color: #102c54;
-    cursor: pointer;
-    float: left;
-    font-size: 15px;
-}
-
-.search-tab-content .tab-rent {
-    width: 200px;
-    text-align: center;
-    background: url("http://dothi.net/Styles/Images/bg-tab.png") repeat;
-    border-bottom: 0;
-    color: #102c54;
-    cursor: pointer;
-    float: left;
-    font-size: 15px;
-}
 .search-tab-content .tab-sell h1, .search-tab-content .tab-rent h2 {
     font-family: 'Roboto Regular' !important;
     font-weight: normal !important;
     font-size: 14px !important;
     line-height: 34px;
+}
+/*-- Main Slide Box --*/
+.main-top-slide{
+	float:left;
+	padding-left: 18px;
+	padding-right: 18px;
+}
+.flex-control-nav {
+	bottom: 10px;
+    line-height: 11px;
+    z-index: 1;
+}
+/*-- Extra Slide Box --*/
+.project-img{
+	padding-left: 20px;
+	padding-top: 20px;
+}
+.extra-top-slide{
+	height: 300px;
+	width: 284px;
+	float:left;
+	text-align: center;
+    background-color: #fff;
+    margin: 0 auto;
+	border: 1px solid #dedede;
 }
 /*-- Primary Menu --*/
 .adv-menu{
@@ -364,20 +352,19 @@ ul {
 	border-top: 1px solid #8e8e8e;
 }
 .post .entry-thumbnail {
-	width: 150px;
+	width: 10px;
 	float: left;
-	margin: 2.2em 2em 1em 0;
 }
 .post .entry-thumbnail img{
-	width: 150px;
-	height: 150px;
+	width: 100px;
+	height: 100px;
 }
 .post .post-thumbnail{
 	margin: 0;
 }
 .post .entry-content,
 .post .entry-header{
-	padding-left: 180px;
+	padding-left: 120px;
 }
 
 .post .entry-content{

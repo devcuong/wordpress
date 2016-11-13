@@ -75,7 +75,7 @@
      * */
     if(!function_exists('thachpham_header')){
         function thachpham_header(){ ?>
-             <div class="site-name">
+<div class="site-name">
              <?php
                 if( is_home() ){
                     printf( '<h1><a href="%1$s" title="%2$s">%3$s</a></h1>',
@@ -92,8 +92,8 @@
                 }
             ?>
             </div>
-            <div class="site-description"><?php bloginfo('description'); ?></div>    
-            <?php 
+<div class="site-description"><?php bloginfo('description'); ?></div>
+<?php 
         }
     }
     
@@ -120,7 +120,7 @@
             if($GLOBALS['wp_query']->max_num_pages < 2){
                 return '';
             } ?>
-            <nav class="pagination" role="navigation" >
+<nav class="pagination" role="navigation">
             <?php if ( get_next_posts_link() ) : ?>
                 <div class="prev">
                 <?php next_posts_link( __('Older Posts', 'thachpham') ); ?>
@@ -130,7 +130,7 @@
                 <div class="next"><?php previous_posts_link( __('Newest Posts', 'thachpham') ); ?> </div>
             <?php endif; ?>
             </nav>
-        <?php }
+<?php }
       }
       
       /**
@@ -150,10 +150,14 @@
         if (!function_exists('thachpham_entry_header')) {
             function thachpham_entry_header(){ ?>
                 <?php if ( is_single() ) : ?>
-                    <h1><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" ><?php the_title(); ?></a></h1>
-                <?php else : ?>
-                    <h2><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" ><?php the_title(); ?></a></h2>
-                <?php endif ?>
+<h1>
+	<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+</h1>
+<?php else : ?>
+<h2>
+	<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+</h2>
+<?php endif ?>
             <?php }
         }
         
@@ -164,7 +168,7 @@
          if (!function_exists('thachpham_entry_meta')) {
             function thachpham_entry_meta(){ ?>
                <?php if ( !is_page() && has_post_thumbnail() ) : ?>
-               <div class="entry-meta">
+<div class="entry-meta">
                 <?php
                     printf( __('<span class="author">Posted by %1$s', 'thachpham'), get_the_author() );
                     printf( __('<span class="date-published"> at %1$s', 'thachpham'), get_the_date() );
@@ -182,7 +186,7 @@
                     endif;
                 ?>
                </div>
-			     <?php else: 
+<?php else: 
 					echo 'Không có kết quả tìm kiếm phù hợp';
 				 ?>
 					
@@ -366,4 +370,47 @@ function set_default_custom_fields($post_id){
         add_post_meta($post_id, 'dien_thoai', '', true);
     }
     return true;
+}
+
+/*------------- GET TOP NEWS ------------- */
+if (!function_exists('dothi_get_top_news')) {
+    function dothi_get_top_news(){
+        
+        // Query get top 6 news
+        $v_args = array(
+            'post_type'     =>  'News', // your CPT
+            'posts_per_page' => 6
+        );
+        $newsQuery = new WP_Query( $v_args );
+    ?>
+       		<?php 	if( $newsQuery->have_posts() ) : 
+       			while( $newsQuery->have_posts() ) : 
+       			$newsQuery->the_post(); ?>
+       			<?php
+				   if($newsQuery->current_post == 0)
+				   { ?>
+<div class='news-default-left'>
+	<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail(); ?>
+	</a>
+	<h2>
+		<a href="<?php the_title(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+	</h2>
+</div>
+<div class="news-default-right">
+	<ul>
+		<li class="first-li"><?php } ?>
+		
+		<li>
+			<h3>
+				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+								<?php the_title(); ?>
+							</a>
+			</h3>
+		</li>
+				<?php endwhile ; ?>
+				<?php endif; ?>
+        
+            </ul>
+            <?php
+    }
 }
