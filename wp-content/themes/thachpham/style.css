@@ -78,7 +78,6 @@ ul {
 	width: 320px;
 	float:right;
 	margin-left: 10px;
-	background-color: red;
 }
 
 /*--Phan Header--*/
@@ -158,6 +157,33 @@ ul {
     margin-top: 5px;
 }
 /*-- Top news Box --*/
+.title_n{
+	background: none repeat scroll 0 0 #055699;
+    background-image: none;
+    background-position-x: 0px;
+    background-position-y: 0px;
+    background-size: initial;
+    background-repeat-x: repeat;
+    background-repeat-y: repeat;
+    background-attachment: scroll;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(5, 86, 153);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 100%;
+    height: 25px;
+}
+#most_view_title{
+	padding-top: 5px;
+	text-align: center;
+	height:30px;
+}
+#most_view_title h3{
+	font-size: 1.2em;
+	margin-top: 5px;
+	color: #fff;
+}
 .content .news-default {
     width: 680px;
     margin-top: 20px;
@@ -346,6 +372,29 @@ ul {
 }
 
 /*--Phan Post ThumbNail--*/
+.date {
+    bottom: -5px;
+    right: 0;
+    color: #959595;
+    font-size: 12px;
+}
+.other div label {
+    width: 60px;
+    display: inline-block;
+    color: #424242;
+    margin-right: 5px;
+    font-weight: normal;
+}
+.other div label span {
+    float: right;
+}
+.other {
+    font-size: 12px;
+}
+.other .price {
+    color: #37a344;
+    font-weight: bold;
+}
 .title_post a {
     background: url("http://file4.batdongsan.com.vn/images/tit1.gif") no-repeat scroll left top #055699;
     float: left;
@@ -355,6 +404,7 @@ ul {
 }
 .title_post a span{
 	color: #fff;
+	font-weight: normal;
 }
 .line_gr {
     border-bottom: 2px solid #055699;
@@ -370,15 +420,15 @@ ul {
 	float: left;
 }
 .post .entry-thumbnail img{
-	width: 100px;
-	height: 100px;
+	width: 170px;
+	height: 115px;
 }
 .post .post-thumbnail{
 	margin: 0;
 }
 .post .entry-content,
 .post .entry-header{
-	padding-left: 120px;
+	padding-left: 185px;
 }
 
 .post .entry-content{
@@ -578,7 +628,6 @@ blockquote.right {
 
 .widget ul li{
 	margin-bottom: 8px !important;
-	list-style: square !important;
 }
 
 .widget_calendar{}

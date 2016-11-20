@@ -1,3 +1,4 @@
+<?php include 'comments.php' ;?>
 <?php
 /**
   @ Khai bao hang gia tri
@@ -150,14 +151,14 @@
         if (!function_exists('thachpham_entry_header')) {
             function thachpham_entry_header(){ ?>
                 <?php if ( is_single() ) : ?>
-<h1>
-	<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-</h1>
-<?php else : ?>
-<h2>
-	<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-</h2>
-<?php endif ?>
+                <h1>
+                	<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+                </h1>
+                <?php else : ?>
+                <h2>
+                	<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+                </h2>
+                <?php endif ?>
             <?php }
         }
         
@@ -200,10 +201,27 @@
           if (!function_exists('thachpham_entry_content')) {
             function thachpham_entry_content(){
               if ( !is_single() && !is_page() ) {
-                // the_excerpt();
+                //the_excerpt();
+                  echo "<div class='other'>";
+                  echo "<div class='price'>";
+                  echo "<label>Giá<span>:</span></label>1.5 Tỷ</div>";
+                  echo "<div class='area'>";
+                  echo "<label>Diện tích<span>:</span></label>64&nbsp;m²</div>";
+                  echo "<div class='location'>";
+                  echo "<label>Vị trí<span>:</span></label>";
+                  echo "Quận 9 - Hồ Chí Minh";
+                  echo "</div>";
+                  echo "</div>";
+                  echo "<span class='date'>";
+                  echo "14/11/2016</span>";
               } else {
-                the_content();
                 
+                if(is_page('dang-tin')){
+                    the_content();
+                }
+                else{
+                    echo get_the_content();
+                }             
                 /* Phan trang trong single */
                 $link_pages = array(
                 'before' => __('<p>Page: ', 'thachpham'),
@@ -251,13 +269,16 @@ function thachpham_style() {
 }
 add_action('wp_enqueue_scripts', 'thachpham_style');
 
-	/*------------- TEMPLATE CSS ------------- */
+	/*------------- TEMPLATE JS ------------- */
 function thachpham_script() {
 	wp_register_script('superfish-script', THEME_URL. "/superfish.js", array('jquery'));
 	wp_enqueue_script('superfish-script');
 	
 	wp_register_script('custom-script', THEME_URL. "/custom.js", array('jquery'));
 	wp_enqueue_script('custom-script');
+	
+	wp_register_script('jssor-script', THEME_URL. "/jssor.slider-21.1.6.min.js", array('jquery'));
+	wp_enqueue_script('jssor-script');
 }
 add_action('wp_enqueue_scripts', 'thachpham_script');
 
@@ -361,17 +382,6 @@ add_action('init','wpse_load_custom_search_template');
 //To keep the count accurate, lets get rid of prefetching
 remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
 
-/*------------- SET DEFAULT CUSTOM FIELD FOR POST ------------- */
-add_action('wp_insert_post', 'set_default_custom_fields');
-function set_default_custom_fields($post_id){
-    if ( $_GET['post_type'] == 'project' ) {
-
-        add_post_meta($post_id, 'dia_chi', '', true);
-        add_post_meta($post_id, 'dien_thoai', '', true);
-    }
-    return true;
-}
-
 /*------------- GET TOP NEWS ------------- */
 if (!function_exists('dothi_get_top_news')) {
     function dothi_get_top_news(){
@@ -414,3 +424,47 @@ if (!function_exists('dothi_get_top_news')) {
             <?php
     }
 }
+
+/*------------- GET IMAGE SLIDE IN POST ------------- */
+ if(!function_exists("dothi_get_image_slide")){
+     function dothi_get_image_slide(){ 
+         $images =  get_post_meta( get_the_ID(), 'hinh_anh_du_an');
+         if (count($images)>0) {
+         ?>
+         <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 800px; height: 456px; overflow: hidden; visibility: hidden; background-color: #f5f5f5;">
+         <!-- Loading Screen -->
+         <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+             <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+                 <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+                 <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 800px; height: 356px; overflow: hidden;">
+            <?php for ($x = 0; $x < count($images); $x++){ ?>
+                             <div data-p="144.50">
+                             <img data-u="image" src="<?php echo wp_get_attachment_url( $images[$x], "thumbnail", true); ?>" />
+                             <img data-u="thumb" src="<?php echo wp_get_attachment_url( $images[$x], "thumbnail", true); ?>" />
+                             </div>
+                        <?php } ?>
+                    
+                     <a data-u="any" href="http://www.jssor.com" style="display:none">Image Gallery</a>
+                 </div>
+                 <!-- Thumbnail Navigator -->
+                 <div data-u="thumbnavigator" class="jssort01" style="position:absolute;left:0px;bottom:0px;width:800px;height:100px;" data-autocenter="1">
+                     <!-- Thumbnail Item Skin Begin -->
+                     <div data-u="slides" style="cursor: default;">
+                         <div data-u="prototype" class="p">
+                             <div class="w">
+                                 <div data-u="thumbnailtemplate" class="t"></div>
+                             </div>
+                             <div class="c"></div>
+                         </div>
+                     </div>
+                     <!-- Thumbnail Item Skin End -->
+                 </div>
+                 <!-- Arrow Navigator -->
+                 <span data-u="arrowleft" class="jssora05l" style="top:158px;left:8px;width:40px;height:40px;"></span>
+                 <span data-u="arrowright" class="jssora05r" style="top:158px;right:8px;width:40px;height:40px;"></span>
+             </div>
+             <script type="text/javascript">jssor_1_slider_init();</script> <?php }
+     }
+ }
+ 

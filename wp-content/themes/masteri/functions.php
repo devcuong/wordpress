@@ -157,7 +157,7 @@ if (! function_exists('thachpham_theme_setup')) {
             'before_title' => '<h3 class="widget-title">',
             'after_title' => '</h3>'
         );
-        register_sidebar($sidebar);
+        
     }
     add_action('init', 'thachpham_theme_setup');
 }

@@ -72,17 +72,34 @@ class Thachpham_Widget extends WP_Widget {
 	 
 			//In tiêu đề widget
 			// var_dump($args['before_title']);
-			echo "<div id='most_view_title'>".$args['before_title'].$title.$args['after_title']."</div>";
+			echo "<div id='most_view_title' class='title_n'>".$args['before_title'].$title.$args['after_title']."</div>";
 	 
 			// Nội dung trong widget
+			echo "<div class='news-default-right'>";
+			echo "<ul>";
 			$popularpost = new WP_Query( array( 'post_type'     =>  'News','posts_per_page' => 5, 'meta_key' => 'wpb_post_views_count', 'orderby' => 'meta_value_num', 'order' => 'DESC'  ) );
 			while ( $popularpost->have_posts() ) : $popularpost->the_post();
-			echo "<br>";
-			the_title(); 
-
+			 if($popularpost->current_post == 0):
+			{
+			    echo "<li class='first-li'><h3>";
+			}
+			else:
+			{
+			    echo "<li><h3>";
+			}
+			endif;
+			echo "<a href='";
+			the_permalink();
+			echo "' title='";
+			the_title();
+			echo "'>";
+			the_title();
+			echo "</a>"; 
+            echo "</h3></li>";
 			endwhile;
 			// Kết thúc nội dung trong widget
-	 
+			echo "</ul>";
+	        echo "</div>";
 			echo $args['after_widget'];
         }
  

@@ -77,17 +77,36 @@ class Top_Project_Widget extends WP_Widget {
 	 
 			//In tiêu đề widget
 			// var_dump($args['before_title']);
-			echo "<div>".$args['before_title'].$title.$args['after_title']."</div>";
+			echo "<div id='most_view_title' class='title_n'>".$args['before_title'].$title.$args['after_title']."</div>";
 	 
 			// Nội dung trong widget
-			$projectpost = new WP_Query( array( 'post_type'     =>  'project','posts_per_page' => $number ) );
-			while ( $projectpost->have_posts() ) : $projectpost->the_post();
-			echo "<br>";
-			the_title(); 
-
+			echo "<div class='news-default-right'>";
+			echo "<ul>";
+	 
+			// Nội dung trong widget
+			$projectPost = new WP_Query( array( 'post_type' => 'project','posts_per_page' => $number ) );
+			while ( $projectPost->have_posts() ) : $projectPost->the_post();
+			 if($projectPost->current_post == 0):
+			{
+			    echo "<li class='first-li'><h3>";
+			}
+			else:
+			{
+			    echo "<li><h3>";
+			}
+			endif;
+			echo "<a href='";
+			the_permalink();
+			echo "' title='";
+			the_title();
+			echo "'>";
+			the_title();
+			echo "</a>"; 
+            echo "</h3></li>";
 			endwhile;
 			// Kết thúc nội dung trong widget
-	 
+			echo "</ul>";
+	        echo "</div>";
 			echo $args['after_widget'];
         }
  
