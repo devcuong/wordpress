@@ -95,12 +95,12 @@
         <?php thachpham_entry_header(); ?>
         <?php /* thachpham_entry_meta(); */ ?>
     </div>
+	<?php if (is_single()) { ?>
     <div class="entry-information" >
-        <div class="infor-location" ><?php 
-            the_content();
-        ?></div>
+        <div class="infor-location" ></div>
         <div class="infor_price"></div>
     </div>
+	<?php } ?>
     <div class="entry-content">
         <?php  thachpham_entry_content(); 	 ?>
         <?php ( is_single() ? thachpham_entry_tag() : '' ) ?>
