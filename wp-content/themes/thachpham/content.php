@@ -97,7 +97,15 @@
     </div>
 	<?php if (is_single()) { ?>
     <div class="entry-information" >
-        <div class="infor-location" ></div>
+        <div class="infor-location" >
+        <?php
+        $thanh_pho = get_post_meta( get_the_ID(), 'thanh_pho', true );
+        var_dump($thanh_pho);
+        echo $thanh_pho;
+        $field_object = get_field_object($thanh_pho);
+        $value = get_field('field_name');
+        var_dump($field_object);
+        ?></div>
         <div class="infor_price"></div>
     </div>
 	<?php } ?>
