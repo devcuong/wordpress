@@ -98,14 +98,7 @@
 	<?php if (is_single()) { ?>
     <div class="entry-information" >
         <div class="infor-location" >
-        <?php
-        $thanh_pho = get_post_meta( get_the_ID(), 'thanh_pho', true );
-        var_dump($thanh_pho);
-        echo $thanh_pho;
-        $field_object = get_field_object($thanh_pho);
-        $value = get_field('field_name');
-        var_dump($field_object);
-        ?></div>
+       </div>
         <div class="infor_price"></div>
     </div>
 	<?php } ?>
@@ -116,6 +109,16 @@
     <?php if (is_single()) { ?>
     <div class="entry-slide">
      <?php dothi_get_image_slide() ?>
+    </div>
+    <div class="detail-infor">
+         <?php
+        $field = get_field_object('cho_de');
+        $value = $field['value'];
+        if ( isset( $field['choices'] ) ) {
+            $label = $field['choices'][$value];
+            echo $label;
+        }
+        ?>
     </div>
     <?php } ?>
 </article>
