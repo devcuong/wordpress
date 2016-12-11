@@ -216,11 +216,12 @@
                   echo "14/11/2016</span>";
               } else {
                 
-                if(is_page('dang-tin')){
+                if(is_page('dang-tin') || is_page('members') || is_page('dashboard')){
                     the_content();
                 }
                 else{
-                    echo get_the_content();
+                    the_content();
+                    /* echo get_the_content(); */
                 }             
                 /* Phan trang trong single */
                 $link_pages = array(
@@ -467,4 +468,9 @@ if (!function_exists('dothi_get_top_news')) {
              <script type="text/javascript">jssor_1_slider_init();</script> <?php }
      }
  }
+ function disable_self_trackback( &$links ) {
+     foreach ( $links as $l => $link )
+         if ( 0 === strpos( $link, get_option( 'home' ) ) )
+             unset($links[$l]); }
+         add_action( 'pre_ping', 'disable_self_trackback' );
  

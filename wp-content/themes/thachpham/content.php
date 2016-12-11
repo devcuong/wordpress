@@ -112,7 +112,7 @@
     </div>
     <div class="detail-infor">
          <?php
-        $field = get_field_object('cho_de');
+        $field = get_field_object('field_58438bf388e3d');
         $value = $field['value'];
         if ( isset( $field['choices'] ) ) {
             $label = $field['choices'][$value];
