@@ -110,26 +110,26 @@ class UM_Form {
 				$this->post_form = array_merge( $this->form_data, $this->post_form );
 
 				
-				$secure_form_post = apply_filters('um_secure_form_post', true );
- 				
- 				if( isset( $this->form_data['custom_fields'] ) 
- 					&& strstr( $this->form_data['custom_fields'], 'role_' )
- 					&& $secure_form_post  ){  // Secure selected role
+				if( isset( $this->form_data['custom_fields'] )  && strstr( $this->form_data['custom_fields'], 'role_' )  ){  // Secure selected role
 					
 					$custom_field_roles = $this->custom_field_roles( $this->form_data['custom_fields'] );
                     
-                    $role = $_POST['role'];
+                    if( isset( $_POST['role'] ) ){
+	                    $role = $_POST['role'];
 
-                    if( is_array( $_POST['role'] ) ){
-                    	$role = current( $_POST['role'] );
-                    }
+	                    if( is_array( $_POST['role'] ) ){
+	                    	$role = current( $_POST['role'] );
+	                    }
 
-					if ( isset( $custom_field_roles ) && is_array(  $custom_field_roles ) && ! in_array( $role , $custom_field_roles ) ) {
-						wp_die( __( 'This is not possible for security reasons.','ultimatemember') );
-					} 
+						if ( isset( $custom_field_roles ) && is_array(  $custom_field_roles ) && ! in_array( $role , $custom_field_roles ) ) {
+							wp_die( __( 'This is not possible for security reasons.','ultimatemember') );
+						} 
 
-					$this->post_form['role'] = $role;
-					$this->post_form['submitted']['role'] = $role;
+						$this->post_form['role'] = $role;
+						$this->post_form['submitted']['role'] = $role;
+					}
+
+					
 
 				}else if( isset( $this->post_form['mode'] ) && $this->post_form['mode'] == 'register' ) {
 					$role = $this->assigned_role( $this->form_id );
@@ -137,7 +137,6 @@ class UM_Form {
 					$this->post_form['submitted']['role'] = $role;
 				}
 				
-               
 				if ( isset( $_POST[ $ultimatemember->honeypot ] ) && $_POST[ $ultimatemember->honeypot ] != '' ){
 					wp_die('Hello, spam bot!');
 				}

@@ -392,7 +392,7 @@ class Quick_Featured_Images_Columns {
     public function set_thumbnail () {
 
 		if ( ! isset( $_POST[ 'qfi_nonce' ] ) or ! wp_verify_nonce( $_POST[ 'qfi_nonce' ], 'qfi-image-column' ) ) {
-			$text = 'Sorry, you are not allowed to add this item.';
+			$text = 'Sorry, you are not allowed to edit this item.';
 			die( __( $text ) );
 		}
 		if ( isset( $_POST[ 'post_id' ] ) and isset( $_POST[ 'thumbnail_id' ] ) ) {

@@ -406,6 +406,7 @@ class Quick_Featured_Images_Tools { // only for debugging: extends Quick_Feature
 	 */
 	public function main() {
 		// set variables
+		$this->set_server_config();
 		$this->set_default_values();
 		// get current step
 		$this->selected_step = $this->get_sanitized_step();
@@ -634,6 +635,41 @@ class Quick_Featured_Images_Tools { // only for debugging: extends Quick_Feature
 		$this->max_image_length = 9999;
 		// slug for cached results
 		$this->transient_name = 'quick_featured_images_results';
+	}
+	
+	/**
+	 * Set server timeout for PHP scripts in seconds
+	 *
+	 * @access   private
+	 * @since    12.2
+	 */
+	private function set_server_config() {
+		// to prevent blank pages for this script:
+		// set server timeout to 3000 seconds if lower
+		$value = (int) ini_get( 'max_execution_time' );
+		if ( 2999 > $value ) {
+			ini_set( 'max_execution_time', '3000' );
+		}
+		// and set allowed memory space to 512 MB if lower
+		preg_match( '/(\d+)(\w+)/', ini_get( 'memory_limit' ), $matches );
+		if ( $matches ) {
+			$value = (int) $matches[ 1 ];
+			switch ( strtolower( $matches[ 2 ] ) ) {
+				case 'g':
+				case 'gb':
+					$value *= 1024;
+				case 'm':
+				case 'mb':
+					$value *= 1024;
+				case 'k':
+				case 'kb':
+					$value *= 1024;
+			}
+			
+			if ( 500000000 > $value ) {
+				ini_set( 'memory_limit', '512M' );
+			}
+		}
 	}
 	
 	/**
@@ -1722,7 +1758,7 @@ class Quick_Featured_Images_Tools { // only for debugging: extends Quick_Feature
 	 */
 	private function get_sanitized_post_thumbnail_id( $post_id ) {
 		// check if an image with the given ID exists in the media library, else set id to 0
-		$current_thumb_id = get_post_thumbnail_id( $post_id );
+		$current_thumb_id = (int) get_post_thumbnail_id( $post_id );
 		if ( $current_thumb_id and wp_attachment_is_image( $current_thumb_id ) ) {
 			return $current_thumb_id;
 		} else {

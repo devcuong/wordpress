@@ -8,7 +8,7 @@ jQuery( document ).ready( function( $ ){
 	var blank_url = $( '#placeholder_url' ).val();
 
 	// bind the media uploader at current and future ( 'live()' ) image upload buttons
-    $( '.imageupload' ).live( 'click', function( e ) {
+    $( document ).on( 'click', '.imageupload', function( e ) {
 		
         e.preventDefault();
  
@@ -48,7 +48,7 @@ jQuery( document ).ready( function( $ ){
 	 * Remove rule row
 	 */
 	// clear default image
-    $( '.remove_rule' ).live( 'click', function( e ) {
+    $( document ).on( 'click', '.remove_rule', function( e ) {
  
         e.preventDefault();
 		

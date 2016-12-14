@@ -346,6 +346,8 @@ class UM_User {
 			unset( $submitted['confirm_user_password'] );
 		}
 
+		$submitted = apply_filters('um_before_save_filter_submitted', $submitted );
+
 		do_action('um_before_save_registration_details', $this->id, $submitted );
 
 		update_user_meta( $this->id, 'submitted', $submitted );
@@ -690,6 +692,8 @@ class UM_User {
 			}
 		}
 
+		wp_reset_query();  
+
 		$ultimatemember->profile->arr_user_roles[ 'is_1' ][ $slug ] = $role_id;
 		$ultimatemember->profile->arr_user_roles[ 'is_'  ][ $slug ] = $role_title;
 
@@ -698,6 +702,34 @@ class UM_User {
 		}
 		
 		return $role_title;
+	}
+
+	/**
+	 * Get role slug by ID
+	 * @param  integer $id 
+	 * @return string
+	 */
+	function get_role_slug_by_id( $id ) {
+		global $wpdb, $ultimatemember;
+
+
+		$args = array(
+		    	'posts_per_page' => 1,
+		    	'post_type' => 'um_role',
+		    	'page_id'	=> $id,
+		    	'post_status' => array('publish'),
+		);
+
+		$roles = new WP_Query( $args );
+		$role_slug = '';
+		
+		if ( $roles->have_posts() ) {
+			$role_slug = $roles->post->post_name;
+		}
+
+		wp_reset_query();  
+
+		return $role_slug;
 	}
 
 	/***

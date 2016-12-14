@@ -37,20 +37,21 @@
 	<div id="wr_header" class="header">
 		<div class="header-register" id="headerregister">
 			<div class="action">
-
-
-				<div class="logon">
-					<a href="/dang-nhap.htm" rel="nofollow" title="Đăng nhập"> <span>Đăng
-							nhập</span>
-					</a>
-				</div>
-				<div class="register">
-					<a href="/dang-ky.htm" rel="nofollow" title="Đăng ký"> <span>Đăng
-							ký</span>
-					</a>
-				</div>
-
-
+				<?php if(!is_user_logged_in()){
+					echo "<div class='logon'>";
+					echo "<a href='/dang-nhap.htm' rel='nofollow' title='Đăng nhập'> <span>Đăng nhập</span></a>";
+					echo "</div>";
+					echo "<div class='register'>";
+					echo "<a href='/dang-ky.htm' rel='nofollow' title='Đăng ký'> <span>Đăng ký</span></a>";
+					echo "</div>";	
+				} else{
+					$current_user = wp_get_current_user();
+					echo "<div class='logon'>";
+					echo "<a href='http://dothi24h.abc/logout/' rel='nofollow' title='Đăng xuất'> <span>";
+					echo $current_user->display_name;
+					echo "</span></a>";
+					echo "</div>";
+				} ?>
 			</div>
 		</div>
 		<div class="header-logo">

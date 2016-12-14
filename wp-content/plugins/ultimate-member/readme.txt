@@ -5,9 +5,9 @@ Contributors: ultimatemember, champsupertramp
 Donate link: 
 Tags: access control, author, authors, author profile, comments, community, communities, conditional fields, conditional logic, conditional menus, content protection, custom fields, file uploads, form builder, front-end login, front-end registration, gravatar, hide wp-admin, login, login page, logged-in users, mandrill, member, members, membership, member directory, online users, profile, profiles, profile builder, registration, restriction, restrict content, role creation, role menus, search filters, sign in, sign up, social network, star ratings, toolbar, user, users, user fields, user profile, user-profile, user profiles, user roles
 Requires at least: 4.1
-Tested up to: 4.6.1
+Tested up to: 4.7
 
-Stable Tag: 1.3.71
+Stable Tag: 1.3.78
 
 License: GNU Version 2 or Any Later Version
 
@@ -59,6 +59,7 @@ Ultimate Member has a range of extensions that allow you to extend the power of 
 * [myCRED](https://ultimatemember.com/extensions/mycred/) - With the myCRED extension you can integrate Ultimate Member with the popular myCRED points management plugin
 * [Notices](https://ultimatemember.com/extensions/notices/) - Alert users to important information using conditional notices
 * [Profile Completeness](https://ultimatemember.com/extensions/profile-completeness/) - Encourage or force users to complete their profiles with the profile completeness extension
+* [Friends](https://ultimatemember.com/extensions/friends/) - Allows users to become friends by sending & accepting/rejecting friend requests
 
 = Free Extensions =
 
@@ -149,6 +150,111 @@ The plugin works with popular caching plugins by automatically excluding Ultimat
 
 == Changelog ==
 
+= 1.3.78: December 08, 2016 =
+
+* Bugfixes:
+  * Fix menu settings compatibility issue with WP 4.7
+  * Fix mobile class on account delete tab heading
+  * Fixes an issue where tagline shows the current users to all members
+  * Fixes notice on updating WP List Table quick edit
+  * Remove notices
+
+  = 1.3.77: November 30, 2016 =
+
+* Bugfixes:
+  * Fix set and reset password validation.
+  * Remove notices
+
+= 1.3.76: November 30, 2016 =
+
+* Bugfixes:
+  * Fix invalid security notice in set password.
+
+= 1.3.75: November 29, 2016 =
+
+* Bugfixes:
+  * Fix 'Invalid user ID' on profile update
+ 
+= 1.3.74: November 29, 2016 =
+
+* Enhancements:
+  * Improves clear users cache. 
+  * Removes user id from redirect URL on registration process for pending review and email activation statuses.
+
+* Bugfixes:
+  * Fix assigning of role on registration process
+  * Fix change email address in edit mode.
+  * Fix change password validation.
+  * Removes notices when role field is present in the profile form.
+
+
+= 1.3.73: November 17, 2016 =
+
+* Enhancements:
+  * Adds a filter hook to modify the submitted details on registration process
+      * `um_before_save_filter_submitted`
+  * Adds a filter hook to disable canonical link in header
+      * `um_allow_canonical__filter`
+  * Adds a filter hook to modify the auto-generated email address on registration process
+      * `um_user_register_submitted__email`
+  * Adds filter hooks to modify locale, language file path and textdomain
+      * `um_language_textdomain`
+      * `um_language_locale`
+      * `um_language_file`
+  * Adds filter hook to modify the data of selected value:
+      * `um_is_selected_filter_data`
+  * Adds new select/multi-select options to retrieve options from a callback.
+      * In the form builder, edit or add a select/multi-select field and add your callback function in `Choices callback` field to get populated.
+  * Adds parent select field option to dynamically populate another select field.
+      * If `Choices Callback` option is set in the field settings,  the `Parent Option` triggers an Ajax request to populate the child options on `change` event.
+  * Updates `um.min.js` file.
+  * Updates `en_US` translation file.
+
+* Bugfixes:
+  *  Removes notices from WPCLI console.
+  *  Removes notices from edit profile mode
+  *  Removes autocomplete from search filter fields
+  *  Fix translation strings of search filters on a member directory
+  *  Fix email notifications not sending on registration process
+  *  Fix field selection with special characters on form submission
+  *  Fix assigning of role on register submission process
+
+= 1.3.72: October 10, 2016 =
+
+* Enhancements:
+  *  Improves the bulk filters, actions and redirection in `User Screens`
+  *  Adds new access options to disallow access on homepage and category pages. 
+  *  Adds Textarea to show in profile tagline on Member Directory
+  * Adds a filter hook `um_allow_frontend_image_uploads` to allow profile and cover photo uploads on front-end pages.
+  * Adds new filter hooks to modify image field data on upload: 
+      * `um_image_handle_global__option`
+      * `um_image_handle_{$field}__option`
+  * Adds a new filter hook to modify the redirection of non logged in users who visit the parent user page.
+     * `um_locate_user_profile_not_loggedin__redirect`
+  * Improves generate dummies tool with `wp_remote_get`
+  * Adds a new action hook for a new section in cover area:
+     * `um_cover_area_content`
+  * Updates the English translation .po and .mo files.
+  * Improves the shortcode `um_show_content` to swap the `user_id` with the current profile.
+
+* Bugfixes:
+  *  Fixes a bug where multi-select field options doesn't match the user selected options that contain html entities.
+  *  Fixes a bug to display correct role slugs in radio and select fields.
+  *  Fixes a bug where reset password form is conflicting with register and login form on a page.
+  *  Fixes a bug where Users queue count in the Admin > `All Users / Users` menu doesn't update when a user account is in `pending user review` and gets deleted.
+  * Fixes a typo in Password Reset Email option's description
+  * Fixes a bug where conditional fields 'equals to' validation on registration process
+  * Fixes a bug to disable the query with hiding account on member directory
+  * Fixes a bug to retrieve specific number of members 
+  * Fixes a bug to retrieve all members with `get_members` new parameter `number`
+  * Fixes a typo in Welcome Email template.
+  * Fixes a bug where login form redirection is set to `wp-admin/admin-ajax.php` instead of the current page when loaded via ajax.
+  * Fixes a bug where uninstall link doesn't load.
+  * Fixes a bug to redirect users to correct URL after login based from login options.
+  * Fixes a bug where non-logged in users are not able to access the profile page when `Global Site Access` is set to `Site accessible to Logged In Users`.
+  * Fixes a bug to modify the login redirection url especially when DOING_AJAX is defined.
+  * Fixes a bug to retrieve correct community roles per site in a Multisite Network setup.
+  
 = 1.3.71: September 12, 2016 =
 
 * Enhancements: 

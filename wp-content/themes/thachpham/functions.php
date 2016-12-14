@@ -280,6 +280,9 @@ function thachpham_script() {
 	
 	wp_register_script('jssor-script', THEME_URL. "/jssor.slider-21.1.6.min.js", array('jquery'));
 	wp_enqueue_script('jssor-script');
+	
+	wp_register_script('google-map-script', "https://maps.googleapis.com/maps/api/js?key=AIzaSyBK2AXcHa6l2tTR_8t0lpPIRzAQXxw6BdU&callback=initMap", array());
+	wp_enqueue_script('google-map-script');
 }
 add_action('wp_enqueue_scripts', 'thachpham_script');
 
@@ -473,4 +476,8 @@ if (!function_exists('dothi_get_top_news')) {
          if ( 0 === strpos( $link, get_option( 'home' ) ) )
              unset($links[$l]); }
          add_action( 'pre_ping', 'disable_self_trackback' );
- 
+
+ function register_my_menu() {
+		register_nav_menu('header-menu',__( 'Header Menu' ));
+}
+add_action( 'init', 'register_my_menu' );

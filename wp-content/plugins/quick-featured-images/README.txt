@@ -3,8 +3,8 @@ Contributors: Hinjiriyo
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2KUW27NECWVWJ
 Tags: add, arabic, assign, associate, attach, attachment, attachments, audio, audios, author, auto, automatic, batch, brazilian, bulk, categories, category, change, column, control, custom post type, custom post types, custom taxonomies, custom taxonomy, date, dates, default, define, delete, detach, exchange, featured, featured image, featured images, filter, gallery, galleries, image, image size, images, mass, media, mime, multimedia, nextgen, pages, parent page, period, português do brasil, portuguese, post type, post types, posts, quick, random, rapid, remove, replace, rules, search, set, standard, tag, taxonomies, taxonomy, thumb, thumbnail, thumbnails, thumbs, time, unset, update, user, video, videos, spanish, español, deutsch, german
 Requires at least: 3.8
-Tested up to: 4.6.1
-Stable tag: 12.1.1
+Tested up to: 4.7
+Stable tag: 12.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -278,6 +278,12 @@ If you want to contribute a translation of the plugin in your language it would 
 
 == Changelog ==
 
+= 12.2 =
+* Added in 'Set, replace, remove': server configuration to avoid PHP timeout and memory limitation in most cases
+* Fixed deprecated jquery live()
+* Adjusted texts for WP 4.7
+* Tested successfully with WordPress 4.7
+
 = 12.1.1 =
 * Fixed warning about undefined variable in Presets
 * Revised german translation
@@ -393,203 +399,11 @@ Added spanish translation for the main texts of the plugin
 * Corrected CSS height for images in image column to keep the aspect ratio
 * Updated *.pot file and german translation
 
-= 9.1 =
-* Added in 'Set, replace, remove': Option to find first image in WP galleries
-* Added in 'Set, replace, remove': Informations about type and status of each post in preview list
-* Fixed in 'Set, replace, remove': Only some assigned featured images were displayed; now all assigned images are displayed
-* Fixed in 'Set, replace, remove': Hilited wrong step in process bar when user skips filters; now correct hilite
-* Fixed in 'Image Columns': No more warning if no option was checked
-* Slight design improvement on the post type filter
-* Improved performance of preview list
-* Adopted new core strings of WP 4.1
-* Updated *.pot file and german translation
-
-= 9.0 =
-* Tested successfully with WP 4.1, especially the improved queries
-* Added in 'Set, replace, remove': New filter 'Multimedia File Filter' for audio and video file types
-* Added in 'Set, replace, remove': Option to ignore posts with featured images and consider only posts without any featured image
-* Added in posts lists: Featured Image columns in posts lists are now sortable by image
-* Fixed in 'Set, replace, remove': If no post type was selected in the post type filter all posts were returned as result; now no posts are returned as expected
-* Fixed in 'Set, replace, remove': If a post had no title the link to this post was missing in the result lists; now a link with default '(no title)' is displayed
-* Fixed in 'Set, replace, remove': If an image and the action 'Add first post image' were selected the design on the following pages was destroyed
-* Improved performance in 'Set, replace, remove' for the result lists
-* Changed sidebar content
-* Updated *.pot file and german translation
-
-= 8.3.1 =
-* Fixed in 'Image Columns': bug which displayed undesired thumbnail columns. Please reset your image column settings.
-* Tested successfully with WordPress 4.0.1
-* Revised headlines in start page of 'Set, replace, remove' for better comprehension
-* Updated *.pot file and german translation
-
-= 8.3 =
-* Fixed bug in 'Preset Featured Images' which prevented to recognize the first content image
-* Improved algorithm for better detection of the id of the first content image
-* Improved SQL performance in 'Set, replace, delete'
-* Improved security by changing `(int)` to `absint()` for ID variables
-* Fixed typo in german translation
-
-= 8.2.2 =
-* Added rule at the presets to overwrite existing featured images or to keep them by default
-* Fixed bug at the presets where a rule based on a user could be ignored
-* Updated *.pot file and german translation
-
-= 8.2.1 =
-* Successfully tested with WordPress 4.0
-* Added icons for plugin search
-* Changed order of links for this plugin on plugin list
-
-= 8.2 =
-* Added in 'Preset Featured Images': author as taxonomy
-* Added in 'Set, replace, remove' a help text for the case of a white blank page while treating thousands of posts
-* Improved in 'Preset Featured Images': featured image is set when a new post is created, so the rules work with auto-posting / auto-blogging plugins (aggregators)
-* Improved uninstall routine
-* Tested successfully with WordPress 3.9.2
-* Updated *.pot file and german translation
-
-= 8.1 =
-* Added option to use the first content image as featured image only if there is no featured image
-* Fixed empty pulldown menu on 'Preset Featured Images' if values have apostrophes
-* Fixed PayPal button if WordPress locale value is not supported by PayPal
-* Improved robustness and security of code for page 'Preset Featured Images'
-* Renamed sub menu page 'Settings' to 'Image Columns'
-* Changed illustration on page 'Image Columns'
-* Updated *.pot file and german translation
-* Updated screenshots
-
-= 8.0 =
-* Added the functionality of auto set featured images for new posts based on user defined rules
-* Added a sub menu page 'Preset Featured Images'
-* Updated menu page 'Overview'
-* Moved menu item near menu item 'Media'
-* Tested JavaScript in Opera, Firefox, Chrome and Internet Explorer
-* Fixed wrong behaviour on Customize page if both image selection buttons were clicked
-* Fixed HTML content section of custom taxonomies filter
-* Updated uninstall file
-* Updated *.pot file and german translation
-* Added screenshot of page 'Preset Featured Images'
-
-= 7.0 =
-* Added a top level menu item 'Featured Images'
-* Added a sub menu page 'Overview'
-* Added a sub menu page 'Settings'
-* Added a sub menu page 'Customize', moved the former menu link 'Media' - 'Quick Featured Images' to there
-* Added additional image column in lists of posts for assigned featured images
-* Added additional image column in lists of pages
-* Added additional image column in lists of thumbnail supporting custom post types
-* Added options to switch each of the additional image columns on or off
-* Added uninstall file
-* Raised the lowest required WordPress version from 3.7 to 3.8 because of the use of dashicons
-* Significant refactoring
-* Fixed width of selected image on the plugin's start page
-* Fixed error message for too old WordPress version
-* Tested on localized WordPress installations
-* Updated *.pot file and german translation
-* Updated screenshots
-
-= 6.0 =
-* Added action: Set multiple selected images as featured images randomly
-* Revised layout of the plugin's start page
-* Updated *.pot file and german translation
-
-= 5.1.1 =
-* Added a notice to the image selection button for the case of not working.
-* Tiny text changes
-* Refactoring for the image search function
-* Updated *.pot file and german translation
-
-= 5.1 =
-* Added: Column in the preview list for the future featured image
-* Added: Option whether to overwrite existing featured images or not
-* Added: User selected filters and options in the information section
-* Changed: Setting no filters jumps directly to confirmation page instead of displaying an error message
-* Improved: Search for first image in posts finds more images
-* Improved: Selected featured images which should be replaced are remembered if the user goes back to selection page
-* Updated *.pot file and german translation
-
-= 5.0 =
-* Added action: Take the first image in a post as featured image
-* Updated *.pot file and german translation
-
-= 4.1.2 =
-Fixed bug on using custom taxonomies
-
-= 4.1.1 =
-Fixed an insufficient security check which prevented to set a featured image
-
-= 4.1 =
-* Added link &quot;Bulk set as featured image&quot; under each image in the media library
-* Changed hard coded plugin name to variable
-* Tested with WordPress 3.9.1
-* Updated *.pot file and german translation
-
-= 4.0 =
-* Added new filter &quot;Filter by Time Specifications&quot;: Search in time periods on a year-month base
-* Improved page speed at both the preview list and the result list
-* Improved style for smartphones
-* Updated *.pot file and german translation
-
-= 3.2.1 =
-* Added message after activation about the plugin's location in the backend
-* Updated *.pot file and german translation
-
-= 3.2 =
-* Added thumbnails of current assigned featured images both in the preview and the result lists
-* Design adjustment for links
-* Updated *.pot file and german translation
-
-
-= 3.1.1 =
-* Fixed useless listing of custom post types which do not support thumbnails
-
-= 3.1 =
-* Fixed missing merge of post types and custom post types as default if post type filter was not selected
-* Changed the style to be based more on WP standard style
-* Changed selection modus for images to be replaced from single to multiple
-* Changed names of custom post types into their more readable labels
-* Changed names of custom taxonomies into their more readable labels
-* Changed notice for untouched posts from &quot;failed&quot; to &quot;unconsidered&quot;
-* Moved notice of selected action to the right of the selected image
-* Updated *.pot file and german translation
-
-= 3.0.2 =
-* Fixed broken search filter
-
-= 3.0.1 =
-* Fixed: error message after plugin activation
-* Fixed: no images in the image library
-* Fixed: PHP error searching for posts in the backend
-* Deleted uninstall.php to avoid a confusing uninstall message
-
-= 3.0 =
-* Added new filter &quot;Filter by Custom Taxonomies&quot;
-* Changed default post types: ALL posts, pages and custom post types are included in the search by default 
-* Changed default selection in drop down selection lists into &quot;nothing selected&quot;
-* Updated *.pot file and german translation
-* Improved performance
-* Improved design of confirmation page
-* Revised functions
-
-= 2.0.2 =
-* Revised SQL statement for featured image size filter
-
-= 2.0.1 =
-* Fixed missing headline on confirmation page if action &quot;remove any image&quot; was selected
-* Updated *.pot file and german translation
-
-= 2.0 =
-* Added new action &quot;Remove any image&quot;
-* Added new filter &quot;Filter by Featured Image Size&quot;
-* Added error notice if no image of the image replacement list was selected
-* Changed design of the plugin's start page. I hope you find it more useful
-* Improved processing speed of found posts
-* Improved performance
-* Improved security for input data and URLs
-
-= 1.0 =
-* The plugin was released.
 
 == Upgrade Notice ==
+
+= 12.2 =
+Added prevention of PHP timeout and memory limitation, fixed live(), considered WordPress 4.7
 
 = 12.1.1 =
 Fixed warning about undefined variable in Presets
@@ -647,84 +461,3 @@ Improved performance of confirmation step and better security, tested with WP 4.
 
 = 10.0 =
 Introducing premium version Quick Featured Images Pro, corrected CSS
-
-= 9.1 =
-Added option in 'Set, replace, remove' to find first image in galleries, fixed bug and warning, some improvements
-
-= 9.0 =
-Tested successfully with WP 4.1, added filter for audio and video file types in 'Set, replace, remove', made Featured Image column sortable by image, fixed minor bugs.
-
-= 8.3.1 =
-Tiny text revision and fixed bug which displayed undesired thumbnail columns. Please reset your image column settings.
-
-= 8.3 =
-Bugfixing and improvements for detecting the first image in post contents
-
-= 8.2.2 =
-Added rule at the presets to keep existing featured images. Please refine your preset rules if you use the &quot;first content image rule&quot;!
-
-= 8.2.1 =
-Successfully tested with WordPress 4.0, added icons for plugin search
-
-= 8.2 =
-Improved presets, improved uninstall routine, tested with WordPress 3.9.2
-
-= 8.1 =
-Added option to use the first content image as featured image only if there is no featured image; more robust and secure code for page 'Preset Featured Images'
-
-= 8.0 =
-Added the functionality of auto set featured images for new posts based on user defined rules and a new sub menu page 'Default Images'
-
-= 7.0 =
-Added: new top level menu item, column for featured images in lists of posts, options page
-
-= 6.0 =
-New action: Set multiple selected images as featured images randomly
-
-= 5.1.1 =
-Added a notice to the image selection button for the case of not working.
-
-= 5.1 =
-New option and many user interface improvements
-
-= 5.0 =
-Added action: Take the first image in a post as featured image
-
-= 4.1.2 =
-Fixed bug on using custom taxonomies
-
-= 4.1.1 =
-Fixed security check
-
-= 4.1 =
-Added link &quot;Bulk set as featured image&quot; under each image in the media library. Tested with WordPress 3.9.1
-
-= 4.0 =
-Added new filter &quot;Filter by Time Specifications&quot;: Search in time periods on a year-month base. Improved page speed at both the preview list and the result list. Improved style for smartphones
-
-= 3.2.1 =
-More orientation: After activation of this plugin a message tells you where you can find the plugin in the WordPress backend.
-
-= 3.2 =
-Better overview: Now you can see both in the preview and the result lists the current assigned featured image of each post.
-
-= 3.1.1 =
-Fixed useless listing of custom post types which do not support thumbnails
-
-= 3.1 =
-Many improvements of the user interface in style and labeling. Now you can select multiple images to be replaced instead of only a single one. Fixed some minor errors
-
-= 3.0.2 =
-Now the filter by search term works properly again.
-
-= 3.0.1 =
-Fixed error message after plugin activation and missed images in the library
-
-= 3.0 =
-Added new filter &quot;Filter by Custom Taxonomies&quot;. Be aware of the changed default behaviour: ALL posts, pages and custom post types are included in the search by default. Improved performance. Improved design of confirmation page
-
-= 2.0 =
-Many improvements and additions
-
-= 1.0 =
-No upgrades, just the first release.

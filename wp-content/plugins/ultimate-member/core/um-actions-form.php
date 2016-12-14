@@ -158,10 +158,34 @@
 	        $ultimatemember->form->add_error('profile_photo', sprintf(__('%s is required.','ultimatemember'), 'Profile Photo' ) );
 	    }
 
-		if( isset(  $fields ) && ! empty(  $fields ) ){
+	   
+	   if( isset(  $fields ) && ! empty(  $fields ) ){
 			foreach( $fields as $key => $array ) {
 
 				$array = apply_filters('um_get_custom_field_array', $array, $fields );
+				
+				if( isset( $array ['conditions'] ) && ! empty(  $array ['conditions'] )  ){ 
+					
+					foreach( $array ['conditions'] as $condition ){
+						
+						$visibility = $condition[0];
+						$parent_key = $condition[1];
+						$op = $condition[2];
+						$parent_value = $condition[3];
+						
+						if( $visibility == 'hide' ){
+							if( $op == 'equals to' ){
+
+								if( $args[ $parent_key ] == $parent_value ){
+										continue 2; 
+								}
+							
+							}
+						}
+
+					}
+					
+				}
 
 				if ( isset( $array['type'] ) && $array['type'] == 'checkbox' && isset( $array['required'] ) && $array['required'] == 1 && !isset( $args[$key] ) ) {
 					$ultimatemember->form->add_error($key, sprintf(__('%s is required.','ultimatemember'), $array['title'] ) );
@@ -361,11 +385,17 @@
 
 								if ( in_array( $key, array('user_email') ) ) {
 
+									if( ! isset( $args['user_id'] ) ){
+										$args['user_id'] = um_get_requested_user();
+									}
+
+									$email_exists =  email_exists( $args[$key] );
+
 									if ( $args[$key] == '' && in_array( $key, array('user_email') ) ) {
 										$ultimatemember->form->add_error($key, __('You must provide your email','ultimatemember') );
-									} else if ( in_array( $mode, array('register') )  && email_exists( $args[$key] )  ) {
+									} else if ( in_array( $mode, array('register') )  && $email_exists  ) {
 										$ultimatemember->form->add_error($key, __('This email is already linked to an existing account','ultimatemember') );
-									} else if ( in_array( $mode, array('profile') )  && email_exists( $args[$key] ) != $args['user_id']  ) {
+									} else if ( in_array( $mode, array('profile') )  && $email_exists && $email_exists != $args['user_id']  ) {
 										$ultimatemember->form->add_error($key, __('This email is already linked to an existing account','ultimatemember') );
 									} else if ( !is_email( $args[$key] ) ) {
 										$ultimatemember->form->add_error($key, __('This is not a valid email','ultimatemember') );

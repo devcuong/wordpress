@@ -4,7 +4,7 @@ jQuery( document ).ready( function( $ ){
 	 * bind the media uploader at current and future ( 'live()' ) image upload buttons
 	 * single image selection
 	 */	 
-    $( '.qfi_set_fi' ).live( 'click', function( e ) {
+	$( document ).on( 'click', '.qfi_set_fi', function( e ) {
 		
 		e.preventDefault();
 
@@ -58,7 +58,7 @@ jQuery( document ).ready( function( $ ){
 	 * remove featured image from post and
 	 * display 'set image' link
 	 */	 
-	$( '.qfi_delete_fi' ).live( 'click', function( e ) {
+	$( document ).on( 'click', '.qfi_delete_fi', function( e ) {
 		
 		e.preventDefault();
 
