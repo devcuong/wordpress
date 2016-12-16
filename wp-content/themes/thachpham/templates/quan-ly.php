@@ -16,7 +16,7 @@
                 <?php endif; ?>
     </div>
     <div id="sidebar">  
-        day la sidebar
+        <?php get_sidebar("manage-right") ?>
     </div>
 </div>
 <?php get_footer(); ?>
