@@ -67,6 +67,7 @@
                 'after_title' => '</h3>'
             );
             register_sidebar( $sidebar );
+			/* Tạo sidebar cho page phụ */
         }
         add_action('init', 'thachpham_theme_setup');
     }
