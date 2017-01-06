@@ -645,3 +645,48 @@ blockquote.right {
 }
 
 /*--sidebar trang quan ly--*/
+.page-title {
+    background: #055699;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    margin-top: 2px;
+    padding-left: 10px;
+    text-transform: uppercase;
+    width: 100%;
+}
+.page-content{
+	background-color: #ffffff;
+}
+.tbl {
+    border-collapse: collapse;
+    color: #666;
+	width: 100%;
+}
+/*--phan trang--*/
+ul.pagination {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+
+ul.pagination li {
+	display: inline;
+}
+
+ul.pagination li a {
+	color: black;
+	float: left;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+ul.pagination li a.active {
+    background-color: #055699;
+    color: white;
+}
+
+ul.pagination li a:hover:not(.active) {background-color: #ddd;}
