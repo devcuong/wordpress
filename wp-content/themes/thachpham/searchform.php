@@ -49,9 +49,6 @@ function removeQuanHuyen(){
 	  length = select.options.length;
 }
 }	
-$(document).ready(function() {
-  $('#selLoaiNhaDat').niceSelect();
-});
 </script>
 <form method="get" id="advanced-searchform" role="search"
 	action="<?php echo esc_url( home_url( '/' ) ); ?>">
@@ -63,7 +60,7 @@ $(document).ready(function() {
 			name="name" id="name" /><br>
 	</div>
 	<!-- Chon Loai Nha Dat -->
-	<select name="ld" id="selLoaiNhaDat" style="display: none;">
+	<select name="ld" id="selLoaiNhaDat">
 		<option value=""><?php _e( '--Chọn Loại Nhà Đất--', 'thachpham' ); ?></option>
 		<option value="ban_can_ho_chung_cu"><?php _e( 'Bán căn hộ chung cư', 'thachpham' ); ?></option>
 		<option value="ban_nha_rieng"><?php _e( 'Bán nhà riêng', 'thachpham' ); ?></option>
