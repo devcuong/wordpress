@@ -68,6 +68,15 @@
             );
             register_sidebar( $sidebar );
 			/* Tạo sidebar cho page phụ */
+            $extraSidebar = array(
+                'name' => __('Extra Sidebar', 'thachpham'),
+                'id' => 'extra-sidebar',
+                'description' => __('Extra sidebar'),
+                'class' => 'extra-sidebar',
+                'before_title' => '<h3 class="widget-title">',
+                'after_title' => '</h3>'
+            );
+            register_sidebar( $extraSidebar );
         }
         add_action('init', 'thachpham_theme_setup');
     }
@@ -139,9 +148,9 @@
        * Ham hien thi thumbnail
        * */
        if ( !function_exists('thachpham_thumbnail') ){
-            function thachpham_thumbnail($size){
+            function thachpham_thumbnail($postId){
                 if( !is_single() && has_post_thumbnail() && !post_password_required() || has_post_format('image')) : ?>
-                <?php the_post_thumbnail( $size ); ?>
+                <?php echo get_the_post_thumbnail($postId, array( 150, 200)); ?>
             <?php endif; ?>
             <?php }
        }
@@ -202,7 +211,6 @@
           if (!function_exists('thachpham_entry_content')) {
             function thachpham_entry_content(){
               if ( !is_single() && !is_page() ) {
-                //the_excerpt();
                   echo "<div class='other'>";
                   echo "<div class='price'>";
                   echo "<label>Giá<span>:</span></label>1.5 Tỷ</div>";
@@ -216,14 +224,8 @@
                   echo "<span class='date'>";
                   echo "14/11/2016</span>";
               } else {
-                
-                if(is_page('dang-tin') || is_page('members') || is_page('dashboard')){
                     the_content();
-                }
-                else{
-                    the_content();
-                    /* echo get_the_content(); */
-                }             
+                /* echo get_the_content(); */         
                 /* Phan trang trong single */
                 $link_pages = array(
                 'before' => __('<p>Page: ', 'thachpham'),

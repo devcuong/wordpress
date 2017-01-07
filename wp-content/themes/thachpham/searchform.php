@@ -59,6 +59,7 @@ function removeQuanHuyen(){
 			placeholder="<?php _e( 'Nhập từ khóa muốn tìm', 'thachpham' ); ?>"
 			name="name" id="name" /><br>
 	</div>
+	<div class="search-or"></div>
 	<!-- Chon Loai Nha Dat -->
 	<select name="ld" id="selLoaiNhaDat">
 		<option value=""><?php _e( '--Chọn Loại Nhà Đất--', 'thachpham' ); ?></option>

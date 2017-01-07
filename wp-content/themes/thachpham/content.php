@@ -89,7 +89,7 @@
     </style>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
     <div class="entry-thumbnail">
-        <?php thachpham_thumbnail('thumbnail'); ?>
+        <?php thachpham_thumbnail(get_the_ID()); ?>
     </div>
     <div class="entry-header">
         <?php thachpham_entry_header(); ?>
