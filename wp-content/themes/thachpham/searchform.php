@@ -54,13 +54,14 @@ function removeQuanHuyen(){
 	action="<?php echo esc_url( home_url( '/' ) ); ?>">
 	<!-- PASSING THIS TO TRIGGER THE ADVANCED SEARCH RESULT PAGE FROM functions.php -->
 	<input type="hidden" name="search" value="advanced">
-	<div class="input1" id="KeyDownEnterHome">
+	<div class="input1" id="DivKeySearch">
 		<input type="text" value=""
 			placeholder="<?php _e( 'Nhập từ khóa muốn tìm', 'thachpham' ); ?>"
 			name="name" id="name" /><br>
 	</div>
 	<div class="search-or"></div>
 	<!-- Chon Loai Nha Dat -->
+	<div id="category-select-real" class="advanced-selection">
 	<select name="ld" id="selLoaiNhaDat">
 		<option value=""><?php _e( '--Chọn Loại Nhà Đất--', 'thachpham' ); ?></option>
 		<option value="ban_can_ho_chung_cu"><?php _e( 'Bán căn hộ chung cư', 'thachpham' ); ?></option>
@@ -73,17 +74,22 @@ function removeQuanHuyen(){
 		<option value="ban_kho_nha_xuong"><?php _e( 'Bán kho, nhà xưởng', 'thachpham' ); ?></option>
 		<option value="ban_bat_dong_san_khac"><?php _e( 'Bán các loại bất động sản khác', 'thachpham' ); ?></option>
 	</select>
+	</div>
 	<!-- Chon Thanh Pho -->
+	<div id="city-select-real" class="advanced-selection">
 	<select name="tp" id="selThanhPho" onchange="changeThanhPho()">
 		<option value=""><?php _e( '--Chọn Thành Phố--', 'thachpham' ); ?></option>
-	</select><br>
+	</select>
+	</div>
 	<!-- Chon Quan Huyen -->
+    <div id="district-select-real" class="advanced-selection">
 	<select name="qh" id="selQuanHuyen">
 		<option value=""><?php _e( '--Chọn Quận Huyện--', 'thachpham' ); ?></option>
-	</select><br>
-
+	</select>
+    </div>
 	<!-- Chon Dien Tich -->
-	<select name="dt" id="selDienTich">
+	<div id="area-select-real">
+	<select name="dt" id="selDienTich" class="advanced-selection">
 		<option value=""><?php _e( '--Chọn Diện Tích--', 'thachpham' ); ?></option>
 		<option value="chua_xac_dinh"><?php _e( 'Chưa xác định', 'thachpham' ); ?></option>
 		<option value="nho_hon_30_m2"><?php _e( '<= 30 m2', 'thachpham' ); ?></option>
@@ -96,9 +102,10 @@ function removeQuanHuyen(){
 		<option value="250_toi_300_m2"><?php _e( '250 - 300 m2', 'thachpham' ); ?></option>
 		<option value="300_toi_500_m2"><?php _e( '300 - 500 m2', 'thachpham' ); ?></option>
 		<option value="lon_hon_500_m2"><?php _e( '>= 500 m2', 'thachpham' ); ?></option>
-	</select><br>
-
+	</select>
+	</div>
 	<!-- Chon Muc Gia -->
+	<div  >
 	<select name="gd" id="selGiaNhaDat">
 		<option value=""><?php _e( '--Chọn Mức Giá--', 'thachpham' ); ?></option>
 		<option value="gia_thoa_thuan"><?php _e( 'Thỏa thuận', 'thachpham' ); ?></option>
@@ -113,5 +120,7 @@ function removeQuanHuyen(){
 		<option value="tu_10_toi_20_ty"><?php _e( '10 - 20 tỷ', 'thachpham' ); ?></option>
 		<option value="tu_20_toi_30_ty"><?php _e( '20 - 30 tỷ', 'thachpham' ); ?></option>
 		<option value="lon_hon_30_ty"><?php _e( '> 30 tỷ', 'thachpham' ); ?></option>
-	</select><br> <input type="submit" id="searchsubmit" value="Search" />
+	</select>
+	</div>
+	<input type="submit" id="searchsubmit" value="Search" />
 </form>

@@ -106,6 +106,9 @@
         <?php  thachpham_entry_content(); 	 ?>
         <?php ( is_single() ? thachpham_entry_tag() : '' ) ?>
     </div>
+    <div class="entry-viewed">
+        <?php  thachpham_entry_count_viewed(get_the_ID()); 	 ?>
+    </div>
     <?php if (is_single()) { ?>
     <div class="entry-slide">
      <?php dothi_get_image_slide() ?>

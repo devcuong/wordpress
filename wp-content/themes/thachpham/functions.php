@@ -150,7 +150,7 @@
        if ( !function_exists('thachpham_thumbnail') ){
             function thachpham_thumbnail($postId){
                 if( !is_single() && has_post_thumbnail() && !post_password_required() || has_post_format('image')) : ?>
-                <?php echo get_the_post_thumbnail($postId, array( 150, 200)); ?>
+                <?php echo get_the_post_thumbnail($postId, array( 80, 80)); ?>
             <?php endif; ?>
             <?php }
        }
@@ -221,24 +221,28 @@
                   echo "Quận 9 - Hồ Chí Minh";
                   echo "</div>";
                   echo "</div>";
-                  echo "<span class='date'>";
-                  echo "14/11/2016</span>";
+                  echo "<div class='date'>";
+                  echo "14/11/2016</div>";
               } else {
                     the_content();
                 /* echo get_the_content(); */         
-                /* Phan trang trong single */
-                $link_pages = array(
-                'before' => __('<p>Page: ', 'thachpham'),
-                'after' => '</p>',
-                'nextpagelink' => __('Next Page', 'thachpham'),
-                'previouspagelink' => __('Previous Page', 'thachpham')
-                );
-                wp_link_pages( $link_pages );
                 
               }
             }
         }
-        
+        /**
+         * Ham hien thi dem luot xem cua tin
+         * */
+        if (!function_exists('thachpham_entry_count_viewed')) {
+            function thachpham_entry_count_viewed($postID){
+                if ( !is_single() && !is_page() ) {
+                    $count_key = 'wpb_post_views_count';
+                    $count = get_post_meta($postID, $count_key, true);
+                    echo "<div class='count-viewed'><label>Lượt xem: </label>";
+                    echo $count."</div>";
+                }
+            }
+        }
         /**
          * Them read more
          * */
