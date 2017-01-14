@@ -53,6 +53,7 @@ function removeQuanHuyen(){
 <form method="get" id="advanced-searchform" role="search"
 	action="<?php echo esc_url( home_url( '/' ) ); ?>">
 	<!-- PASSING THIS TO TRIGGER THE ADVANCED SEARCH RESULT PAGE FROM functions.php -->
+	<div id="searchArea" style="overflow: scroll;" >
 	<input type="hidden" name="search" value="advanced">
 	<div class="input1" id="DivKeySearch">
 		<input type="text" value=""
@@ -88,7 +89,7 @@ function removeQuanHuyen(){
 	</select>
     </div>
 	<!-- Chon Dien Tich -->
-	<div id="area-select-real">
+	<div id="area-select-real" class="advanced-selection">
 	<select name="dt" id="selDienTich" class="advanced-selection">
 		<option value=""><?php _e( '--Chọn Diện Tích--', 'thachpham' ); ?></option>
 		<option value="chua_xac_dinh"><?php _e( 'Chưa xác định', 'thachpham' ); ?></option>
@@ -105,7 +106,7 @@ function removeQuanHuyen(){
 	</select>
 	</div>
 	<!-- Chon Muc Gia -->
-	<div  >
+	<div id="price-select-real" class="advanced-selection">
 	<select name="gd" id="selGiaNhaDat">
 		<option value=""><?php _e( '--Chọn Mức Giá--', 'thachpham' ); ?></option>
 		<option value="gia_thoa_thuan"><?php _e( 'Thỏa thuận', 'thachpham' ); ?></option>
@@ -121,6 +122,22 @@ function removeQuanHuyen(){
 		<option value="tu_20_toi_30_ty"><?php _e( '20 - 30 tỷ', 'thachpham' ); ?></option>
 		<option value="lon_hon_30_ty"><?php _e( '> 30 tỷ', 'thachpham' ); ?></option>
 	</select>
+	</div>
+	<div id="ward-select-real" class="advanced-selection" style="display: block;"> 
+		<select name="px" id="selPhuongXa" >
+			<option value=""><?php _e( '--Chọn Phường Xã--', 'thachpham' ); ?></option>
+		</select>
+	</div>
+	<div id="street-select-real" class="advanced-selection" style="display: block;"> 
+		<select name="dp" id="selPhuongXa">
+			<option value=""><?php _e( '--Chọn Đường Phố--', 'thachpham' ); ?></option>
+		</select>
+	</div>
+	<div id="room-select-real" class="advanced-selection" style="display: block;"> 
+		<select name="sp" id="selPhuongXa">
+			<option value=""><?php _e( '--Chọn Số Phòng--', 'thachpham' ); ?></option>
+		</select>
+	</div>
 	</div>
 	<input type="submit" id="searchsubmit" value="Search" />
 </form>
