@@ -103,7 +103,7 @@ function wpuf_settings_fields() {
             array(
                 'name'    => 'insert_photo_size',
                 'label'   => __( 'Insert Photo image size', 'wpuf' ),
-                'desc'    => __( 'Default image size of "<strong>Insert Photo</strong>" button in post content area', 'wpuf' ),
+                'desc'    => __( 'Default image size of "<strong>Thêm hình ảnh</strong>" button in post content area', 'wpuf' ),
                 'type'    => 'select',
                 'options' => wpuf_get_image_sizes(),
                 'default' => 'thumbnail'
@@ -111,7 +111,7 @@ function wpuf_settings_fields() {
             array(
                 'name'  => 'insert_photo_type',
                 'label' => __( 'Insert Photo image type', 'wpuf' ),
-                'desc'  => __( 'Default image type of "<strong>Insert Photo</strong>" button in post content area', 'wpuf' ),
+                'desc'  => __( 'Default image type of "<strong>Thêm hình ảnh</strong>" button in post content area', 'wpuf' ),
                 'type'  => 'select',
                 'options' => array(
                     'image' => __( 'Image only', 'wpuf' ),

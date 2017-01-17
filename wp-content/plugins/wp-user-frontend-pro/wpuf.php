@@ -270,7 +270,7 @@ class WP_User_Frontend {
             ?>
             <script type="text/javascript" id="wpuf-language-script">
                 var error_str_obj = {
-                    'required' : '<?php _e( 'is required', 'wpuf' ); ?>',
+                    'required' : '<?php _e( 'không được bỏ trống', 'wpuf' ); ?>',
                     'mismatch' : '<?php _e( 'does not match', 'wpuf' ); ?>',
                     'validation' : '<?php _e( 'is not valid', 'wpuf' ); ?>'
                 }
@@ -332,7 +332,7 @@ class WP_User_Frontend {
 
         wp_localize_script( 'wpuf-form', 'wpuf_frontend', array(
             'ajaxurl'       => admin_url( 'admin-ajax.php' ),
-            'error_message' => __( 'Please fix the errors to proceed', 'wpuf' ),
+            'error_message' => __( 'Xin hãy nhập đầy đủ thông tin', 'wpuf' ),
             'nonce'         => wp_create_nonce( 'wpuf_nonce' )
         ) );
 

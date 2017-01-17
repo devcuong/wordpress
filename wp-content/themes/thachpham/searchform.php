@@ -48,22 +48,52 @@ function removeQuanHuyen(){
 	  select.options[i] = null;
 	  length = select.options.length;
 }
-}	
+}
+$(document).ready(function(){
+    $("#lblSearch").click(function(){
+        if($(this).html() == "Tìm nâng cao"){
+        	$(this).html("Bỏ tìm");
+            $("#searchArea").css("overflow","scroll");
+            $("#searchArea").css("overflow-x","hidden");
+            // 
+            $("#ward-select-real").css("display","block");
+            $("#street-select-real").css("display","block");
+            $("#room-select-real").css("display","block");
+            $("#direction-select-real").css("display","block");
+            $("#project-select-real").css("display","block");
+        }else{
+        	$(this).text("Tìm nâng cao");
+            $("#searchArea").css("overflow","hidden");
+            $("#searchArea").css("overflow-x","hidden");
+            // 
+            $("#ward-select-real").css("display","none");
+            $("#street-select-real").css("display","none");
+            $("#room-select-real").css("display","none");
+            $("#direction-select-real").css("display","none");
+            $("#project-select-real").css("display","none");   
+        }
+    });
+});
 </script>
 <form method="get" id="advanced-searchform" role="search"
 	action="<?php echo esc_url( home_url( '/' ) ); ?>">
 	<!-- PASSING THIS TO TRIGGER THE ADVANCED SEARCH RESULT PAGE FROM functions.php -->
-	<div id="searchArea" style="overflow: scroll;" >
+	<div id="searchArea" style="overflow: hidden;" >
 	<input type="hidden" name="search" value="advanced">
-	<div class="input1" id="DivKeySearch">
+	<div class="keyword" id="DivKeySearch">
 		<input type="text" value=""
 			placeholder="<?php _e( 'Nhập từ khóa muốn tìm', 'thachpham' ); ?>"
 			name="name" id="name" /><br>
 	</div>
 	<div class="search-or"></div>
 	<!-- Chon Loai Nha Dat -->
-	<div id="category-select-real" class="advanced-selection">
-	<select name="ld" id="selLoaiNhaDat">
+	<div id="adtype-select-real" class="advanced-selection" style="display: block;">
+	<select name="lt" id="selLoaiTin" class="selSearch">
+		<option value=""><?php _e( '--Chọn Loại Tin Đăng--', 'thachpham' ); ?></option>
+	</select>
+	</div>
+	<div id="category-select-real" class="advanced-selection" style="display: block;">
+	<select name="ld" id="selLoaiNhaDat" class="selSearch">
 		<option value=""><?php _e( '--Chọn Loại Nhà Đất--', 'thachpham' ); ?></option>
 		<option value="ban_can_ho_chung_cu"><?php _e( 'Bán căn hộ chung cư', 'thachpham' ); ?></option>
 		<option value="ban_nha_rieng"><?php _e( 'Bán nhà riêng', 'thachpham' ); ?></option>
@@ -77,20 +107,20 @@ function removeQuanHuyen(){
 	</select>
 	</div>
 	<!-- Chon Thanh Pho -->
-	<div id="city-select-real" class="advanced-selection">
-	<select name="tp" id="selThanhPho" onchange="changeThanhPho()">
+	<div id="city-select-real" class="advanced-selection" style="display: block;">
+	<select name="tp" id="selThanhPho" onchange="changeThanhPho()" class="selSearch">
 		<option value=""><?php _e( '--Chọn Thành Phố--', 'thachpham' ); ?></option>
 	</select>
 	</div>
 	<!-- Chon Quan Huyen -->
-    <div id="district-select-real" class="advanced-selection">
-	<select name="qh" id="selQuanHuyen">
+    <div id="district-select-real" class="advanced-selection" style="display: block;">
+	<select name="qh" id="selQuanHuyen" class="selSearch">
 		<option value=""><?php _e( '--Chọn Quận Huyện--', 'thachpham' ); ?></option>
 	</select>
     </div>
 	<!-- Chon Dien Tich -->
-	<div id="area-select-real" class="advanced-selection">
-	<select name="dt" id="selDienTich" class="advanced-selection">
+	<div id="area-select-real" class="advanced-selection" style="display: block;">
+	<select name="dt" id="selDienTich" class="selSearch">
 		<option value=""><?php _e( '--Chọn Diện Tích--', 'thachpham' ); ?></option>
 		<option value="chua_xac_dinh"><?php _e( 'Chưa xác định', 'thachpham' ); ?></option>
 		<option value="nho_hon_30_m2"><?php _e( '<= 30 m2', 'thachpham' ); ?></option>
@@ -106,8 +136,8 @@ function removeQuanHuyen(){
 	</select>
 	</div>
 	<!-- Chon Muc Gia -->
-	<div id="price-select-real" class="advanced-selection">
-	<select name="gd" id="selGiaNhaDat">
+	<div id="price-select-real" class="advanced-selection" style="display: block;">
+	<select name="gd" id="selGiaNhaDat" class="selSearch">
 		<option value=""><?php _e( '--Chọn Mức Giá--', 'thachpham' ); ?></option>
 		<option value="gia_thoa_thuan"><?php _e( 'Thỏa thuận', 'thachpham' ); ?></option>
 		<option value="nho_hon_500_trieu"><?php _e( '< 500 triệu', 'thachpham' ); ?></option>
@@ -123,21 +153,34 @@ function removeQuanHuyen(){
 		<option value="lon_hon_30_ty"><?php _e( '> 30 tỷ', 'thachpham' ); ?></option>
 	</select>
 	</div>
-	<div id="ward-select-real" class="advanced-selection" style="display: block;"> 
-		<select name="px" id="selPhuongXa" >
+	<div id="ward-select-real" class="advanced-selection" style="display: none;"> 
+		<select name="px" id="selPhuongXa" class="selSearch" >
 			<option value=""><?php _e( '--Chọn Phường Xã--', 'thachpham' ); ?></option>
 		</select>
 	</div>
-	<div id="street-select-real" class="advanced-selection" style="display: block;"> 
-		<select name="dp" id="selPhuongXa">
+	<div id="street-select-real" class="advanced-selection" style="display: none;"> 
+		<select name="dp" id="selDuongPho" class="selSearch" >
 			<option value=""><?php _e( '--Chọn Đường Phố--', 'thachpham' ); ?></option>
 		</select>
 	</div>
-	<div id="room-select-real" class="advanced-selection" style="display: block;"> 
-		<select name="sp" id="selPhuongXa">
+	<div id="room-select-real" class="advanced-selection" style="display: none;"> 
+		<select name="sp" id="selSoPhong" class="selSearch" >
 			<option value=""><?php _e( '--Chọn Số Phòng--', 'thachpham' ); ?></option>
 		</select>
 	</div>
+	<div id="direction-select-real" class="advanced-selection" style="display: none;"> 
+		<select name="hn" id="selHuongNha" class="selSearch" >
+			<option value=""><?php _e( '--Chọn Hướng Nhà--', 'thachpham' ); ?></option>
+		</select>
 	</div>
-	<input type="submit" id="searchsubmit" value="Search" />
+	<div id="project-select-real" class="advanced-selection" style="display: none;"> 
+		<select name="da" id="selDuAn" class="selSearch" >
+			<option value=""><?php _e( '--Chọn Dự Án--', 'thachpham' ); ?></option>
+		</select>
+	</div>
+	</div>
+	<div class="timkiems">
+	   <a id="lblSearch">Tìm nâng cao</a>
+	   <input type="submit" id="searchsubmit" value="Tìm kiếm" />
+	</div>
 </form>
