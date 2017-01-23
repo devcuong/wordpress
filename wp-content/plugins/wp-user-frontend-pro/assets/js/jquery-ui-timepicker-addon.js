@@ -41,16 +41,16 @@
 		this.regional = []; // Available regional settings, indexed by language code
 		this.regional[''] = { // Default regional settings
 			currentText: 'Now',
-			closeText: 'Done',
+			closeText: 'Chọn',
 			amNames: ['AM', 'A'],
 			pmNames: ['PM', 'P'],
 			timeFormat: 'HH:mm',
 			timeSuffix: '',
 			timeOnlyTitle: 'Choose Time',
-			timeText: 'Time',
-			hourText: 'Hour',
-			minuteText: 'Minute',
-			secondText: 'Second',
+			timeText: 'Thời gian',
+			hourText: 'Giờ',
+			minuteText: 'Phút',
+			secondText: 'Giây',
 			millisecText: 'Millisecond',
 			timezoneText: 'Time Zone',
 			isRTL: false

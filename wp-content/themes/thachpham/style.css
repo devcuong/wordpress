@@ -742,6 +742,28 @@ ul.pagination li a:hover:not(.active) {background-color: #ddd;}
 }
 
 /*----------------------------------------ĐĂNG TIN----------------------------------------*/
-.radio-loai-tin .wpuf-fields input[type="radio"]:checked ~ * { 
-    background:pink !important;
+.wpuf_loai_nha_dat_ban_1506,
+.wpuf_thanh_pho_1506,
+.wpuf_dien_tich_1506,
+.wpuf_huong_nha_1506,
+.wpuf_muc_gia_1506,
+.wpuf_du_an_nha_dat_1506 { 
+    width: 250px;
+	text-align: center;
+}
+
+.wpuf_gia_nha_dat_1506{
+	width: 250px;
+}
+.wpuf_ngay_dang_tin_1506,
+.wpuf_ngay_het_han_1506
+{
+	width: 250px;
+}
+.wpuf_mat_tien_1506,
+.wpuf_so_tang_1506,
+.wpuf_so_phong_1506,
+.wpuf_so_toilet_1506,
+.wpuf_duong_vao_1506{
+	width: 150px;
 }

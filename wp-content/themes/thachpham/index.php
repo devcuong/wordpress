@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<?php get_sidebar('top-content') ?>
 <div class="content">
 <div class="col-left">
 	<?php /* get_sidebar('top-news') */?>

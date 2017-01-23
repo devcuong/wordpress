@@ -1,6 +1,6 @@
 <div class="menu-user">
-    <div class="mu-title">
-        <h3>Thông tin tài khoản</h3>
+    <div id="most_view_title" class="title_n">
+        <h3 class="widget-title">Thông tin tài khoản</h3>
     </div>
 	<ul>
 		<li class="lead"><a href="javascript:">Quản lý tin rao</a></li>

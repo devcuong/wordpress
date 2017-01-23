@@ -164,8 +164,14 @@
                 <h1>
                 	<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
                 </h1>
+                <?php elseif (is_page()) : ?>
+                <div id="most_view_title" class="title_n" >
+                <h3 class="widget-title">
+                	<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+                </h3>
+                </div>
                 <?php else : ?>
-                <h2>
+                 <h2>
                 	<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
                 </h2>
                 <?php endif ?>
@@ -283,16 +289,16 @@ add_action('wp_enqueue_scripts', 'thachpham_style');
 	/*------------- TEMPLATE JS ------------- */
 function thachpham_script() {
 	
-	wp_register_script('new-jquery', "https://code.jquery.com/jquery-3.1.1.min.js", array());
-	wp_enqueue_script('new-jquery');
+/* 	wp_register_script('new-jquery', "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js", array());
+	wp_enqueue_script('new-jquery'); */
 	
 	wp_register_script('nice-select', THEME_URL. "/jquery.nice-select.js", array());
 	wp_enqueue_script('nice-select');
 	
-	wp_register_script('custom-script', THEME_URL. "/custom.js", array('jquery'));
+	wp_register_script('custom-script', THEME_URL. "/custom.js", array());
 	wp_enqueue_script('custom-script');
 	
-	wp_register_script('jssor-script', THEME_URL. "/jssor.slider-21.1.6.min.js", array('jquery'));
+	wp_register_script('jssor-script', THEME_URL. "/jssor.slider-21.1.6.min.js", array());
 	wp_enqueue_script('jssor-script');
 	
 	wp_register_script('google-map-script', "https://maps.googleapis.com/maps/api/js?key=AIzaSyBK2AXcHa6l2tTR_8t0lpPIRzAQXxw6BdU&callback=initMap", array());
@@ -495,3 +501,14 @@ if (!function_exists('dothi_get_top_news')) {
 		register_nav_menu('header-menu',__( 'Header Menu' ));
 }
 add_action( 'init', 'register_my_menu' );
+
+//Making jQuery Google API
+function modify_jquery() {
+    if (!is_admin()) {
+        // comment out the next two lines to load the local copy of jQuery
+        wp_deregister_script('jquery');
+        wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', false, '3.1.1');
+        wp_enqueue_script('jquery');
+    }
+}
+add_action('init', 'modify_jquery');
