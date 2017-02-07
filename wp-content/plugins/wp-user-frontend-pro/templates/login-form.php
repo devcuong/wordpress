@@ -18,11 +18,11 @@
 
     <form name="loginform" class="wpuf-login-form" id="loginform" action="<?php echo $action_url; ?>" method="post">
         <p>
-            <label for="wpuf-user_login"><?php _e( 'Username', 'wpuf' ); ?></label>
+            <label for="wpuf-user_login"><?php _e( 'Tên người dùng', 'wpuf' ); ?></label>
             <input type="text" name="log" id="wpuf-user_login" class="input" value="" size="20" />
         </p>
         <p>
-            <label for="wpuf-user_pass"><?php _e( 'Password', 'wpuf' ); ?></label>
+            <label for="wpuf-user_pass"><?php _e( 'Mật khẩu', 'wpuf' ); ?></label>
             <input type="password" name="pwd" id="wpuf-user_pass" class="input" value="" size="20" />
         </p>
 
@@ -30,11 +30,11 @@
 
         <p class="forgetmenot">
             <input name="rememberme" type="checkbox" id="wpuf-rememberme" value="forever" />
-            <label for="wpuf-rememberme"><?php esc_attr_e( 'Remember Me' ); ?></label>
+            <label for="wpuf-rememberme"><?php esc_attr_e( 'Nhớ tài khoản' ); ?></label>
         </p>
 
         <p class="submit">
-            <input type="submit" name="wp-submit" id="wp-submit" value="<?php esc_attr_e( 'Log In' ); ?>" />
+            <input type="submit" name="wp-submit" id="wp-submit" value="<?php esc_attr_e( 'Đăng nhập' ); ?>" />
             <input type="hidden" name="redirect_to" value="<?php echo WPUF_Login::get_posted_value( 'redirect_to' ); ?>" />
             <input type="hidden" name="wpuf_login" value="true" />
             <input type="hidden" name="action" value="login" />

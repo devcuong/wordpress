@@ -3,7 +3,6 @@
         <h3 class="widget-title">Thông tin tài khoản</h3>
     </div>
 	<ul>
-		<li class="lead"><a href="javascript:">Quản lý tin rao</a></li>
 		<li><a href="/thanh-vien/dang-tin-ban-cho-thue-nha-dat.htm">Đăng tin
 				rao bán/cho thuê</a></li>
 		<li class="active"><a href="/thanh-vien/quan-ly-tin.htm">Quản lý tin

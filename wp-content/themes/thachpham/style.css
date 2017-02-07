@@ -767,3 +767,12 @@ ul.pagination li a:hover:not(.active) {background-color: #ddd;}
 .wpuf_duong_vao_1506{
 	width: 150px;
 }
+.menu-user{
+	background: #fff;
+}
+.wpuf-user-loggedin, .login{
+	text-align: center;
+}
+.title_thue{
+	margin-top: 20px;
+}

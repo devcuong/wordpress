@@ -205,15 +205,15 @@ class WPUF_Login {
         $links = array();
 
         if ( $args['login'] ) {
-            $links[] = sprintf( '<a href="%s">%s</a>', $this->get_action_url( 'login' ), __( 'Log In', 'wpuf' ) );
+            $links[] = sprintf( '<a href="%s">%s</a>', $this->get_action_url( 'login' ), __( 'Đăng nhập', 'wpuf' ) );
         }
 
         if ( $args['register'] ) {
-            $links[] = sprintf( '<a href="%s">%s</a>', $this->get_action_url( 'register' ), __( 'Register', 'wpuf' ) );
+            $links[] = sprintf( '<a href="%s">%s</a>', $this->get_action_url( 'register' ), __( 'Đăng Ký', 'wpuf' ) );
         }
 
         if ( $args['lostpassword'] ) {
-            $links[] = sprintf( '<a href="%s">%s</a>', $this->get_action_url( 'lostpassword' ), __( 'Lost Password', 'wpuf' ) );
+            $links[] = sprintf( '<a href="%s">%s</a>', $this->get_action_url( 'lostpassword' ), __( 'Quên mật khẩu', 'wpuf' ) );
         }
 
         return implode( ' | ', $links );

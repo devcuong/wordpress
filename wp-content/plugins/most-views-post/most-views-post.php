@@ -77,7 +77,7 @@ class Thachpham_Widget extends WP_Widget {
 			// Nội dung trong widget
 			echo "<div class='news-default-right'>";
 			echo "<ul>";
-			$popularpost = new WP_Query( array( 'post_type'     =>  'News','posts_per_page' => 5, 'meta_key' => 'wpb_post_views_count', 'orderby' => 'meta_value_num', 'order' => 'DESC'  ) );
+			$popularpost = new WP_Query( array( 'post_type'     =>  'News','numberposts' => 5, 'meta_key' => 'wpb_post_views_count', 'orderby' => 'meta_value_num', 'order' => 'DESC'  ) );
 			while ( $popularpost->have_posts() ) : $popularpost->the_post();
 			 if($popularpost->current_post == 0):
 			{

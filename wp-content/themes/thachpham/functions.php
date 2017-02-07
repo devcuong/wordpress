@@ -122,27 +122,6 @@
             wp_nav_menu( $menu );
         }
      }
-     
-     /**
-      * Ham tao phan trang don gian
-      * */
-      if(!function_exists('thachpham_pagination')){
-        function thachpham_pagination(){
-            if($GLOBALS['wp_query']->max_num_pages < 2){
-                return '';
-            } ?>
-<nav class="pagination" role="navigation">
-            <?php if ( get_next_posts_link() ) : ?>
-                <div class="prev">
-                <?php next_posts_link( __('Older Posts', 'thachpham') ); ?>
-                </div>
-            <?php endif; ?>
-            <?php if ( get_previous_posts_link() ) : ?>
-                <div class="next"><?php previous_posts_link( __('Newest Posts', 'thachpham') ); ?> </div>
-            <?php endif; ?>
-            </nav>
-<?php }
-      }
       
       /**
        * Ham hien thi thumbnail
@@ -215,11 +194,17 @@
          * Ham hien thi noi dung cua post page
          * */
           if (!function_exists('thachpham_entry_content')) {
-            function thachpham_entry_content(){
+            function thachpham_entry_content($postID){
+/*                 $giaBDS = 0;
+                $field = get_field_object('field_58438bf388e3d');
+                $value = $field['muc_gia'];
+                if ( isset( $field['choices'] ) ) {
+                    $giaBDS = $field['choices'][$value];
+                } */
               if ( !is_single() && !is_page() ) {
                   echo "<div class='other'>";
                   echo "<div class='price'>";
-                  echo "<label>Giá<span>:</span></label>1.5 Tỷ</div>";
+                  echo "<label>Giá<span>:</span></label>".get_post_meta($postID,"gia_nha_dat",true)." ".get_post_meta($postID,"gia",true)."</div>";
                   echo "<div class='area'>";
                   echo "<label>Diện tích<span>:</span></label>64&nbsp;m²</div>";
                   echo "<div class='location'>";
@@ -409,7 +394,6 @@ remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
 /*------------- GET TOP NEWS ------------- */
 if (!function_exists('dothi_get_top_news')) {
     function dothi_get_top_news(){
-        
         // Query get top 6 news
         $v_args = array(
             'post_type'     =>  'News', // your CPT

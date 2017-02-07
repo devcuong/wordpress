@@ -103,7 +103,7 @@
     </div>
 	<?php } ?>
     <div class="entry-content">
-        <?php  thachpham_entry_content(); 	 ?>
+        <?php  thachpham_entry_content(get_the_ID()); 	 ?>
         <?php ( is_single() ? thachpham_entry_tag() : '' ) ?>
     </div>
     <div class="entry-viewed">

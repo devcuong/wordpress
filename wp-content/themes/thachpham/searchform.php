@@ -2,7 +2,7 @@
 function changeThanhPho() {
 	var x = document.getElementById("selThanhPho").value;
 	var qhSelect = document.getElementById('selQuanHuyen');
-	var urlData = "http://localhost:8080/wordpress/wp-content/themes/thachpham/file/";
+	var urlData = "http://dothi24h.abc/wp-content/themes/thachpham/file/";
 	var fullUrlData = "";
 	if( x == "ho_chi_minh" ){
 		fullUrlData = urlData+'ho_chi_minh.txt';
