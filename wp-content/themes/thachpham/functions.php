@@ -67,6 +67,7 @@
                 'after_title' => '</h3>'
             );
             register_sidebar( $sidebar );
+			
 			/* Tạo sidebar cho page phụ */
             $extraSidebar = array(
                 'name' => __('Extra Sidebar', 'thachpham'),
@@ -77,6 +78,17 @@
                 'after_title' => '</h3>'
             );
             register_sidebar( $extraSidebar );
+			
+			/* Tạo sidebar cho page chua search form */
+            $searchSidebar = array(
+                'name' => __('Search Sidebar', 'thachpham'),
+                'id' => 'search-sidebar',
+                'description' => __('Search sidebar'),
+                'class' => 'search-sidebar',
+                'before_title' => '<h3 class="widget-title">',
+                'after_title' => '</h3>'
+            );
+            register_sidebar( $searchSidebar );
         }
         add_action('init', 'thachpham_theme_setup');
     }

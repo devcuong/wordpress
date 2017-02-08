@@ -57,7 +57,7 @@
     </div>
    
 </div>
-    <div id="sidebar-search">
+    <div id="sidebar">
         <?php get_sidebar('search'); ?>
     <div class="clear"></div>
     </div>
