@@ -300,6 +300,9 @@ function thachpham_script() {
 	
 	wp_register_script('google-map-script', "https://maps.googleapis.com/maps/api/js?key=AIzaSyBK2AXcHa6l2tTR_8t0lpPIRzAQXxw6BdU&callback=initMap", array());
 	wp_enqueue_script('google-map-script');
+	
+	wp_register_script('dothi24h', THEME_URL. "/dothi24h.js", array('jquery'));
+	wp_enqueue_script('dothi24h');
 }
 add_action('wp_enqueue_scripts', 'thachpham_script');
 
