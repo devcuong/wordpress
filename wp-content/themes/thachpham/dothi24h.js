@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	
 	var hostFile = "http://dothi24h.abc/wp-content/themes/thachpham/file/";
-	// Hien thi khi chon selection thanh pho
+	// Hien thi quan huyen khi chon selection thanh pho
 	$('.wpuf_thanh_pho_1506').on('change', function() {
 		  var x = this.value;
 		  var qhSelect = $( ".wpuf_quan_huyen_1506" );
@@ -23,7 +23,7 @@ $(document).ready(function() {
 			});	
 		})
 		
-		// Hien thi khi chon selection quan huyen
+		// Hien thi phuong xa khi chon selection quan huyen
 			$('.wpuf_quan_huyen_1506').on('change', function() {
 		  var tp = $('.wpuf_thanh_pho_1506').val();
 		  var qh = this.value;
@@ -32,6 +32,28 @@ $(document).ready(function() {
 		  var fullUrlData = "";
 		  
 		  fullUrlData = hostFile + tp + "/" + qh + ".txt"; 
+		  
+		  jQuery.get(fullUrlData, function(data) {
+				var obj = JSON.parse(data);
+				for(i = 0; i < obj.length ; i++){
+					var opt = document.createElement('option');
+					opt.value = obj[i].meta;
+					opt.innerHTML = obj[i].name;
+					pxSelect.append(new Option(obj[i].name, obj[i].meta));
+				}
+			});	
+		})
+		
+		// Hien thi ten duong khi chon selection phuong xa
+		$('.wpuf_phuong_xa_1506').on('change', function() {
+		  var tp = $('.wpuf_thanh_pho_1506').val();
+		  var qh = $('.wpuf_quan_huyen_1506').val();
+		  var px = this.value;
+		  var pxSelect = $( ".wpuf_duong_pho_1506" );
+		  pxSelect.empty();
+		  var fullUrlData = "";
+		  
+		  fullUrlData = hostFile + tp + "/" + qh + "/" + px + ".txt"; 
 		  
 		  jQuery.get(fullUrlData, function(data) {
 				var obj = JSON.parse(data);
