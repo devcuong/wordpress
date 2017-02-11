@@ -1,12 +1,44 @@
+// Load dữ liệu của thành phố khi load page
+$(document).on("pageload",function(){
+	var hostFile = "http://dothi24h.abc/wp-content/themes/thachpham/file/";
+	var fullUrlData = hostFile + "tinh_thanh_pho/" + "tinh_thanh_pho.txt";
+	var tpSelect = $( ".wpuf_thanh_pho_1506" );
+	tpSelect.empty();
+	
+	  jQuery.get(fullUrlData, function(data) {
+			var obj = JSON.parse(data);
+			for(i = 0; i < obj.length ; i++){
+				tpSelect.append(new Option(obj[i].name, obj[i].meta));
+			}
+		});	
+	});
+
 $(document).ready(function() {
 	
 	var hostFile = "http://dothi24h.abc/wp-content/themes/thachpham/file/";
+	
+	var fullUrlData = hostFile + "tinh_thanh_pho/" + "tinh_thanh_pho.txt";
+	var tpSelect = $( ".wpuf_thanh_pho_1506" );
+	tpSelect.empty();
+	
+	  jQuery.get(fullUrlData, function(data) {
+			var obj = JSON.parse(data);
+			for(i = 0; i < obj.length ; i++){
+				tpSelect.append(new Option(obj[i].name, obj[i].meta));
+			}
+		});	
+	
 	// Hien thi quan huyen khi chon selection thanh pho
 	$('.wpuf_thanh_pho_1506').on('change', function() {
-		  var x = this.value;
 		  var qhSelect = $( ".wpuf_quan_huyen_1506" );
 		  qhSelect.empty();
-		  var urlData = hostFile+"/quan-theo-thanh-pho/";
+		  var x = this.value;
+		  
+		  // Trường hợp chọn thành phố có text là "Chọn Thành Phố"
+		  if(x == ""){
+				qhSelect.append(new Option("-- Chọn Quận Huyện --", ""));
+		  }
+		  var urlData = hostFile+"/quan_huyen_theo_thanh_pho/";
 		  var fullUrlData = "";
 		  if( x == "ho_chi_minh" ){
 				fullUrlData = urlData+'ho_chi_minh.txt';
@@ -15,9 +47,6 @@ $(document).ready(function() {
 		  jQuery.get(fullUrlData, function(data) {
 				var obj = JSON.parse(data);
 				for(i = 0; i < obj.length ; i++){
-					var opt = document.createElement('option');
-					opt.value = obj[i].meta;
-					opt.innerHTML = obj[i].name;
 					qhSelect.append(new Option(obj[i].name, obj[i].meta));
 				}
 			});	
@@ -29,6 +58,11 @@ $(document).ready(function() {
 		  var qh = this.value;
 		  var pxSelect = $( ".wpuf_phuong_xa_1506" );
 		  pxSelect.empty();
+		  
+		  // Trường hợp chọn quận huyện có text là "Chọn Quận Huyện"
+		  if(qh == ""){
+				pxSelect.append(new Option("-- Chọn Phường Xã --", ""));
+		  }
 		  var fullUrlData = "";
 		  
 		  fullUrlData = hostFile + tp + "/" + qh + ".txt"; 
@@ -36,9 +70,6 @@ $(document).ready(function() {
 		  jQuery.get(fullUrlData, function(data) {
 				var obj = JSON.parse(data);
 				for(i = 0; i < obj.length ; i++){
-					var opt = document.createElement('option');
-					opt.value = obj[i].meta;
-					opt.innerHTML = obj[i].name;
 					pxSelect.append(new Option(obj[i].name, obj[i].meta));
 				}
 			});	
@@ -49,8 +80,14 @@ $(document).ready(function() {
 		  var tp = $('.wpuf_thanh_pho_1506').val();
 		  var qh = $('.wpuf_quan_huyen_1506').val();
 		  var px = this.value;
-		  var pxSelect = $( ".wpuf_duong_pho_1506" );
-		  pxSelect.empty();
+		  var dpSelect = $( ".wpuf_duong_pho_1506" );
+		  dpSelect.empty();
+		  
+		  // Trường hợp chọn phường xã có text là "Chọn Phường Xã"
+		  if(qh == ""){
+			  dpSelect.append(new Option("-- Chọn Đường/Phố --", ""));
+		  }
+		  
 		  var fullUrlData = "";
 		  
 		  fullUrlData = hostFile + tp + "/" + qh + "/" + px + ".txt"; 
@@ -58,10 +95,7 @@ $(document).ready(function() {
 		  jQuery.get(fullUrlData, function(data) {
 				var obj = JSON.parse(data);
 				for(i = 0; i < obj.length ; i++){
-					var opt = document.createElement('option');
-					opt.value = obj[i].meta;
-					opt.innerHTML = obj[i].name;
-					pxSelect.append(new Option(obj[i].name, obj[i].meta));
+					dpSelect.append(new Option(obj[i].name, obj[i].meta));
 				}
 			});	
 		})
