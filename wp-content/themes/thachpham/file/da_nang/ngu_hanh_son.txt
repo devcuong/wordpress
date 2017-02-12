@@ -1,0 +1,1 @@
+[{"name":"-- phường/xã --","meta":""},{"name":"phường khuê mỹ","meta":"phuong_khue_mỹ"},{"name":"phường hòa hải","meta":"phuong_hoa_hai"},{"name":"phường hòa quý","meta":"phuong_hoa_quy"},{"name":"phường mỹ an","meta":"phuong_mỹ_an"}]

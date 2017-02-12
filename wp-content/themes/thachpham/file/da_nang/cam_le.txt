@@ -1,0 +1,1 @@
+[{"name":"-- phường/xã --","meta":""},{"name":"phường hòa an","meta":"phuong_hoa_an"},{"name":"phường hòa phát","meta":"phuong_hoa_phat"},{"name":"phường hòa thọ đông","meta":"phuong_hoa_tho_dong"},{"name":"phường hòa thọ tây","meta":"phuong_hoa_tho_tay"},{"name":"phường hòa xuân","meta":"phuong_hoa_xuan"},{"name":"phường khuê trung","meta":"phuong_khue_trung"}]

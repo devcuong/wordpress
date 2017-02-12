@@ -1,0 +1,1 @@
+[{"name":"-- phường/xã --","meta":""},{"name":"phường anh dũng","meta":"phuong_anh_dung"},{"name":"phường đa phúc","meta":"phuong_da_phuc"},{"name":"phường hải thành","meta":"phuong_hai_thanh"},{"name":"phường hòa nghĩa","meta":"phuong_hoa_nghia"},{"name":"phường hưng đạo","meta":"phuong_hung_dao"},{"name":"phường tân thành","meta":"phuong_tan_thanh"}]

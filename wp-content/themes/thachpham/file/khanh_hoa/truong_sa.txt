@@ -1,0 +1,1 @@
+[{"name":"-- phường/xã --","meta":""},{"name":"xã sinh tồn","meta":"xa_sinh_ton"},{"name":"xã song tử tây","meta":"xa_song_tu_tay"},{"name":"thị trấn trường sa","meta":"thi_tran_truong_sa"}]

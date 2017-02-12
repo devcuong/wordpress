@@ -1,0 +1,1 @@
+[{"name":"-- phường/xã --","meta":""},{"name":"phường hòa hiệp bắc","meta":"phuong_hoa_hiep_bac"},{"name":"phường hòa hiệp nam","meta":"phuong_hoa_hiep_nam"},{"name":"phường hòa khánh bắc","meta":"phuong_hoa_khanh_bac"},{"name":"phường hòa khánh nam","meta":"phuong_hoa_khanh_nam"},{"name":"phường hòa minh","meta":"phuong_hoa_minh"}]

@@ -1,258 +1,258 @@
-[  
-   {  
-      "name":"--Chọn Tỉnh/Thành Phố--",
+﻿[
+   {
+      "name":"-- tỉnh/thành phố --",
       "meta":""
    },
-   {  
-      "name":"Hồ Chí Minh",
+   {
+      "name":"hồ chí minh",
       "meta":"ho_chi_minh"
    },
-   {  
-      "name":"Hà Nội",
+   {
+      "name":"hà nội",
       "meta":"ha_noi"
    },
-   {  
-      "name":"Bình Dương",
-      "meta":"binh_duong"
-   },
-   {  
-      "name":"Đà Nẵng",
+   {
+      "name":"đà nẵng",
       "meta":"da_nang"
    },
-   {  
-      "name":"Hải Phòng",
-      "meta":"hai_phong"
+   {
+      "name":"bình dương",
+      "meta":"binh_duong"
    },
-   {  
-      "name":"Long An",
-      "meta":"long_an"
-   },
-   {  
-      "name":"Bà Rịa Vũng Tàu",
-      "meta":"ba_ria_vung_tau"
-   },
-   {  
-      "name":"An Giang",
-      "meta":"an_giang"
-   },
-   {  
-      "name":"Bắc Giang",
-      "meta":"bac_giang"
-   },
-   {  
-      "name":"Bắc Cạn",
-      "meta":"bac_can"
-   },
-   {  
-      "name":"Bạc Liêu",
-      "meta":"bac_lieu"
-   },
-   {  
-      "name":"Bắc Ninh",
-      "meta":"bac_ninh"
-   },
-   {  
-      "name":"Bên Tre",
-      "meta":"ben_tre"
-   },
-   {  
-      "name":"Bình Định",
-      "meta":"binh_dinh"
-   },
-   {  
-      "name":"Bình Phước",
-      "meta":"binh_phuoc"
-   },
-   {  
-      "name":"Bình Thuận",
-      "meta":"binh_thuan"
-   },
-   {  
-      "name":"Cà Mau",
-      "meta":"ca_mau"
-   },
-   {  
-      "name":"Cần Thơ",
-      "meta":"can_tho"
-   },
-   {  
-      "name":"Cao Bằng",
-      "meta":"cao_bang"
-   },
-   {  
-      "name":"Đắk Lắk",
-      "meta":"dak_lak"
-   },
-   {  
-      "name":"Đắk Nông",
-      "meta":"dak_nong"
-   },
-   {  
-      "name":"Điện Biên",
-      "meta":"dien_bien"
-   },
-   {  
-      "name":"Đồng Nai",
+   {
+      "name":"đồng nai",
       "meta":"dong_nai"
-   },  
-   {  
-      "name":"Đồng Tháp",
-      "meta":"dong_thap"
    },
-   {  
-      "name":"Gia Lai",
-      "meta":"gia_lai"
-   },
-   {  
-      "name":"Hà Giang",
-      "meta":"ha_giang"
-   },
-   {  
-      "name":"Hà Nam",
-      "meta":"ha_nam"
-   },
-   {  
-      "name":"Hà Tĩnh",
-      "meta":"ha_tinh"
-   },
-   {  
-      "name":"Hải Dương",
-      "meta":"hai_duong"
-   },
-   {  
-      "name":"Hậu Giang",
-      "meta":"hau_giang"
-   },
-   {  
-      "name":"Hòa Bình",
-      "meta":"hoa_binh"
-   },
-   {  
-      "name":"Hưng Yên",
-      "meta":"hung_yen"
-   },
-   {  
-      "name":"Khánh Hòa",
+   {
+      "name":"khánh hòa",
       "meta":"khanh_hoa"
    },
-   {  
-      "name":"Kiên Giang",
-      "meta":"kien_giang"
+   {
+      "name":"hải phòng",
+      "meta":"hai_phong"
    },
-   {  
-      "name":"Kon Tum",
-      "meta":"kon_tum"
+   {
+      "name":"long an",
+      "meta":"long_an"
    },
-   {  
-      "name":"Lai Châu",
-      "meta":"lai_chau"
-   },
-   {  
-      "name":"Lâm Đồng",
-      "meta":"lam_dong"
-   },
-   {  
-      "name":"Lạng Sơn",
-      "meta":"lang_son"
-   },
-   {  
-      "name":"Lào Cai",
-      "meta":"lao_cai"
-   },
-   {  
-      "name":"Nam Định",
-      "meta":"nam_dinh"
-   },
-   {  
-      "name":"Nghệ An",
-      "meta":"nghe_an"
-   },
-   {  
-      "name":"Ninh Bình",
-      "meta":"ninh_binh"
-   },
-   {  
-      "name":"Ninh Thuận",
-      "meta":"ninh_thuan"
-   },
-   {  
-      "name":"Phú Thọ",
-      "meta":"phu_tho"
-   },
-   {  
-      "name":"Phú Yên",
-      "meta":"phu_yen"
-   },
-   {  
-      "name":"Quảng Bình",
-      "meta":"quang_binh"
-   },
-   {  
-      "name":"Quảng Nam",
+   {
+      "name":"quảng nam",
       "meta":"quang_nam"
    },
-   {  
-      "name":"Quảng Ngãi",
-      "meta":"quang_ngai"
+   {
+      "name":"bà rịa vũng tàu",
+      "meta":"ba_ria_vung_tau"
    },
-   {  
-      "name":"Quảng Ninh",
-      "meta":"quang_ninh"
+   {
+      "name":"đắk lắk",
+      "meta":"dak_lak"
    },
-   {  
-      "name":"Quảng Trị",
-      "meta":"quang_tri"
+   {
+      "name":"cần thơ",
+      "meta":"can_tho"
    },
-   {  
-      "name":"Sóc Trăng",
-      "meta":"soc_trang"
+   {
+      "name":"bình thuận",
+      "meta":"binh_thuan"
    },
-   {  
-      "name":"Sơn La",
-      "meta":"son_la"
+   {
+      "name":"lâm đồng",
+      "meta":"lam_dong"
    },
-   {  
-      "name":"Tây Ninh",
-      "meta":"tay_ninh"
-   },
-   {  
-      "name":"Thái Bình",
-      "meta":"thai_binh"
-   },
-   {  
-      "name":"Thái Nguyên",
-      "meta":"thai_nguyen"
-   },
-   {  
-      "name":"Thanh Hóa",
-      "meta":"thanh_hoa"
-   },
-   {  
-      "name":"Thừa Thiên Huế",
+   {
+      "name":"thừa thiên huế",
       "meta":"thua_thien_hue"
    },
-   {  
-      "name":"Tiền Giang",
+   {
+      "name":"kiên giang",
+      "meta":"kien_giang"
+   },
+   {
+      "name":"bắc ninh",
+      "meta":"bac_ninh"
+   },
+   {
+      "name":"quảng ninh",
+      "meta":"quang_ninh"
+   },
+   {
+      "name":"thanh hóa",
+      "meta":"thanh_hoa"
+   },
+   {
+      "name":"nghệ an",
+      "meta":"nghe_an"
+   },
+   {
+      "name":"hải dương",
+      "meta":"hai_duong"
+   },
+   {
+      "name":"gia lai",
+      "meta":"gia_lai"
+   },
+   {
+      "name":"bình phước",
+      "meta":"binh_phuoc"
+   },
+   {
+      "name":"hưng yên",
+      "meta":"hung_yen"
+   },
+   {
+      "name":"bình định",
+      "meta":"binh_dinh"
+   },
+   {
+      "name":"tiền giang",
       "meta":"tien_giang"
    },
-   {  
-      "name":"Trà Vinh",
-      "meta":"tra_vinh"
+   {
+      "name":"thái bình",
+      "meta":"thai_binh"
    },
-   {  
-      "name":"Tuyên Quang",
-      "meta":"tuyen_quang"
+   {
+      "name":"bắc giang",
+      "meta":"bac_giang"
    },
-   {  
-      "name":"Vĩnh Long",
-      "meta":"vinh_long"
+   {
+      "name":"hòa bình",
+      "meta":"hoa_binh"
    },
-   {  
-      "name":"Vĩnh Phúc",
+   {
+      "name":"an giang",
+      "meta":"an_giang"
+   },
+   {
+      "name":"vĩnh phúc",
       "meta":"vinh_phuc"
    },
-   {  
-      "name":"Yên Bái",
+   {
+      "name":"tây ninh",
+      "meta":"tay_ninh"
+   },
+   {
+      "name":"thái nguyên",
+      "meta":"thai_nguyen"
+   },
+   {
+      "name":"lào cai",
+      "meta":"lao_cai"
+   },
+   {
+      "name":"nam định",
+      "meta":"nam_dinh"
+   },
+   {
+      "name":"quảng ngãi",
+      "meta":"quang_ngai"
+   },
+   {
+      "name":"bến tre",
+      "meta":"ben_tre"
+   },
+   {
+      "name":"đắk nông",
+      "meta":"dak_nong"
+   },
+   {
+      "name":"cà mau",
+      "meta":"ca_mau"
+   },
+   {
+      "name":"vĩnh long",
+      "meta":"vinh_long"
+   },
+   {
+      "name":"ninh bình",
+      "meta":"ninh_binh"
+   },
+   {
+      "name":"phú thọ",
+      "meta":"phu_tho"
+   },
+   {
+      "name":"ninh thuận",
+      "meta":"ninh_thuan"
+   },
+   {
+      "name":"phú yên",
+      "meta":"phu_yen"
+   },
+   {
+      "name":"hà nam",
+      "meta":"ha_nam"
+   },
+   {
+      "name":"hà tĩnh",
+      "meta":"ha_tinh"
+   },
+   {
+      "name":"đồng tháp",
+      "meta":"dong_thap"
+   },
+   {
+      "name":"sóc trăng",
+      "meta":"soc_trang"
+   },
+   {
+      "name":"kon tum",
+      "meta":"kon_tum"
+   },
+   {
+      "name":"quảng bình",
+      "meta":"quang_binh"
+   },
+   {
+      "name":"quảng trị",
+      "meta":"quang_tri"
+   },
+   {
+      "name":"trà vinh",
+      "meta":"tra_vinh"
+   },
+   {
+      "name":"hậu giang",
+      "meta":"hau_giang"
+   },
+   {
+      "name":"sơn la",
+      "meta":"son_la"
+   },
+   {
+      "name":"bạc liêu",
+      "meta":"bac_lieu"
+   },
+   {
+      "name":"yên bái",
       "meta":"yen_bai"
+   },
+   {
+      "name":"tuyên quang",
+      "meta":"tuyen_quang"
+   },
+   {
+      "name":"điện biên",
+      "meta":"dien_bien"
+   },
+   {
+      "name":"lai châu",
+      "meta":"lai_chau"
+   },
+   {
+      "name":"lạng sơn",
+      "meta":"lang_son"
+   },
+   {
+      "name":"hà giang",
+      "meta":"ha_giang"
+   },
+   {
+      "name":"bắc kạn",
+      "meta":"bac_kan"
+   },
+   {
+      "name":"cao bằng",
+      "meta":"cao_bang"
    }
 ]

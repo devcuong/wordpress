@@ -1,0 +1,1 @@
+[{"name":"-- phường/xã --","meta":""},{"name":"xã an thới đông","meta":"xa_an_thoi_dong"},{"name":"xã bình khánh","meta":"xa_binh_khanh"},{"name":"phường cần thạnh","meta":"phuong_can_thanh"},{"name":"xã long hòa","meta":"xa_long_hoa"},{"name":"xã lý nhơn","meta":"xa_ly_nhon"},{"name":"xã tam thôn hiệp","meta":"xa_tam_thon_hiep"},{"name":"xã thạnh an","meta":"xa_thanh_an"}]
