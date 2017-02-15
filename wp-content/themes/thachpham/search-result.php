@@ -7,6 +7,6 @@
         <?php thachpham_entry_meta(); ?>
     </div>
     <div class="entry-content">
-        <?php thachpham_entry_content(); 	 ?>
+        <?php thachpham_entry_content(get_the_ID()); 	 ?>
     </div>
 </article>
