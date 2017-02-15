@@ -1,0 +1,1 @@
+[{"name":"-- phường/xã --","meta":""},{"name":"xã an ngãi","meta":"xa_an_ngai"},{"name":"xã an nhứt","meta":"xa_an_nhut"},{"name":"xã long điền","meta":"xa_long_dien"},{"name":"thị trấn long hải","meta":"thi_tran_long_hai"},{"name":"xã phước hưng","meta":"xa_phuoc_hung"},{"name":"xã phước tỉnh","meta":"xa_phuoc_tinh"},{"name":"xã tam phước","meta":"xa_tam_phuoc"}]

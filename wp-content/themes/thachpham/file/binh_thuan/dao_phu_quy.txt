@@ -1,0 +1,1 @@
+[{"name":"-- phường/xã --","meta":""},{"name":"xã long hải","meta":"xa_long_hai"},{"name":"xã ngũ phụng","meta":"xa_ngu_phung"},{"name":"xã tam thanh","meta":"xa_tam_thanh"}]

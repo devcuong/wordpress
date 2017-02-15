@@ -1,0 +1,1 @@
+[{"name":"-- phường/xã --","meta":""},{"name":"phường bình san","meta":"phuong_binh_san"},{"name":"phường đông hồ","meta":"phuong_dong_ho"},{"name":"xã mỹ đức","meta":"xa_mỹ_duc"},{"name":"phường pháo đài","meta":"phuong_phao_dai"},{"name":"xã thuận yên","meta":"xa_thuan_yen"},{"name":"xã tiên hải","meta":"xa_tien_hai"},{"name":"phường tô châu","meta":"phuong_to_chau"}]

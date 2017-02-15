@@ -1,0 +1,1 @@
+[{"name":"-- phường/xã --","meta":""},{"name":"xã giai xuân","meta":"xa_giai_xuan"},{"name":"xã mỹ khánh","meta":"xa_mỹ_khanh"},{"name":"xã nhơn ái","meta":"xa_nhon_ai"},{"name":"xã nhơn nghĩa","meta":"xa_nhon_nghia"},{"name":"thị trấn phong điền","meta":"thi_tran_phong_dien"},{"name":"xã tân thới","meta":"xa_tan_thoi"},{"name":"xã trường long","meta":"xa_truong_long"}]

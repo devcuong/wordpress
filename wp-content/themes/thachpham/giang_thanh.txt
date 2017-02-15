@@ -1,0 +1,1 @@
+[{"name":"-- phường/xã --","meta":""},{"name":"xã phú lợi","meta":"xa_phu_loi"},{"name":"xã phú mỹ","meta":"xa_phu_mỹ"},{"name":"xã tân khánh hoà","meta":"xa_tan_khanh_hoa"},{"name":"xã vĩnh điều","meta":"xa_vinh_dieu"},{"name":"xã vĩnh phú","meta":"xa_vinh_phu"}]

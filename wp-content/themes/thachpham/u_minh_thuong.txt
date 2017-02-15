@@ -1,0 +1,1 @@
+[{"name":"-- phường/xã --","meta":""},{"name":"xã an minh bắc","meta":"xa_an_minh_bac"},{"name":"xã hòa chánh","meta":"xa_hoa_chanh"},{"name":"xã minh thuận","meta":"xa_minh_thuan"},{"name":"xã thạnh yên","meta":"xa_thanh_yen"},{"name":"xã thạnh yên a","meta":"xa_thanh_yen_a"},{"name":"xã vĩnh hòa","meta":"xa_vinh_hoa"}]

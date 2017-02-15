@@ -1,0 +1,1 @@
+[{"name":"-- phường/xã --","meta":""},{"name":"xã cuôr knia","meta":"xa_cuor_knia"},{"name":"xã ea bar","meta":"xa_ea_bar"},{"name":"xã ea huar","meta":"xa_ea_huar"},{"name":"xã ea nuôl","meta":"xa_ea_nuol"},{"name":"xã ea wer","meta":"xa_ea_wer"},{"name":"xã krông na","meta":"xa_krong_na"},{"name":"xã tân hòa","meta":"xa_tan_hoa"}]

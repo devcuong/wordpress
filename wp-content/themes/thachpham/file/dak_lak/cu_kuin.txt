@@ -1,0 +1,1 @@
+[{"name":"-- phường/xã --","meta":""},{"name":"xã cư ê wi","meta":"xa_cu_e_wi"},{"name":"xã dray bhăng","meta":"xa_dray_bhang"},{"name":"xã ea bhôk","meta":"xa_ea_bhok"},{"name":"xã ea hu","meta":"xa_ea_hu"},{"name":"xã ea ktur","meta":"xa_ea_ktur"},{"name":"xã ea ning","meta":"xa_ea_ning"},{"name":"xã ea tiêu","meta":"xa_ea_tieu"},{"name":"xã hòa hiệp","meta":"xa_hoa_hiep"}]

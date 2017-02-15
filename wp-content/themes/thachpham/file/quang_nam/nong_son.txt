@@ -1,0 +1,1 @@
+[{"name":"-- phường/xã --","meta":""},{"name":"xã phước ninh","meta":"xa_phuoc_ninh"},{"name":"xã quế lâm","meta":"xa_que_lam"},{"name":"xã quế lộc","meta":"xa_que_loc"},{"name":"xã quế ninh","meta":"xa_que_ninh"},{"name":"xã quế phước","meta":"xa_que_phuoc"},{"name":"xã quế trung","meta":"xa_que_trung"},{"name":"xã sơn viên","meta":"xa_son_vien"}]

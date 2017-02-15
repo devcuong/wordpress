@@ -1,0 +1,1 @@
+[{"name":"-- phường/xã --","meta":""},{"name":"xã đạ chais","meta":"xa_da_chais"},{"name":"xã đạ nhim","meta":"xa_da_nhim"},{"name":"xã đạ sar","meta":"xa_da_sar"},{"name":"xã đưng knớ","meta":"xa_dung_kno"},{"name":"thị trấn lạc dương","meta":"thi_tran_lac_duong"},{"name":"xã lát","meta":"xa_lat"}]

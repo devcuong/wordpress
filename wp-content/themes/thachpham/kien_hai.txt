@@ -1,0 +1,1 @@
+[{"name":"-- phường/xã --","meta":""},{"name":"xã an sơn","meta":"xa_an_son"},{"name":"xã hòn tre","meta":"xa_hon_tre"},{"name":"xã lại sơn","meta":"xa_lai_son"},{"name":"xã nam du","meta":"xa_nam_du"}]
