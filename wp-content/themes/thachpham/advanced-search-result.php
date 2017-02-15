@@ -22,18 +22,25 @@ $searchQuery = new WP_Query( $v_args );
 // var_dump($searchQuery->request);
 ?>
 <?php get_header(); ?>
-	<div class="content">
-		<div id="main-content">
-			<?php if( $searchQuery->have_posts() ) : while( $searchQuery->have_posts() ) : $searchQuery->the_post(); ?>
-					<?php get_template_part('search-result', get_post_format()); ?>
-			<?php endwhile; ?>
-			<?php else : ?>
+<div class="content">
+<div class="col-left">
+	<div id="main-content">
+				<h2>Search Result</h2>
+			<?php if ( have_posts() ) : while( have_posts() ) : the_post(); ?>
+			<?php get_template_part('search-result', get_post_format()); ?>
+			
+			<?php endwhile ?>
+			<?php else: ?>
 				<?php get_template_part('search-result', 'none'); ?>
-			<?php endif; ?>
-			<?php wp_reset_postdata(); ?>
-		</div>
-		<div id="sidebar">  
-			<?php get_sidebar(); ?>
-		</div>
+			<?php endif ?>
 	</div>
+</div>
+    <div id="sidebar">
+        <?php get_sidebar('search'); ?>
+    <div class="clear"></div>
+    </div>
+    <div id="sidebar-second">
+        <?php get_sidebar('extra'); ?>
+    </div>
+</div>
 <?php get_footer(); ?>

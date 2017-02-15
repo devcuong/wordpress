@@ -207,12 +207,6 @@
          * */
           if (!function_exists('thachpham_entry_content')) {
             function thachpham_entry_content($postID){
-/*                 $giaBDS = 0;
-                $field = get_field_object('field_58438bf388e3d');
-                $value = $field['muc_gia'];
-                if ( isset( $field['choices'] ) ) {
-                    $giaBDS = $field['choices'][$value];
-                } */
               if ( !is_single() && !is_page() ) {
                   echo "<div class='other'>";
                   echo "<div class='price'>";
@@ -384,13 +378,6 @@ add_action('init','wpse_load_custom_search_template');
   }
 
 /*------------- GET CUSTOM POST FOR INIT LOAD ------------- */
-	// add_action( 'pre_get_posts', 'add_my_post_types_to_query' );
-
-	// function add_my_post_types_to_query( $query ) {
-		// if ( is_home() && $query->is_main_query() )
-			// $query->set( 'post_type', array( 'post', 'news' ) );
-		// return $query;
-	// }
 	function wpb_set_post_views($postID) {
     $count_key = 'wpb_post_views_count';
     $count = get_post_meta($postID, $count_key, true);

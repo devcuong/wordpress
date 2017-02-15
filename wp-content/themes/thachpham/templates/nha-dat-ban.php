@@ -49,7 +49,6 @@
             ?>
             </div>
         </article>
-        
         <?php endwhile ?>
         <?php else: ?>
             <?php get_template_part('content', 'none'); ?>
