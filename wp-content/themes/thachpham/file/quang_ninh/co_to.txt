@@ -1,0 +1,1 @@
+[{"name":"-- phường/xã --","meta":""},{"name":"thị trấn cô tô","meta":"thi_tran_co_to"},{"name":"xã đảo trần","meta":"xa_dao_tran"},{"name":"xã đồng tiến","meta":"xa_dong_tien"},{"name":"xã thanh lân","meta":"xa_thanh_lan"}]

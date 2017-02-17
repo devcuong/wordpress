@@ -1,0 +1,1 @@
+[{"name":"-- ph??ng/xã --","meta":""},{"name":"xã an minh b?c","meta":"xa_an_minh_bac"},{"name":"xã hòa chánh","meta":"xa_hoa_chanh"},{"name":"xã minh thu?n","meta":"xa_minh_thuan"},{"name":"xã th?nh yên","meta":"xa_thanh_yen"},{"name":"xã th?nh yên a","meta":"xa_thanh_yen_a"},{"name":"xã v?nh hòa","meta":"xa_vinh_hoa"}]

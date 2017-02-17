@@ -207,7 +207,7 @@
          * */
           if (!function_exists('thachpham_entry_content')) {
             function thachpham_entry_content($postID){
-              if ( !is_single() && !is_page() ) {
+              if ( !is_single() && !is_page()) {
                   echo "<div class='other'>";
                   echo "<div class='price'>";
                   echo "<label>Giá<span>:</span></label>".get_post_meta($postID,"gia_nha_dat",true)." ".get_post_meta($postID,"gia",true)."</div>";

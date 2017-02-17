@@ -1,23 +1,55 @@
 <?php
 // Get data from URL into variables
-$_name = $_GET['name'] != '' ? $_GET['name'] : '';
+$_keyword = $_GET['keyword'] != '' ? $_GET['keyword'] : '';
 $_tp = $_GET['tp'] != '' ? $_GET['tp'] : '';
+$_lt = $_GET['lt'] != '' ? $_GET['lt'] : '';
+$_ld = $_GET['ld'] != '' ? $_GET['ld'] : '';
 $_qh = $_GET['qh'] != '' ? $_GET['qh'] : '';
-
+$_dt = $_GET['dt'] != '' ? $_GET['dt'] : '';
+$_gd = $_GET['gd'] != '' ? $_GET['gd'] : '';
 // Start the Query
 $v_args = array(
         'post_type'     =>  'post', // your CPT
-        's'             =>  $_name, // looks into everything with the keyword from your 'name field'
+        's'             =>  $_keyword, // looks into everything with the keyword from your 'name field'
         'meta_query'    =>  array(
                                 array(
-                                    'key'     => 'chon_thanh_pho', // assumed your meta_key is 'car_model'
+                                    'key'     => 'thanh_pho', // assumed your meta_key is 'thanh_pho'
                                     'value'   => $_tp,
                                     'compare' => '=', // finds models that matches 'model' from the select field
-                                )
+                                ),
+                            array(
+                                'key'     => 'loai_tin', // assumed your meta_key is 'thanh_pho'
+                                'value'   => $_lt,
+                                'compare' => '=', // finds models that matches 'model' from the select field
+                            ),
+                            array(
+                                'key'     => 'loai_tin', // assumed your meta_key is 'thanh_pho'
+                                'value'   => $_tp,
+                                'compare' => '=', // finds models that matches 'model' from the select field
+                            ),
+                            array(
+                                'key'     => 'loai_tin', // assumed your meta_key is 'thanh_pho'
+                                'value'   => $_tp,
+                                'compare' => '=', // finds models that matches 'model' from the select field
+                            ),
+                            array(
+                                'key'     => 'loai_tin', // assumed your meta_key is 'thanh_pho'
+                                'value'   => $_tp,
+                                'compare' => '=', // finds models that matches 'model' from the select field
+                            ),
+                            array(
+                                'key'     => 'loai_tin', // assumed your meta_key is 'thanh_pho'
+                                'value'   => $_tp,
+                                'compare' => '=', // finds models that matches 'model' from the select field
+                            ),
+                            array(
+                                'key'     => 'loai_tin', // assumed your meta_key is 'thanh_pho'
+                                'value'   => $_tp,
+                                'compare' => '=', // finds models that matches 'model' from the select field
+                            )
                             )
     );
 $searchQuery = new WP_Query( $v_args );
-
 // Open this line to Debug what's query WP has just run
 // var_dump($searchQuery->request);
 ?>
@@ -26,7 +58,7 @@ $searchQuery = new WP_Query( $v_args );
 <div class="col-left">
 	<div id="main-content">
 				<h2>Search Result</h2>
-			<?php if ( have_posts() ) : while( have_posts() ) : the_post(); ?>
+			<?php if ($searchQuery->have_posts() ) : while($searchQuery->have_posts() ) : $searchQuery->the_post(); ?>
 			<?php get_template_part('search-result', get_post_format()); ?>
 			
 			<?php endwhile ?>

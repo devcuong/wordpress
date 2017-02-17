@@ -83,13 +83,15 @@ $(document).ready(function(){
 	<div class="keyword" id="DivKeySearch">
 		<input type="text" value=""
 			placeholder="<?php _e( 'Nhập từ khóa muốn tìm', 'thachpham' ); ?>"
-			name="name" id="name" /><br>
+			name="keyword" id="key" /><br>
 	</div>
 	<div class="search-or"></div>
 	<!-- Chon Loai Nha Dat -->
 	<div id="adtype-select-real" class="advanced-selection" style="display: block;">
 	<select name="lt" id="selLoaiTin" class="selSearch">
 		<option value=""><?php _e( '--Chọn Loại Tin Đăng--', 'thachpham' ); ?></option>
+		<option value="bds_ban"><?php _e( 'BĐS Bán', 'thachpham' ); ?></option>
+		<option value="bds_thue"><?php _e( 'BĐS Thuê', 'thachpham' ); ?></option>
 	</select>
 	</div>
 	<div id="category-select-real" class="advanced-selection" style="display: block;">

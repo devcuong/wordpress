@@ -93,7 +93,6 @@
     </div>
     <div class="entry-header">
         <?php thachpham_entry_header(); ?>
-        <?php /* thachpham_entry_meta(); */ ?>
     </div>
 	<?php if (is_single()) { ?>
     <div class="entry-information" >

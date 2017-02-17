@@ -1,12 +1,14 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
-    <div class="entry-thumbnail">
-        <?php thachpham_thumbnail('thumbnail'); ?>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<div class="entry-thumbnail">
+        <?php thachpham_thumbnail(get_the_ID()); ?>
     </div>
-    <div class="entry-header">
+	<div class="entry-header">
         <?php thachpham_entry_header(); ?>
-        <?php thachpham_entry_meta(); ?>
     </div>
-    <div class="entry-content">
+	<div class="entry-content">
         <?php thachpham_entry_content(get_the_ID()); 	 ?>
+    </div>
+	<div class="entry-viewed">
+        <?php  thachpham_entry_count_viewed(get_the_ID()); 	 ?>
     </div>
 </article>
