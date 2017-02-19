@@ -207,6 +207,7 @@
          * */
           if (!function_exists('thachpham_entry_content')) {
             function thachpham_entry_content($postID){
+              var_dump($postID);
               if ( !is_single() && !is_page()) {
                   echo "<div class='other'>";
                   echo "<div class='price'>";

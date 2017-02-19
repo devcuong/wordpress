@@ -1,57 +1,74 @@
 <?php
+$keyword = "";
+if (isset($_GET['keyword']) && !empty($_GET['keyword'])){
+    $keyword = $_GET['keyword']; 
+}
+
 // Get data from URL into variables
-$_keyword = $_GET['keyword'] != '' ? $_GET['keyword'] : '';
-$_tp = $_GET['tp'] != '' ? $_GET['tp'] : '';
-$_lt = $_GET['lt'] != '' ? $_GET['lt'] : '';
-$_ld = $_GET['ld'] != '' ? $_GET['ld'] : '';
-$_qh = $_GET['qh'] != '' ? $_GET['qh'] : '';
-$_dt = $_GET['dt'] != '' ? $_GET['dt'] : '';
-$_gd = $_GET['gd'] != '' ? $_GET['gd'] : '';
+$queryMetaArray = array('relation' => 'AND');
+
+if (isset($_GET['tp']) && !empty($_GET['tp'])){
+    $_tp = $_GET['tp'];
+    array_push($queryMetaArray, array(
+                                    'key'     => 'thanh_pho', // assumed your meta_key is 'thanh_pho'
+                                    'value'   => $_tp,
+                                    'compare' => '=',
+                                ));
+}
+
+if (isset($_GET['lt']) && !empty($_GET['lt'])){
+    $_lt = $_GET['lt'];
+    array_push($queryMetaArray, array(
+    'key'     => 'loai_tin', // assumed your meta_key is 'loai_tin'
+    'value'   => $_lt,
+    'compare' => '=',
+    ));
+}
+
+if (isset($_GET['ld']) && !empty($_GET['ld'])){
+    $_ld = $_GET['ld'];
+    array_push($queryMetaArray, array(
+    'key'     => 'loai_nha_dat', // assumed your meta_key is 'loai_nha_dat'
+    'value'   => $_ld,
+    'compare' => '=',
+    ));
+}
+
+if (isset($_GET['qh']) && !empty($_GET['qh'])){
+    $_qh = $_GET['qh'];
+    array_push($queryMetaArray, array(
+    'key'     => 'quan_huyen', // assumed your meta_key is 'loai_nha_dat'
+    'value'   => $_qh,
+    'compare' => '=',
+    ));
+}
+
+if (isset($_GET['dt']) && !empty($_GET['dt'])){
+    $_dt = $_GET['dt'];
+    array_push($queryMetaArray, array(
+    'key'     => 'dien_tich', // assumed your meta_key is 'dien_tich'
+    'value'   => $_dt,
+    'compare' => '=',
+    ));
+}
+
+if (isset($_GET['gd']) && !empty($_GET['gd'])){
+    $_gd = $_GET['gd'];
+    array_push($queryMetaArray, array(
+    'key'     => 'muc_gia', // assumed your meta_key is 'muc_gia'
+    'value'   => $_gd,
+    'compare' => '=',
+    ));
+}
+/* var_dump($queryMetaArray); */
 // Start the Query
 $v_args = array(
         'post_type'     =>  'post', // your CPT
-        's'             =>  $_keyword, // looks into everything with the keyword from your 'name field'
-        'meta_query'    =>  array(
-                                array(
-                                    'key'     => 'thanh_pho', // assumed your meta_key is 'thanh_pho'
-                                    'value'   => $_tp,
-                                    'compare' => '=', // finds models that matches 'model' from the select field
-                                ),
-                            array(
-                                'key'     => 'loai_tin', // assumed your meta_key is 'thanh_pho'
-                                'value'   => $_lt,
-                                'compare' => '=', // finds models that matches 'model' from the select field
-                            ),
-                            array(
-                                'key'     => 'loai_tin', // assumed your meta_key is 'thanh_pho'
-                                'value'   => $_tp,
-                                'compare' => '=', // finds models that matches 'model' from the select field
-                            ),
-                            array(
-                                'key'     => 'loai_tin', // assumed your meta_key is 'thanh_pho'
-                                'value'   => $_tp,
-                                'compare' => '=', // finds models that matches 'model' from the select field
-                            ),
-                            array(
-                                'key'     => 'loai_tin', // assumed your meta_key is 'thanh_pho'
-                                'value'   => $_tp,
-                                'compare' => '=', // finds models that matches 'model' from the select field
-                            ),
-                            array(
-                                'key'     => 'loai_tin', // assumed your meta_key is 'thanh_pho'
-                                'value'   => $_tp,
-                                'compare' => '=', // finds models that matches 'model' from the select field
-                            ),
-                            array(
-                                'key'     => 'loai_tin', // assumed your meta_key is 'thanh_pho'
-                                'value'   => $_tp,
-                                'compare' => '=', // finds models that matches 'model' from the select field
-                            )
-                            )
-    );
+        's'             =>  $keyword, // looks into everything with the keyword from your 'name field'
+        'meta_query'    =>  $queryMetaArray
+);
+var_dump($v_args);
 $searchQuery = new WP_Query( $v_args );
-// Open this line to Debug what's query WP has just run
-// var_dump($searchQuery->request);
 ?>
 <?php get_header(); ?>
 <div class="content">
