@@ -15,7 +15,7 @@ if ('POST' == $_SERVER['REQUEST_METHOD']) {
 		<div class="page-content">
                 <?php /* query_posts of approved post of the logged in user */ ?>
                 <?php
-                $postPerPage = 5;
+                $postPerPage = 2;
                 $paged = get_query_var('paged', 1);
                 ?>
                 <?php $queryArray = array( 'author' => $current_user->ID,'post_status' => 'publish' , 'post_type' => array( 'post' ), 'posts_per_page' => $postPerPage, 'paged' => $paged  ) ;?>

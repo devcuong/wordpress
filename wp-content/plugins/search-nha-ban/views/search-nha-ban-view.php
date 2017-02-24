@@ -6,25 +6,26 @@ echo $args['before_widget'];
 			// var_dump($args['before_title']);
 			echo "<div id='most_view_title' class='title_n'>".$args['before_title'].$title.$args['after_title']."</div>";
 ?>
+<div class="search-plugin-content">
 	<form method="get" id="advanced-searchform" role="search"
 	action="<?php echo esc_url( home_url( '/' ) ); ?>">
 	<!-- PASSING THIS TO TRIGGER THE ADVANCED SEARCH RESULT PAGE FROM functions.php -->
-	<div id="searchArea" style="overflow: hidden;" >
+	<div style="overflow: hidden;" class="search-plugin" >
 	<input type="hidden" name="search" value="advanced">
 	<div class="keyword" id="DivKeySearch">
 		<input type="text" value=""
 			placeholder="<?php _e( 'Nhập từ khóa muốn tìm', 'thachpham' ); ?>"
-			name="name" id="name" /><br>
+			name="keyword" id="keyword" class="plug-keyword" /><br>
 	</div>
 	<div class="search-or"></div>
 	<!-- Chon Loai Nha Dat -->
 	<div id="adtype-select-real" class="advanced-selection" style="display: block;">
-	<select name="lt" id="selLoaiTin" class="selSearch">
+	<select name="lt" id="selLoaiTin" class="plug-search">
 		<option value=""><?php _e( '--Chọn Loại Tin Đăng--', 'thachpham' ); ?></option>
 	</select>
 	</div>
 	<div id="category-select-real" class="advanced-selection" style="display: block;">
-	<select name="ld" id="selLoaiNhaDat" class="selSearch">
+	<select name="ld" id="selLoaiNhaDat" class="plug-search">
 		<option value=""><?php _e( '--Chọn Loại Nhà Đất--', 'thachpham' ); ?></option>
 		<option value="ban_can_ho_chung_cu"><?php _e( 'Bán căn hộ chung cư', 'thachpham' ); ?></option>
 		<option value="ban_nha_rieng"><?php _e( 'Bán nhà riêng', 'thachpham' ); ?></option>
@@ -39,19 +40,19 @@ echo $args['before_widget'];
 	</div>
 	<!-- Chon Thanh Pho -->
 	<div id="city-select-real" class="advanced-selection" style="display: block;">
-	<select name="tp" id="selThanhPho" onchange="changeThanhPho()" class="selSearch">
+	<select name="tp" id="selThanhPho" onchange="changeThanhPho()" class="plug-search">
 		<option value=""><?php _e( '--Chọn Thành Phố--', 'thachpham' ); ?></option>
 	</select>
 	</div>
 	<!-- Chon Quan Huyen -->
     <div id="district-select-real" class="advanced-selection" style="display: block;">
-	<select name="qh" id="selQuanHuyen" class="selSearch">
+	<select name="qh" id="selQuanHuyen" class="plug-search">
 		<option value=""><?php _e( '--Chọn Quận Huyện--', 'thachpham' ); ?></option>
 	</select>
     </div>
 	<!-- Chon Dien Tich -->
 	<div id="area-select-real" class="advanced-selection" style="display: block;">
-	<select name="dt" id="selDienTich" class="selSearch">
+	<select name="dt" id="selDienTich" class="plug-search">
 		<option value=""><?php _e( '--Chọn Diện Tích--', 'thachpham' ); ?></option>
 		<option value="chua_xac_dinh"><?php _e( 'Chưa xác định', 'thachpham' ); ?></option>
 		<option value="nho_hon_30_m2"><?php _e( '<= 30 m2', 'thachpham' ); ?></option>
@@ -68,7 +69,7 @@ echo $args['before_widget'];
 	</div>
 	<!-- Chon Muc Gia -->
 	<div id="price-select-real" class="advanced-selection" style="display: block;">
-	<select name="gd" id="selGiaNhaDat" class="selSearch">
+	<select name="gd" id="selGiaNhaDat" class="plug-search">
 		<option value=""><?php _e( '--Chọn Mức Giá--', 'thachpham' ); ?></option>
 		<option value="gia_thoa_thuan"><?php _e( 'Thỏa thuận', 'thachpham' ); ?></option>
 		<option value="nho_hon_500_trieu"><?php _e( '< 500 triệu', 'thachpham' ); ?></option>
@@ -85,27 +86,27 @@ echo $args['before_widget'];
 	</select>
 	</div>
 	<div id="ward-select-real" class="advanced-selection" style="display: none;"> 
-		<select name="px" id="selPhuongXa" class="selSearch" >
+		<select name="px" id="selPhuongXa" class="plug-search" >
 			<option value=""><?php _e( '--Chọn Phường Xã--', 'thachpham' ); ?></option>
 		</select>
 	</div>
 	<div id="street-select-real" class="advanced-selection" style="display: none;"> 
-		<select name="dp" id="selDuongPho" class="selSearch" >
+		<select name="dp" id="selDuongPho" class="plug-search" >
 			<option value=""><?php _e( '--Chọn Đường Phố--', 'thachpham' ); ?></option>
 		</select>
 	</div>
 	<div id="room-select-real" class="advanced-selection" style="display: none;"> 
-		<select name="sp" id="selSoPhong" class="selSearch" >
+		<select name="sp" id="selSoPhong" class="plug-search" >
 			<option value=""><?php _e( '--Chọn Số Phòng--', 'thachpham' ); ?></option>
 		</select>
 	</div>
 	<div id="direction-select-real" class="advanced-selection" style="display: none;"> 
-		<select name="hn" id="selHuongNha" class="selSearch" >
+		<select name="hn" id="selHuongNha" class="plug-search" >
 			<option value=""><?php _e( '--Chọn Hướng Nhà--', 'thachpham' ); ?></option>
 		</select>
 	</div>
 	<div id="project-select-real" class="advanced-selection" style="display: none;"> 
-		<select name="da" id="selDuAn" class="selSearch" >
+		<select name="da" id="selDuAn" class="plug-search" >
 			<option value=""><?php _e( '--Chọn Dự Án--', 'thachpham' ); ?></option>
 		</select>
 	</div>
@@ -115,6 +116,7 @@ echo $args['before_widget'];
 	   <input type="submit" id="searchsubmit" value="Tìm kiếm" />
 	</div>
 </form>
+</div>
 <?php
 echo $args['after_widget'];
 ?>

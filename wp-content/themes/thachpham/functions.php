@@ -207,8 +207,7 @@
          * */
           if (!function_exists('thachpham_entry_content')) {
             function thachpham_entry_content($postID){
-              var_dump($postID);
-              if ( !is_single() && !is_page()) {
+              if ( !is_single() && !is_page() && !is_bool($postID)) {
                   echo "<div class='other'>";
                   echo "<div class='price'>";
                   echo "<label>Giá<span>:</span></label>".get_post_meta($postID,"gia_nha_dat",true)." ".get_post_meta($postID,"gia",true)."</div>";
@@ -489,7 +488,7 @@ if (!function_exists('dothi_get_top_news')) {
 }
 add_action( 'init', 'register_my_menu' );
 
-//Making jQuery Google API
+// Making jQuery Google API
 function modify_jquery() {
     if (!is_admin()) {
         // comment out the next two lines to load the local copy of jQuery
@@ -499,3 +498,41 @@ function modify_jquery() {
     }
 }
 add_action('init', 'modify_jquery');
+
+// Pagination
+function kriesi_pagination($pages = '', $range = 2)
+{
+    $showitems = ($range * 2)+1;
+
+    global $paged;
+    if(empty($paged)) $paged = 1;
+
+    if($pages == '')
+    {
+        global $wp_query;
+        $pages = $wp_query->max_num_pages;
+        if(!$pages)
+        {
+            $pages = 1;
+        }
+    }
+
+    if(1 != $pages)
+    {
+        echo "<div class='pagination'>";
+        if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo "<a href='".get_pagenum_link(1)."'>&laquo;</a>";
+        if($paged > 1 && $showitems < $pages) echo "<a href='".get_pagenum_link($paged - 1)."'>&lsaquo;</a>";
+
+        for ($i=1; $i <= $pages; $i++)
+        {
+        if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems ))
+        {
+        echo ($paged == $i)? "<span class='current'>".$i."</span>":"<a href='".get_pagenum_link($i)."' class='inactive' >".$i."</a>";
+        }
+        }
+
+        if ($paged < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($paged + 1)."'>&rsaquo;</a>";
+        if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($pages)."'>&raquo;</a>";
+            echo "</div>\n";
+    }
+    }

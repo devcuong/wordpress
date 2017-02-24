@@ -15,7 +15,7 @@
 	<div class="line_gr"></div>
 	    <?php         
 	    $v_args = array(
-            'post_type'     =>  'Post', // your CPT
+            'post_type' =>  'Post',
 	        'meta_key' => 'loai_tin',
 	        'meta_value' => 'bds_ban'
         );

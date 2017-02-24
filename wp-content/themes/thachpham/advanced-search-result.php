@@ -60,27 +60,69 @@ if (isset($_GET['gd']) && !empty($_GET['gd'])){
     'compare' => '=',
     ));
 }
-/* var_dump($queryMetaArray); */
+
+if (isset($_GET['px']) && !empty($_GET['px'])){
+    $_px = $_GET['px'];
+    array_push($queryMetaArray, array(
+    'key'     => 'phuong_xa', // assumed your meta_key is 'phuong_xa'
+    'value'   => $_px,
+    'compare' => '=',
+    ));
+}
+
+if (isset($_GET['dp']) && !empty($_GET['dp'])){
+    $_dp = $_GET['dp'];
+    array_push($queryMetaArray, array(
+    'key'     => 'duong_pho', // assumed your meta_key is 'duong_pho'
+    'value'   => $_dp,
+    'compare' => '=',
+    ));
+}
+
+if (isset($_GET['sp']) && !empty($_GET['sp'])){
+    $_sp = $_GET['sp'];
+    array_push($queryMetaArray, array(
+    'key'     => 'so_phong', // assumed your meta_key is 'so_phong'
+    'value'   => $_sp,
+    'compare' => '=',
+    ));
+}
+
+if (isset($_GET['hn']) && !empty($_GET['hn'])){
+    $_hn = $_GET['hn'];
+    array_push($queryMetaArray, array(
+    'key'     => 'huong_bds', // assumed your meta_key is 'huong_bds'
+    'value'   => $_hn,
+    'compare' => '=',
+    ));
+}
+/*  var_dump($queryMetaArray); */
 // Start the Query
 $v_args = array(
         'post_type'     =>  'post', // your CPT
         's'             =>  $keyword, // looks into everything with the keyword from your 'name field'
         'meta_query'    =>  $queryMetaArray
 );
-var_dump($v_args);
 $searchQuery = new WP_Query( $v_args );
+
+kriesi_pagination($searchQuery->max_num_pages);
 ?>
 <?php get_header(); ?>
 <div class="content">
 <div class="col-left">
 	<div id="main-content">
-				<h2>Search Result</h2>
-			<?php if ($searchQuery->have_posts() ) : while($searchQuery->have_posts() ) : $searchQuery->the_post(); ?>
+			<div id="most_view_title" class="title_n"><h3 class="widget-title">Tin nhà đất</h3></div>
+			<span>Có</span>
+			<?php
+            $count = count($searchQuery->post_count);
+            echo  $count . " Tin đăng nhà đất được tìm thấy";
+            ?>
+			<?php 
+			if ($searchQuery->have_posts() ) :
+			while($searchQuery->have_posts() ) :
+			$searchQuery->the_post(); ?>
 			<?php get_template_part('search-result', get_post_format()); ?>
-			
 			<?php endwhile ?>
-			<?php else: ?>
-				<?php get_template_part('search-result', 'none'); ?>
 			<?php endif ?>
 	</div>
 </div>
