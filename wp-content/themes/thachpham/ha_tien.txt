@@ -1,1 +1,0 @@
-[{"name":"-- ph??ng/xã --","meta":""},{"name":"ph??ng bình san","meta":"phuong_binh_san"},{"name":"ph??ng ?ông h?","meta":"phuong_dong_ho"},{"name":"xã m? ??c","meta":"xa_m?_duc"},{"name":"ph??ng pháo ?ài","meta":"phuong_phao_dai"},{"name":"xã thu?n yên","meta":"xa_thuan_yen"},{"name":"xã tiên h?i","meta":"xa_tien_hai"},{"name":"ph??ng tô châu","meta":"phuong_to_chau"}]

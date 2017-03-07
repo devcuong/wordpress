@@ -1,1 +1,0 @@
-[{"name":"-- ph??ng/xã --","meta":""},{"name":"xã phú l?i","meta":"xa_phu_loi"},{"name":"xã phú m?","meta":"xa_phu_m?"},{"name":"xã tân khánh hoà","meta":"xa_tan_khanh_hoa"},{"name":"xã v?nh ?i?u","meta":"xa_vinh_dieu"},{"name":"xã v?nh phú","meta":"xa_vinh_phu"}]

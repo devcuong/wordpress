@@ -97,15 +97,22 @@ if (isset($_GET['hn']) && !empty($_GET['hn'])){
     ));
 }
 /*  var_dump($queryMetaArray); */
-// Start the Query
+/* $paged = get_query_var('paged', 1); */
+if (isset($_GET['paged']) && !empty($_GET['paged'])){
+	$paged = $_GET['paged'];
+}else{
+	$paged = 1;
+}
+
+// Chay search
 $v_args = array(
-        'post_type'     =>  'post', // your CPT
-        's'             =>  $keyword, // looks into everything with the keyword from your 'name field'
-        'meta_query'    =>  $queryMetaArray
+        'post_type'     =>  'post',
+        's'             =>  $keyword,
+        'meta_query'    =>  $queryMetaArray,
+		'posts_per_page' => 1,
+		'paged' => $paged
 );
 $searchQuery = new WP_Query( $v_args );
-
-kriesi_pagination($searchQuery->max_num_pages);
 ?>
 <?php get_header(); ?>
 <div class="content">
@@ -124,6 +131,34 @@ kriesi_pagination($searchQuery->max_num_pages);
 			<?php get_template_part('search-result', get_post_format()); ?>
 			<?php endwhile ?>
 			<?php endif ?>
+			<?php /* if ( $searchQuery->max_num_pages > 1 ) : ?>
+					<div class="clearboth"></div>
+					<?php
+					$pages_total = $searchQuery->max_num_pages;
+					 echo "<ul class='pagination'>";
+							for ($i = 1; $i <= $pages_total; $i ++) {
+								if ($i == (int) $paged ) {
+									echo "<li><a href='".get_pagenum_link($i)."' class='active'>" . $i . "</a></li>";
+								} else {
+									echo "<li><a href='".get_pagenum_link($i)."' >" . $i . "</a></li>";
+								}
+							}
+							echo "</ul>"; */
+					$paging_args = array(
+						'base'         => '%_%',
+						'format'       => '?paged=%#%',
+						'total'        => $searchQuery->max_num_pages,
+						'current'      => $paged,
+						'end_size'     => 2,
+						'mid_size'     => 1,
+						'prev_next'    => True,
+						'prev_text'    => __('« Previous'),
+						'next_text'    => __('Next »'),
+						'type'		   => 'list'
+					);
+					echo paginate_links($paging_args);
+					?>
+			<?php /* endif */ ?>
 	</div>
 </div>
     <div id="sidebar">

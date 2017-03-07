@@ -713,28 +713,28 @@ blockquote.right {
 	width: 100%;
 }
 /*--phan trang--*/
-ul.pagination {
+ul.page-numbers {
 	display: inline-block;
 	padding: 0;
 	margin: 0;
 }
 
-ul.pagination li {
+ul.page-numbers li {
 	display: inline;
 }
 
-ul.pagination li a {
+ul.page-numbers li a {
 	color: black;
 	float: left;
 	padding: 8px 16px;
 	text-decoration: none;
 }
-ul.pagination li a.active {
+ul.page-numbers li span.current {
     background-color: #055699;
     color: white;
 }
 
-ul.pagination li a:hover:not(.active) {background-color: #ddd;}
+ul.page-numbers li a:hover:not(.active) {background-color: #ddd;}
 .sel-search{
 	-webkit-appearance: button;
    -webkit-border-radius: 2px;
